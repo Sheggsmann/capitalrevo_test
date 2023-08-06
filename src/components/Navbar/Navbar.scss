@@ -1,0 +1,68 @@
+@import "../../scss/main";
+
+.navbar {
+  position: relative;
+  padding: 1.75rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+
+  span.navbar_bold {
+    font-weight: 700 !important;
+    text-decoration: underline;
+  }
+
+  @include xl {
+    padding: 1.5rem 2rem;
+  }
+
+  @include md {
+    padding: 1rem 1.25rem;
+  }
+
+  .navbar_logo {
+    height: 4.2rem;
+    cursor: pointer;
+
+    @include md {
+      height: 2.5rem;
+    }
+  }
+
+  .navbar_main {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    @include lg {
+      gap: 1rem;
+    }
+
+    span {
+      cursor: pointer;
+      color: $White;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+
+      @include md {
+        display: none;
+      }
+    }
+  }
+
+  .navbar_buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    @include lg {
+      gap: 0.5rem;
+    }
+  }
+
+  .navbar_language {
+    height: 2rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../scss/main";
+
+.textInput_grey {
+  border-color: $Select_Color !important;
+
+  input {
+    &:focus {
+      border: 1.5px solid $Select_Color !important;
+    }
+  }
+}
+
+.textInput {
+  height: 58px;
+  width: 100%;
+  background: $White;
+  border: 1px solid $Accent;
+  border-radius: 4px;
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 7px;
+    left: 1rem;
+    color: $Label_Color;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+  }
+
+  input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: $Input_Color;
+    font-size: 16px;
+    padding: 0 1rem;
+    padding-top: 20px;
+    border-radius: 4px;
+
+    &:focus {
+      border: 1.5px solid $Accent;
+    }
+  }
+}

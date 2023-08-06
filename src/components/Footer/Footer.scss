@@ -1,0 +1,167 @@
+@import "../../scss/main";
+
+.footer_dark {
+  background: $Footer_Bg !important;
+}
+
+.footer {
+  z-index: 10;
+  position: relative;
+  background: linear-gradient(
+    261.47deg,
+    rgba(242, 246, 253, 0) 13.42%,
+    #f2f6fd 53.56%
+  );
+  border-radius: 100px 100px 0px 0px;
+
+  .footer_logos {
+    width: 1100px;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 4.5rem 0;
+    flex-wrap: wrap;
+
+    @include md {
+      gap: 1rem;
+    }
+
+    img {
+      height: 1.75rem;
+    }
+  }
+
+  .footer_main {
+    width: 1300px;
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "contentMain item1 item2 item3 item4"
+      "contentMain  footerDescription footerDescription footerDescription footerDescription";
+    row-gap: 2.5rem;
+    column-gap: 1rem;
+    border-top: 1px solid rgba(24, 48, 89, 0.13);
+    padding-top: 3rem;
+    padding-bottom: 2.25rem;
+
+    @include md {
+      grid-template-areas:
+        "contentMain item1 item2 "
+        "contentMain item3 item4"
+        "  footerDescription footerDescription footerDescription";
+
+      row-gap: 1.5rem;
+    }
+
+    @include sm {
+      grid-template-areas:
+        "contentMain contentMain  "
+        "item1  item2 "
+        " item3 item4"
+        "  footerDescription footerDescription ";
+
+      row-gap: 1.5rem;
+    }
+  }
+
+  .footer_item {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      font-size: 1.125rem;
+      color: $Text_Grey;
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      font-size: 0.875rem;
+      color: $Text_Grey;
+      font-family: "Manrope", sans-serif;
+      line-height: 1.4;
+      margin-bottom: 0.25rem;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer_contentMain {
+    grid-area: contentMain;
+
+    img {
+      height: 4.25rem;
+      margin-bottom: 2.75rem;
+    }
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .footer_media {
+    display: flex;
+    gap: 1.125rem;
+    flex-wrap: wrap;
+    margin-top: 1.75rem;
+
+    img {
+      height: 1.25rem;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .footer_item1 {
+    grid-area: item1;
+  }
+
+  .footer_item2 {
+    grid-area: item2;
+  }
+
+  .footer_item3 {
+    grid-area: item3;
+  }
+
+  .footer_item4 {
+    grid-area: item4;
+  }
+
+  .footer_description {
+    grid-area: footerDescription;
+  }
+
+  .footer_descriptionLinks {
+    display: flex;
+    gap: 1rem;
+
+    span {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer_text {
+    font-size: 0.75rem;
+    color: $Text_Grey;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.4;
+  }
+}

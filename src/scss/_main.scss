@@ -1,0 +1,93 @@
+$Body: #343a40;
+$Primary_Bg: #183059;
+$White: #ffffff;
+$Black: #000000;
+$CTA: #019d2d;
+$Accent: #f77000;
+$Primary: #002857;
+$Grey: #94959b;
+$Body_Text: #454955;
+$Text_Grey: #717171;
+$Footer_Bg: #f2f6fd;
+$Label_Color: #666666;
+$Input_Color: #333333;
+$Select_Color:#CED4DA;
+
+@mixin rating-colors {
+  background-color: #ed4942;
+
+  &:nth-child(2) {
+    background-color: #ed8042;
+  }
+
+  &:nth-child(3) {
+    background-color: #fcc502;
+  }
+
+  &:nth-child(4) {
+    background-color: #b2cf00;
+  }
+
+  &:nth-child(5) {
+    background-color: #36cf00;
+  }
+}
+
+// media queries
+
+// extra small
+
+$screen-xs-min: 425px;
+
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 767px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// extra Large tablets and desktops
+$screen-xxl-min: 1400px;
+
+@mixin xs {
+  @media (max-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+//Extra Extra large devices
+@mixin xxl {
+  @media (max-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}

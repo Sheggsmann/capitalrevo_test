@@ -1,0 +1,294 @@
+@import "../../scss/main";
+
+.home {
+  .home_top {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 20rem;
+    z-index: 10;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100% - 20rem);
+      width: 100%;
+      background-color: $Accent;
+      transform: rotate(1.75deg);
+      border-radius: 0px 0px 3.125rem 9.375rem;
+    }
+  }
+
+  .home_verticalLines {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 70%;
+    opacity: 0.5;
+  }
+
+  .header {
+    position: relative;
+    background-color: $Primary_Bg;
+    padding-bottom: 2.6rem;
+    border-radius: 0 0 6.25rem 6.25rem;
+    overflow: hidden;
+
+    .header_horizontalLines {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 115%;
+      width: 110%;
+      transform: translate(-5%, 10%);
+      opacity: 0.5;
+    }
+
+    .header_content {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.7rem;
+      margin-top: 0.6rem;
+      padding: 4.12rem;
+      margin-bottom: 1.7rem;
+      z-index: 10;
+
+      @include lg {
+        padding: 2rem;
+      }
+    }
+
+    .header_details {
+      flex-basis: 50%;
+
+      @include md {
+        flex-basis: 100%;
+      }
+
+      span {
+        width: 80%;
+      }
+    }
+
+    .header_image {
+      flex-basis: 50%;
+
+      @include md {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .header_reviews {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .home_main {
+    position: relative;
+    overflow: hidden;
+    margin-top: -26rem;
+    padding-top: 12rem;
+
+    & > section,
+    & > div {
+      position: relative;
+    }
+    .home_bg1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100% + 20rem);
+      width: 150%;
+      z-index: 0;
+      background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.71) 0.91%,
+          rgba(255, 255, 255, 0.19) 51.56%,
+          #ffffff 100%
+        ),
+        url("../../assets/bg.jpeg");
+      transform: rotate(-1.79deg) translateY(-15rem);
+      filter: blur(2px);
+    }
+
+    .home_bg2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: calc(100% + 10rem);
+      width: 100%;
+      z-index: 0;
+      background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.71) 0.91%,
+          rgba(255, 255, 255, 0.19) 51.56%,
+          #ffffff 100%
+        ),
+        url("../../assets/bg.jpeg");
+      transform: translateY(2rem);
+      background-repeat: no-repeat;
+      filter: blur(2px);
+    }
+
+    .home_mainLines {
+      position: absolute;
+      top: 40%;
+      left: 0;
+      height: 60%;
+      width: 100%;
+      z-index: 0;
+      background: url("../../assets/main-horizontal-lines.png");
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  .home_trading {
+    position: relative;
+    z-index: 20;
+  }
+
+  .home_tradingHeading {
+    width: 640px;
+    max-width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      width: 70%;
+      color: $Body;
+      margin: 0 auto;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .home_tradingMain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding-top: 1.65rem;
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  .home_tradingBox {
+    width: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.125rem;
+    justify-content: space-between;
+    padding-top: 3.8rem;
+    padding-bottom: 1.125rem;
+    background: rgba(255, 255, 255, 0.51);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1px);
+    border-radius: 16px;
+    height: initial;
+
+    img {
+      height: 4.125rem;
+    }
+
+    span {
+      font-size: 1.25rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      text-align: center;
+      max-width: 70%;
+      line-height: 1.2;
+    }
+
+    button {
+      cursor: pointer;
+      height: 1.25rem;
+      width: 1.25rem;
+      border: none;
+      outline: none;
+      background-color: transparent;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .home_tradingButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7.3rem;
+
+    p {
+      font-weight: 500;
+      color: $Body;
+      font-family: "Manrope", sans-serif;
+    }
+  }
+
+
+
+  .home_startSteps {
+    h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      font-family: "Gothic A1", sans-serif;
+      text-align: center;
+      margin-bottom: 4rem;
+      line-height: 1.2;
+
+      @include lg {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .home_startStepsMain {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+
+    @include xl {
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+ 
+
+  .home_startStepsButton {
+    @extend .home_tradingButton;
+  }
+
+  .home_bottomText {
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: 5.8rem;
+    margin-bottom: 2.25rem;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    font-family: "Manrope", sans-serif;
+    width: 1085px;
+    text-align: center;
+    color: $Body_Text;
+  }
+}

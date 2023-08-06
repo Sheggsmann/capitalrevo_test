@@ -1,0 +1,33 @@
+@import "../../scss/main";
+
+.currencyIndicator {
+ background-color: $White;
+ padding: 0.5rem 0.75rem;
+ border-radius: 6.25rem;
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+
+ & > img {
+  height: 1.125rem;
+ }
+
+ .currencyIndicator_main {
+  h4 {
+   font-size: 0.75rem;
+   font-weight: 600;
+   color: $Body;
+   margin: 0;
+   line-height: 1.2;
+  }
+
+  div {
+   display: flex;
+   align-items: center;
+   gap: 2px;
+   color: $CTA;
+   font-size: 0.75rem;
+   font-weight: 500;
+  }
+ }
+}

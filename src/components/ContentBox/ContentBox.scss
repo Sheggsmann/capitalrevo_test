@@ -1,0 +1,32 @@
+@import "../../scss/main";
+
+.contentBox_transparent {
+ background-color: transparent !important;
+}
+
+.contentBox {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.51);
+  backdrop-filter: blur(3.5px);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  img {
+    height: 6rem;
+    width: fit-content;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $Black;
+    font-family: "Manrope", sans-serif;
+    line-height: 1.2;
+  }
+
+  p {
+   color: $Body;
+  }
+}

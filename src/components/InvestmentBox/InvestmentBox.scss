@@ -1,0 +1,71 @@
+@import "../../scss/main";
+
+.investmentBox {
+  display: flex;
+  width: 1312px;
+  max-width: 90vw;
+  margin: 0 auto;
+  gap: 5%;
+  background: rgba(255, 255, 255, 0.76);
+  border-radius: 2rem;
+
+  @include md {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  img {
+    width: 50%;
+    height: fit-content;
+  }
+
+  .investmentBox_content {
+    padding: 130px 0 130px 64px;
+
+    @include xl {
+      padding: 80px 0 80px 48px;
+    }
+
+    @include lg {
+      padding: 50px 0 50px 32px;
+    }
+
+    @include md {
+      padding: 40px 20px 40px 20px;
+    }
+    h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: $Primary;
+      font-family: "Gothic A1", sans-serif;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+
+      @include xl {
+        font-size: 2.5rem;
+      }
+
+      @include lg {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      @include md {
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      color: $Body;
+      margin-bottom: 3.5rem;
+
+      @include xl {
+        margin-bottom: 2rem;
+      }
+
+      @include md {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

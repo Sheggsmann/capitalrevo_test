@@ -1,0 +1,50 @@
+@import "../../scss/main";
+
+.dropdown {
+  height: 58px;
+  width: 100%;
+  background: $White;
+  border: 1px solid $Select_Color;
+  border-radius: 4px;
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 7px;
+    left: 1rem;
+    color: $Label_Color;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+  }
+
+  select {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: $Input_Color;
+    font-size: 16px;
+    padding: 0 1rem;
+    padding-top: 20px;
+    border-radius: 4px;
+    z-index: 10;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding-left: 15px;
+
+    &:focus {
+      border: 2px solid $Select_Color;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    height: 1.5rem;
+    z-index: 0;
+  }
+}

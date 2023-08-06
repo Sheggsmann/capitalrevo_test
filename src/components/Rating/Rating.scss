@@ -1,0 +1,35 @@
+@import "../../scss/main";
+
+.rating_body {
+  color: $Body !important;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $White;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+
+  .dark-heading {
+    color: inherit;
+  }
+
+  .rating_stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.16rem;
+    margin-right: 1.09rem;
+  }
+  .rating_reivew {
+  }
+  .rating_source {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .rating_star {
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../scss/main";
+
+.hero_trading {
+  background-image: url("../../assets/accounts-bg.jpeg") !important;
+}
+
+.hero {
+  height: 50vh;
+  width: 100%;
+  border-radius: 0px 0px 100px 100px;
+  height: 612px;
+  max-height: 90vh;
+  min-height: 450px;
+  position: relative;
+  background-image: url("../../assets/earth-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $Primary_Bg;
+  z-index: 10;
+
+  .hero_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 650px;
+    max-width: 90%;
+    padding: 3rem 0;
+    padding-left: 4rem;
+
+    @include xl {
+      padding-left: 2rem;
+    }
+
+    @include md {
+      padding-left: 1rem;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      width: 75%;
+      line-height: 1.6;
+
+      @include md {
+        width: 100%;
+      }
+    }
+  }
+}
