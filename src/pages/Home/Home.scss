@@ -47,6 +47,20 @@
       opacity: 0.5;
     }
 
+    .header-cta-mobile {
+      display: none;
+    }
+
+    @include md {
+      .header-cta-mobile {
+        display: block;
+      }
+
+      .header-cta {
+        display: none;
+      }
+    }
+
     .header_content {
       position: relative;
       display: flex;
@@ -60,6 +74,11 @@
 
       @include lg {
         padding: 2rem;
+      }
+
+      @include md {
+        text-align: center;
+        flex-direction: column;
       }
     }
 
@@ -79,7 +98,8 @@
       flex-basis: 50%;
 
       @include md {
-        display: none;
+        // display: none;
+        width: 70%;
       }
 
       img {
@@ -91,6 +111,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      max-width: 90vw;
     }
   }
 

@@ -8,7 +8,12 @@ import Rating from "../../components/Rating";
 import InvestmentBox from "../../components/InvestmentBox";
 import LicenseLogo from "../../assets/license.svg";
 import SafetyLogo from "../../assets/safety.svg";
-import FaceAgentLogo from "../../assets/face-agent.svg";
+import EarthLogo from "../../assets/about/earth.svg";
+import SealVariantLogo from "../../assets/about/seal-variant.svg";
+import FaceAgentLogo from "../../assets/about/face-agent.svg";
+import CashMultipleLogo from "../../assets/about/cash-multiple.svg";
+import SchoolOutlineLogo from "../../assets/about/school-outline.svg";
+import ChartBarLogo from "../../assets/about/chart-bar.svg";
 import Button from "../../components/Button";
 
 const CurrencyData = [
@@ -44,28 +49,34 @@ const CurrencyData = [
 
 const TradeBoxes = [
   {
+    logo: EarthLogo,
     heading: "Global Presence",
-    text: "Capital Group is now a global organization with regulated trading companies offering .",
+    text: "Trade in global markets with our expansive network and international expertise.",
   },
   {
+    logo: SealVariantLogo,
     heading: "Award Winning Technology",
-    text: "Capital Group is now a global organization with regulated trading companies offering .",
+    text: "Experience trading excellence with our cutting-edge platform and innovative tools.",
   },
   {
-    heading: "Top-notch customer service",
-    text: "Capital Group is now a global organization with regulated trading companies offering .",
+    logo: FaceAgentLogo,
+    heading: "24/7 Customer Service",
+    text: "Get round-the-clock support from our dedicated team, ensuring prompt assistance whenever you need it.",
   },
   {
+    logo: CashMultipleLogo,
     heading: "Flexible Deposit Options",
-    text: "Capital Group is now a global organization with regulated trading companies offering .",
+    text: "Enjoy funding methods tailored to your preferences, providing flexibility for your trading needs.",
   },
   {
-    heading: "Education ",
-    text: "Capital Group is now a global organization with regulated trading companies offering .",
+    logo: SchoolOutlineLogo,
+    heading: "Trading Education",
+    text: "Expand your knowledge and skills with our comprehensive educational resources to make informed decisions.",
   },
   {
-    heading: "Analysis ",
-    text: "Capital Group is now a global organization with regulated trading companies offering .",
+    logo: ChartBarLogo,
+    heading: "Technical Analysis",
+    text: "Stay ahead of the game with in-depth market insights and analysis, helping you identify profitable trading opportunities.",
   },
 ];
 
@@ -140,7 +151,7 @@ const About = () => {
           <div className="about_tradeBoxes">
             {TradeBoxes.map((d, i) => (
               <div key={i} className="about_tradeBox">
-                <img src={FaceAgentLogo} alt="face" />
+                <img src={d.logo} alt="face" />
                 <h3>{d.heading}</h3>
                 <p>{d.text}</p>
               </div>

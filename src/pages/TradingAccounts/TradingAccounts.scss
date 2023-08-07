@@ -220,6 +220,22 @@
     .tradingAccounts_boxButtons {
       display: flex;
       gap: 0.5rem;
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .tradingAccounts_boxButtons.mobile {
+      width: 100%;
+      flex: 1;
+      display: none;
+
+      @include md {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
     }
 
     .tradingAccounts_specs {

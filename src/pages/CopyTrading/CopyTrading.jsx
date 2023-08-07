@@ -2,24 +2,29 @@ import React from "react";
 import "./CopyTrading.scss";
 import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
-import StepBox from "../../components/StepBox";
-import JoinLogo from "../../assets/join.svg";
-import Step2Logo from "../../assets/step-2-1.svg";
-import DepositLogo from "../../assets/deposit.svg";
 import Button from "../../components/Button";
 import InvestmentBox from "../../components/InvestmentBox";
+import ShieldAccountLogo from "../../assets/copy_trading/shield-account-outline.svg";
+import HexagonLogo from "../../assets/copy_trading/professional-hexagon.svg";
+import TimerCheckLogo from "../../assets/copy_trading/timer-check-outline.svg";
 
 const StartSteps = [
   {
-    image: JoinLogo,
+    logo: HexagonLogo,
+    heading: "Benefit from expert's work",
+    text: "Gain from proven trading strategies of experienced professionals",
     details: "A time-saving way to earn passive income",
   },
   {
-    image: Step2Logo,
+    logo: TimerCheckLogo,
+    heading: "Save time",
+    text: "Skip the research and analysis by automatically copying trades of successful traders.",
     details: "Seamless and optimised order execution",
   },
   {
-    image: DepositLogo,
+    logo: ShieldAccountLogo,
+    heading: "Less risk",
+    text: "Mitigate potential losses by diversifying your portfolio through copytrading.",
     details: "An easy and intuitive platform, open to all",
   },
 ];
@@ -58,7 +63,11 @@ const CopyTrading = () => {
 
         <div className="copyTrading_steps">
           {StartSteps.map((d, i) => (
-            <StepBox key={i} image={d.image} details={d.details} />
+            <div key={i} className="copyTrading_stepsBox">
+              <img src={d.logo} alt="face" />
+              <h3>{d.heading}</h3>
+              <p>{d.text}</p>
+            </div>
           ))}
         </div>
 

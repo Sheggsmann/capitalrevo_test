@@ -71,6 +71,7 @@ const Home = () => {
           alt="lines"
           loading="lazy"
         />
+
         <header className="header">
           <img
             src={HomeHorizontalLines}
@@ -78,7 +79,9 @@ const Home = () => {
             alt="lines"
             loading="lazy"
           />
+
           <Navbar />
+
           <div className="header_content">
             <div className="header_details">
               <h1 className="heading-1 mb-1">
@@ -89,13 +92,25 @@ const Home = () => {
                 Trade forex with unbeatable spreads, negative balance
                 protection, 0% commissions, and award winning 24/7 support
               </p>
-              <a href="https://client.kwakolmarkets.com/register">
+
+              <a
+                href="https://client.kwakolmarkets.com/register"
+                className="header-cta"
+              >
                 <Button>Start Trading</Button>
               </a>
             </div>
+
             <div className="header_image">
               <img src={Screen} alt="screens" loading="lazy" />
             </div>
+
+            <a
+              href="https://client.kwakolmarkets.com/register"
+              className="header-cta-mobile"
+            >
+              <Button>Start Trading</Button>
+            </a>
           </div>
 
           <div className="header_reviews">
@@ -113,7 +128,7 @@ const Home = () => {
           <div className="home_tradingHeading">
             <h2>
               Trade <span className="accent"> 100+ Instruments </span>
-              with Award-Winning Broker
+              with an Award-Winning Broker
             </h2>
             <p className="body-large ">
               Diversify your investment portfolio by trading CFDs on more than

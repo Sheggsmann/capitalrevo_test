@@ -122,6 +122,7 @@ const TradingAccounts = () => {
         <div className="tradingAccounts_bg2" />
 
         <div className="tradingAccounts_lines" />
+
         <div className="tradingAccounts_text">
           <h2>
             Accounts For <span className="accent"> Every Trader </span>
@@ -133,6 +134,7 @@ const TradingAccounts = () => {
             options for personalized trading experiences and exclusive benefits.
           </p>
         </div>
+
         <div className="tradingAccounts_tabs">
           {Tabs.map((t, i) => (
             <span
@@ -168,6 +170,7 @@ const TradingAccounts = () => {
                 <div className="tradingAccounts_boxContent">
                   <h3>{d.title}</h3>
                   <p>{d.details}</p>
+
                   <div className="tradingAccounts_boxButtons">
                     <a href="https://client.kwakolmarkets.com/register">
                       <Button>Open account</Button>
@@ -247,6 +250,12 @@ const TradingAccounts = () => {
                       {d.technicalAnalysis}
                     </div>
                   </div>
+                </div>
+
+                <div className="tradingAccounts_boxButtons mobile">
+                  <a href="https://client.kwakolmarkets.com/register">
+                    <Button>Open account</Button>
+                  </a>
                 </div>
               </div>
             </div>

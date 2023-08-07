@@ -30,7 +30,25 @@
     }
   }
 
+  .menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+
+    @include md {
+      display: flex;
+    }
+  }
+
   .navbar_main {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 2.5rem;
@@ -44,11 +62,30 @@
       color: $White;
       font-family: "Inter", sans-serif;
       font-weight: 500;
+    }
+  }
 
-      @include md {
-        display: none;
+  .navbar_links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    @include md {
+      display: none;
+
+      &.open {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: $Primary_Bg;
+        top: 60px;
+        right: 0;
+        padding: 1rem;
+        width: 100%;
       }
     }
+
+
   }
 
   .navbar_buttonsContainer {
@@ -58,6 +95,12 @@
 
     @include lg {
       gap: 0.5rem;
+    }
+
+    @include sm {
+      .login {
+        display: none;
+      }
     }
   }
 
