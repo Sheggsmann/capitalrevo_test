@@ -85,6 +85,23 @@
     margin-bottom: 5rem;
     max-width: 90vw;
     flex-wrap: wrap;
+
+    @include sm {
+      max-width: 100vw;
+      width: 100vw;
+      overflow-x: auto;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   .calendar_content1 {

@@ -190,6 +190,23 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 5.5rem;
+
+    @include sm {
+      width: 100vw;
+      max-width: 100vw;
+      overflow-x: auto;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   .investmentBox {
@@ -222,5 +239,9 @@
     font-family: "Manrope", sans-serif;
     color: $Body;
     text-align: center;
+  }
+
+  @include sm {
+    min-width: 210px;
   }
 }

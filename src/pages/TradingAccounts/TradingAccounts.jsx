@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./TradingAccounts.scss";
 import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
@@ -14,6 +13,8 @@ import VIPLogo from "../../assets/VIP_1.svg";
 import AccountManagerLogo from "../../assets/account-star-outline.svg";
 import CustomerSupportLogo from "../../assets/face-agent.svg";
 import TechAnalysisLogo from "../../assets/chart-waterfall.svg";
+import ProfessionalLogo from "../../assets/professional.svg";
+import "./TradingAccounts.scss";
 
 const Tabs = [
   "Basic",
@@ -23,7 +24,6 @@ const Tabs = [
   "Diamond",
   "Premium",
   "VIP",
-  "Islamic",
 ];
 
 const AccountsDetails = [
@@ -70,7 +70,7 @@ const AccountsDetails = [
     title: "Platinum",
     details:
       "Basic account is ideal for traders looking for a traditional trading experience. The Standard account offers ultra-competitive spreads without any commissions.",
-    logo: StandardLogo,
+    logo: ProfessionalLogo,
     minDeposit: "$100,000",
     spread: "Floating from 1.2 pips",
     leverage: "Up to 1:400",
@@ -83,7 +83,7 @@ const AccountsDetails = [
     title: "Diamond",
     details:
       "Elevate your trading experience with our Platform Account. Enjoy enhanced trading conditions, dedicated account manage, and tailored investment strategies",
-    logo: StandardLogo,
+    logo: ProfessionalLogo,
     minDeposit: "$250,000",
     spread: "Floating from 0.9 pips",
     leverage: "Up to 1:500",
@@ -117,10 +117,10 @@ const TradingAccounts = () => {
         text="Capital Revo offers a wide range of account types, all designed to suit a diverse range of trading styles."
         trading
       />
+
       <div className="tradingAccounts_main">
         <div className="tradingAccounts_bg1" />
         <div className="tradingAccounts_bg2" />
-
         <div className="tradingAccounts_lines" />
 
         <div className="tradingAccounts_text">

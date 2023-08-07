@@ -9,8 +9,12 @@
   justify-content: center;
   align-items: center;
   color: $White;
-  flex-wrap: wrap;
-  row-gap: 0.5rem;
+
+  @include md {
+    div, span {
+      font-size: 12px;
+    }
+  }
 
   .dark-heading {
     color: inherit;
@@ -21,15 +25,16 @@
     justify-content: center;
     align-items: center;
     gap: 0.16rem;
-    margin-right: 1.09rem;
+
+    @include sm {
+      gap: 0.08rem;
+      margin-right: 0.4rem;
+    }
   }
-  .rating_reivew {
-  }
+
   .rating_source {
     display: flex;
     align-items: center;
     gap: 0.3rem;
-  }
-  .rating_star {
   }
 }

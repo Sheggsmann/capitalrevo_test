@@ -19,7 +19,7 @@ const Rating = ({ heading, count, source, color = "" }) => {
         <span className="dark-heading">{count}</span> reviews on
       </div>
       <div className="rating_source">
-        <img src={Star} alt="star" loading="lazy" />
+        <img src={Star} alt="star" />
         <div className="dark-heading">{source}</div>
       </div>
     </div>

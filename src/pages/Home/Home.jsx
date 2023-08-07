@@ -135,11 +135,12 @@ const Home = () => {
               just Forex.
             </p>
           </div>
+
           <div className="home_tradingMain">
             {TradingInstrumentsData.map((d, i) => (
               <div key={i} className="home_tradingBox">
                 <img src={d.image} alt="dollar" loading="lazy" />
-                <span>{d.name}</span>
+                <p>{d.name}</p>
                 <button>
                   <img src={PlusCircleIcon} alt="plus" loading="lazy" />
                 </button>

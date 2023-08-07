@@ -18,6 +18,10 @@
   background-color: $Primary_Bg;
   z-index: 10;
 
+  @include md {
+    background-image: url("../../assets/accounts-bg.jpeg") !important;
+  }
+
   .hero_content {
     position: absolute;
     top: 50%;

@@ -6,8 +6,8 @@ import CurrencyIndicator from "../../components/CurrencyIndicator";
 import Dropdown from "../../components/Dropdown";
 import Table from "../../components/Table";
 import ContentBox from "../../components/ContentBox";
-import FaceAgent from "../../assets/face-agent.svg";
 import Accounts from "../../components/Accounts";
+import HelpCircleIcon from "../../assets/help-circle-outline.svg";
 
 const CurrencyData = [
   {
@@ -184,7 +184,7 @@ const Calendar = () => {
 
         <div className="calendar_boxes">
           <ContentBox
-            logo={FaceAgent}
+            logo={HelpCircleIcon}
             heading="What is Economic Calendar?"
             text={
               <>
@@ -199,7 +199,7 @@ const Calendar = () => {
             }
           />
           <ContentBox
-            logo={FaceAgent}
+            logo={HelpCircleIcon}
             transparent
             heading="How to use the Economic Calendar?"
             text={
@@ -216,7 +216,7 @@ const Calendar = () => {
             }
           />
           <ContentBox
-            logo={FaceAgent}
+            logo={HelpCircleIcon}
             transparent
             heading="Why you should use the Economic Calendar?"
             text={
@@ -232,7 +232,7 @@ const Calendar = () => {
             }
           />
           <ContentBox
-            logo={FaceAgent}
+            logo={HelpCircleIcon}
             heading="How to read the Economic Calendar?"
             text={
               <>
