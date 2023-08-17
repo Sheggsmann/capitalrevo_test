@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import FaceAgentLogo from "../../assets/face-agent-1.svg";
 import EmailLogo from "../../assets/email-outline.svg";
 import LiveChatLogo from "../../assets/message-outline.svg";
+import ContactUs from "../../assets/contact_bg.png";
 import "./Contact.scss";
 
 const ContactBoxes = [
@@ -31,6 +32,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <Hero
+        bgImage={ContactUs}
         heading="Contact us"
         text="Need help? Our 5-star support team is ready to help you Monday through Sunday, 9:00 a.m. to 6:00 p.m. UTC+2"
       />

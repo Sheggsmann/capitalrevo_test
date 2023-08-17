@@ -7,6 +7,7 @@ import InvestmentBox from "../../components/InvestmentBox";
 import ShieldAccountLogo from "../../assets/copy_trading/shield-account-outline.svg";
 import HexagonLogo from "../../assets/copy_trading/professional-hexagon.svg";
 import TimerCheckLogo from "../../assets/copy_trading/timer-check-outline.svg";
+import CopyTradingBg from "../../assets/copytrading_bg.png";
 
 const StartSteps = [
   {
@@ -44,6 +45,7 @@ const CopyTrading = () => {
   return (
     <div className="copyTrading">
       <Hero
+        bgImage={CopyTradingBg}
         heading="Copytrading Platform"
         text="Follow successful traders, automatically replicate their strategies, and maximize your trading potential."
       />

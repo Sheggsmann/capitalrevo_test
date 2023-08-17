@@ -5,14 +5,47 @@ import Button from "../Button";
 import LogoIcon from "../../assets/logo.svg";
 import EnglishFlag from "../../assets/eng-flag.png";
 import MenuIcon from "../../assets/menu.svg";
+import ChevronDown from "../../assets/chevron-down.svg";
+import ChevronUp from "../../assets/chevron-up.svg";
 import "./Navbar.scss";
 
 const MobileLink = ({ link, text, dropdowns }) => {
   const navigate = useNavigate();
   const location = window.location.pathname;
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <span className={`${location.includes(link) ? "navbar_bold" : ""}`}></span>
+    <div className="mobile_link">
+      <div
+        className="dropdown_header"
+        onClick={() => setIsOpen((prev) => !prev)}
+      >
+        <div className={`${location.includes(link) ? "navbar_bold" : ""}`}>
+          {text}
+        </div>
+
+        <div>
+          {!isOpen ? (
+            <img src={ChevronDown} alt="chevron-down" />
+          ) : (
+            <img src={ChevronUp} alt="chevron-up" />
+          )}
+        </div>
+      </div>
+
+      <div className="dropdown_container">
+        {isOpen &&
+          dropdowns.map((dropdown, index) => (
+            <div
+              className="dropdown_item"
+              key={index}
+              onClick={() => navigate(dropdown.link)}
+            >
+              {dropdown.text}
+            </div>
+          ))}
+      </div>
+    </div>
   );
 };
 
@@ -38,8 +71,6 @@ const Navbar = () => {
 
   const isMobile = useMediaQuery("(max-width: 768px)");
 
-  console.log(isMobile);
-
   return (
     <nav className="navbar">
       <img
@@ -55,7 +86,13 @@ const Navbar = () => {
             <MobileLink
               text="Trading"
               link="/accounts"
-              dropdowns={[{ text: "Accounts", link: "/accounts" }]}
+              dropdowns={[
+                { text: "Accounts", link: "/accounts" },
+                { text: "Instruments", link: "/instruments" },
+                { text: "Withdrawals", link: "/widthdrawals" },
+                { text: "Copytrading", link: "/copytrading" },
+                { text: "Synthetic Trading", link: "/synthetic_trading" },
+              ]}
             />
           ) : (
             <WebLink text="Trading" link="/accounts" />
@@ -67,34 +104,42 @@ const Navbar = () => {
             Trading
           </span> */}
 
-          <span
-            className={`${
-              location.includes("/calculator") ? "navbar_bold" : ""
-            }`}
-            onClick={() => navigate("/calculator")}
-          >
-            Tools
-          </span>
-          <span
-            className={`${
-              location.includes("/partnership") ? "navbar_bold" : ""
-            }`}
-            onClick={() => navigate("/partnership")}
-          >
-            Partnership
-          </span>
-          <span
-            className={`${location.includes("/contact") ? "navbar_bold" : ""}`}
-            onClick={() => navigate("/contact")}
-          >
-            Help
-          </span>
-          <span
-            className={`${location.includes("/about") ? "navbar_bold" : ""}`}
-            onClick={() => navigate("/about")}
-          >
-            About
-          </span>
+          {isMobile ? (
+            <MobileLink
+              text="Tools"
+              dropdowns={[{ text: "Tools", link: "/tools" }]}
+            />
+          ) : (
+            <WebLink text="Tools" link="/calculator" />
+          )}
+
+          {isMobile ? (
+            <MobileLink
+              text="Partnership"
+              dropdowns={[{ text: "Partnership", link: "/partnership" }]}
+            />
+          ) : (
+            <WebLink text="Partnership" link="/partnership" />
+          )}
+
+          {isMobile ? (
+            <MobileLink
+              text="Help"
+              link="/contact"
+              dropdowns={[{ text: "Help", link: "/contact" }]}
+            />
+          ) : (
+            <WebLink text="Help" link="/contact" />
+          )}
+
+          {!isMobile && (
+            <span
+              className={`${location.includes("/about") ? "navbar_bold" : ""}`}
+              onClick={() => navigate("/about")}
+            >
+              About
+            </span>
+          )}
         </div>
 
         <div className="navbar_buttonsContainer">

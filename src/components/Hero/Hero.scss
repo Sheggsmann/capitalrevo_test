@@ -12,14 +12,14 @@
   max-height: 90vh;
   min-height: 450px;
   position: relative;
-  background-image: url("../../assets/earth-bg.png");
+  // background-image: url("../../assets/deposit_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $Primary_Bg;
   z-index: 10;
 
   @include md {
-    background-image: url("../../assets/accounts-bg.jpeg") !important;
+    // background-image: url("../../assets/accounts-bg.jpeg") !important;
   }
 
   .hero_content {

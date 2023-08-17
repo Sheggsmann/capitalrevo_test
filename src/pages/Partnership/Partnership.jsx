@@ -7,6 +7,7 @@ import CashFastLogo from "../../assets/partnership/cash-fast.svg";
 import CalendarSyncLogo from "../../assets/partnership/calendar-sync-outline.svg";
 import CalendarWeekLogo from "../../assets/partnership/calendar-week-outline.svg";
 import SourceBranchLogo from "../../assets/partnership/source-branch.svg";
+import PartnershipBg from "../../assets/partnership_bg.png";
 import "./Partnership.scss";
 
 const PartnershipBoxes = [
@@ -46,6 +47,7 @@ const Partnership = () => {
   return (
     <div className="partnership">
       <Hero
+        bgImage={PartnershipBg}
         heading="Partnership program"
         text="Unlock lucrative opportunities with our onlien trading website's partnership program. Earn generous commissions and exclusive benefits."
       />

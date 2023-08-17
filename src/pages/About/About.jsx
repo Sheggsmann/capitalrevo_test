@@ -15,6 +15,7 @@ import CashMultipleLogo from "../../assets/about/cash-multiple.svg";
 import SchoolOutlineLogo from "../../assets/about/school-outline.svg";
 import ChartBarLogo from "../../assets/about/chart-bar.svg";
 import Button from "../../components/Button";
+import AboutBg from "../../assets/about_bg.png";
 
 const CurrencyData = [
   {
@@ -84,6 +85,7 @@ const About = () => {
   return (
     <div className="about">
       <Hero
+        bgImage={AboutBg}
         heading="Global Leading Online Trading Provider"
         text="Capital Revo is a leading global online trading provider, offering trading with Forex and CFDs, indices, precious metals, energy and cryptocurrencies."
       />

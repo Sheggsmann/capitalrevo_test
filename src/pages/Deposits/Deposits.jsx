@@ -9,6 +9,8 @@ import CardLogo from "../../assets/card.svg";
 import WalletLogo from "../../assets/wallet-1.svg";
 import WithdrawalsLogo from "../../assets/withdrawal.svg";
 import ContentBox from "../../components/ContentBox";
+import SectionBox from "../../components/SectionBox";
+import DepositBg from "../../assets/deposit_bg.png";
 // import CheckdecagramIcon from "../../assets/check-decagram.svg";
 // import CurrencyUSDLogo from "../../assets/currency-usd.svg";
 // import ArrowSplitLogo from "../../assets/arrow-split-vertical.svg";
@@ -119,6 +121,7 @@ const Deposits = () => {
   return (
     <div className="deposits">
       <Hero
+        bgImage={DepositBg}
         heading="Deposits and Withdrawals"
         text="Choose from flexible payment options in local currencies, including the world’s most popular payment systems, e-wallets, and crypto wallets."
       />
@@ -228,6 +231,7 @@ const Deposits = () => {
         />
         <EarthBox
           btn
+          btnText="Make a deposit"
           heading="Ready to trade?"
           text="Access the most popular markets through a single account.
           Discover CFD on Stocks, ETFs, Crypto and more. Start trading in less than 5 minutes!"

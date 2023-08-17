@@ -19,6 +19,8 @@ import FinanceLogo from "../../assets/finance.svg";
 import GoldLogo from "../../assets/gold.svg";
 import BTCLogo from "../../assets/currency-btc.svg";
 import EarthBox from "../../components/EarthBox/EarthBox";
+import SectionBox from "../../components/SectionBox/SectionBox";
+import HomeHandomseMan from "../../assets/home_handomse_man.png";
 
 const TradingInstrumentsData = [
   {
@@ -155,7 +157,8 @@ const Home = () => {
           </div>
         </section>
 
-        <EarthBox
+        <SectionBox
+          bgImage={HomeHandomseMan}
           tabs
           heading="Why trade with Capital Revo"
           text="Capital Revo founded in 2015 is a leading online trading provider,

@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
 import Accordion from "../../components/Accordion/Accordion";
+import FAQ_BG from "../../assets/faq_bg.png";
 import "./FAQ.scss";
 
 const PaymentSystems = [
@@ -66,6 +67,7 @@ const FAQ = () => {
   return (
     <div className="faq">
       <Hero
+        bgImage={FAQ_BG}
         heading="Frequently Asked Questions"
         text="Discover answers to common questions and find helpful solutions. Simplify your trading journey with our expert guidance."
       />

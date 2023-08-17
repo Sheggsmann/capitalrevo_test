@@ -8,6 +8,7 @@ import Table from "../../components/Table";
 import ContentBox from "../../components/ContentBox";
 import Accounts from "../../components/Accounts";
 import HelpCircleIcon from "../../assets/help-circle-outline.svg";
+import CalendarBg from "../../assets/calendar_bg.png";
 
 const CurrencyData = [
   {
@@ -142,6 +143,7 @@ const Calendar = () => {
   return (
     <div className="calendar">
       <Hero
+        bgImage={CalendarBg}
         heading="Economic Calendar"
         text="Keep an eye on key upcoming economic events, announcements, and news. Plus, set up filters in a few clicks, selecting for event importance and affected currencies."
       />

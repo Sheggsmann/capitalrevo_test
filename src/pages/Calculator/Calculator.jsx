@@ -11,6 +11,7 @@ import JoinLogo from "../../assets/join.svg";
 import Step2Logo from "../../assets/step-2-1.svg";
 import DepositLogo from "../../assets/deposit.svg";
 import StepBox from "../../components/StepBox";
+import CalculatorBg from "../../assets/calculator_bg.png";
 
 const CurrencyData = [
   {
@@ -68,6 +69,7 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <Hero
+        bgImage={CalculatorBg}
         heading="Forex Trading Calculator"
         text="The tool shows how much money will be immediately engaged in the order with your chosen parameters."
       />
