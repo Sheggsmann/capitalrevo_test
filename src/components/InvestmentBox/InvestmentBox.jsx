@@ -8,6 +8,7 @@ const InvestmentBox = ({
   text,
   buttonText = "Start trading",
   redirectLink = "https://client.kwakolmarkets.com/register",
+  image = CoinsInHandsImage,
 }) => {
   return (
     <div className="investmentBox">
@@ -18,7 +19,7 @@ const InvestmentBox = ({
           <Button>{buttonText}</Button>
         </a>
       </div>
-      <img src={CoinsInHandsImage} alt="invest" />
+      <img src={image} alt="invest" />
     </div>
   );
 };

@@ -10,7 +10,9 @@ import WalletLogo from "../../assets/wallet-1.svg";
 import WithdrawalsLogo from "../../assets/withdrawal.svg";
 import ContentBox from "../../components/ContentBox";
 import SectionBox from "../../components/SectionBox";
+import SectionBox2 from "../../components/SectionBox2";
 import DepositBg from "../../assets/deposit_bg.png";
+import DepositBag from "../../assets/deposits_bag.png";
 // import CheckdecagramIcon from "../../assets/check-decagram.svg";
 // import CurrencyUSDLogo from "../../assets/currency-usd.svg";
 // import ArrowSplitLogo from "../../assets/arrow-split-vertical.svg";
@@ -229,12 +231,13 @@ const Deposits = () => {
           count="724"
           source="TrustPilot"
         />
-        <EarthBox
+        <SectionBox2
+          bgImage={DepositBag}
           btn
           btnText="Make a deposit"
           heading="Ready to trade?"
           text="Access the most popular markets through a single account.
-          Discover CFD on Stocks, ETFs, Crypto and more. Start trading in less than 5 minutes!"
+        Discover CFD on Stocks, ETFs, Crypto and more. Start trading in less than 5 minutes!"
         />
       </div>
       <Footer dark />

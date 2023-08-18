@@ -12,6 +12,7 @@
   @include md {
     flex-direction: column-reverse;
     align-items: center;
+    text-align: center;
   }
 
   img {
@@ -33,6 +34,7 @@
     @include md {
       padding: 40px 20px 40px 20px;
     }
+
     h3 {
       font-size: 3rem;
       font-weight: 700;

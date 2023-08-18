@@ -8,6 +8,7 @@ import ShieldAccountLogo from "../../assets/copy_trading/shield-account-outline.
 import HexagonLogo from "../../assets/copy_trading/professional-hexagon.svg";
 import TimerCheckLogo from "../../assets/copy_trading/timer-check-outline.svg";
 import CopyTradingBg from "../../assets/copytrading_bg.png";
+import CopyTradingSectionImg from "../../assets/copy_trading_section.png";
 
 const StartSteps = [
   {
@@ -109,6 +110,7 @@ const CopyTrading = () => {
         <InvestmentBox
           heading="Start Investing Now"
           text="Our copytrading platform lets our clients access the opportunities of trading without any advanced technical skills."
+          image={CopyTradingSectionImg}
         />
         <p className="body-large">
           Capital Revo Copytrading is a system that facilitates the management
