@@ -171,7 +171,7 @@ const Navbar = () => {
           <img src={EnglishFlag} alt="flag" className="navbar_language" />
           {isMobile && (
             <a
-              href="https://client.kwakolmarkers.com/login"
+              href="https://client.kwakolmarkets.com/login"
               className="navbar_user_icon"
             >
               <svg
