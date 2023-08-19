@@ -7,7 +7,6 @@ import EnglishFlag from "../../assets/eng-flag.png";
 import MenuIcon from "../../assets/menu.svg";
 import ChevronDown from "../../assets/chevron-down.svg";
 import ChevronUp from "../../assets/chevron-up.svg";
-import AccountCircle from "../../assets/account-circle.svg";
 import "./Navbar.scss";
 
 const MobileLink = ({ link, text, dropdowns }) => {
@@ -40,7 +39,11 @@ const MobileLink = ({ link, text, dropdowns }) => {
             <div
               className="dropdown_item"
               key={index}
-              onClick={() => navigate(dropdown.link)}
+              onClick={() => {
+                if (dropdown.link) {
+                  navigate(dropdown.link);
+                }
+              }}
             >
               {dropdown.text}
             </div>
@@ -57,7 +60,9 @@ const WebLink = ({ link, text }) => {
   return (
     <span
       className={`${location.includes(link) ? "navbar_bold" : ""}`}
-      onClick={() => navigate(link)}
+      onClick={() => {
+        if (link) navigate(link);
+      }}
     >
       {text}
     </span>
@@ -96,28 +101,22 @@ const Navbar = () => {
               link="/accounts"
               dropdowns={[
                 { text: "Accounts", link: "/accounts" },
-                { text: "Instruments", link: "/instruments" },
+                { text: "Instruments", link: "" },
                 { text: "Withdrawals", link: "/deposits" },
                 { text: "Copytrading", link: "/copy-trading" },
-                { text: "Synthetic Trading", link: "/synthetic_trading" },
+                { text: "Synthetic Trading", link: "" },
               ]}
             />
           ) : (
             <WebLink text="Trading" link="/accounts" />
           )}
-          {/* <span
-            className={`${location.includes("/accounts") ? "navbar_bold" : ""}`}
-            onClick={() => navigate("/accounts")}
-          >
-            Trading
-          </span> */}
 
           {isMobile ? (
             <MobileLink
               text="Tools"
               dropdowns={[
-                { text: "Web Trader", link: "/tools" },
-                { text: "Mobile App", link: "/tools" },
+                { text: "Web Trader", link: "" },
+                { text: "Mobile App", link: "" },
                 { text: "Trading Calendar", link: "/calendar" },
                 { text: "Forex Calculator", link: "/calculator" },
               ]}

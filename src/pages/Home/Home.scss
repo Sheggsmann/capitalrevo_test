@@ -19,7 +19,13 @@
       transform: rotate(1.75deg);
       border-radius: 0px 0px 3.125rem 9.375rem;
     }
-  }
+
+    @include md {
+      &::before {
+        border-radius: 0px 0px 2.125rem 8.375rem;
+      }
+    }
+ }
 
   .home_verticalLines {
     position: absolute;
@@ -36,6 +42,10 @@
     padding-bottom: 2.6rem;
     border-radius: 0 0 6.25rem 6.25rem;
     overflow: hidden;
+
+    @include md {
+      border-radius: 0 0 3rem 3rem;
+    }
 
     .header_horizontalLines {
       position: absolute;

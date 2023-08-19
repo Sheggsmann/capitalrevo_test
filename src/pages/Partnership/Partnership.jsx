@@ -8,6 +8,7 @@ import CalendarSyncLogo from "../../assets/partnership/calendar-sync-outline.svg
 import CalendarWeekLogo from "../../assets/partnership/calendar-week-outline.svg";
 import SourceBranchLogo from "../../assets/partnership/source-branch.svg";
 import PartnershipBg from "../../assets/partnership_bg.png";
+import PartnershipSection from "../../assets/partnership_section.png"
 import "./Partnership.scss";
 
 const PartnershipBoxes = [
@@ -83,6 +84,7 @@ const Partnership = () => {
             heading="Grow your revenue"
             text="Start promoting the Capital Revo brand and earn commision each time new clients sign up to our platform with our Multi-Level partnership program. Join today to grow your revenue."
             buttonText="Become a partner"
+            image={PartnershipSection}
           />
         </div>
       </div>
