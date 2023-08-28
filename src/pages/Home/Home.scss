@@ -23,6 +23,7 @@
     @include md {
       &::before {
         border-radius: 0px 0px 2.125rem 8.375rem;
+        height: calc(100% - 19.5rem);
       }
     }
  }

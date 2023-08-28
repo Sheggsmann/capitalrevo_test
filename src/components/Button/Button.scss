@@ -13,14 +13,18 @@
  cursor: pointer;
  white-space: nowrap;
 
+    &:hover {
+        background-color: #008425;
+    }
+
  @include md {
-  height: 2.5rem;
+  height: 3rem;
   border-radius: 2.4rem;
   padding: 0 1.25rem;
  }
 
  @include sm {
-  height: 2rem;
+  height: 2.5rem;
  }
 
 

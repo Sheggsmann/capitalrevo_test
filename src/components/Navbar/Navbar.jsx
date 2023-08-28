@@ -7,6 +7,7 @@ import EnglishFlag from "../../assets/eng-flag.png";
 import MenuIcon from "../../assets/menu.svg";
 import ChevronDown from "../../assets/chevron-down.svg";
 import ChevronUp from "../../assets/chevron-up.svg";
+import MobileLogo from "./MobileLogo.svg";
 import "./Navbar.scss";
 
 const MobileLink = ({ link, text, dropdowns }) => {
@@ -87,7 +88,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <img
-        src={LogoIcon}
+        src={isMobile ? MobileLogo : LogoIcon}
         alt="logo"
         className="navbar_logo"
         onClick={() => navigate("/")}

@@ -51,7 +51,7 @@ const Accounts = () => {
   return (
     <div className="accounts">
       <div className="accounts_content">
-        <h3>Accounts For Every Trader</h3>
+        <h3 className="text-primary">Accounts For Every Trader</h3>
         <p>
           We have accounts for both new and more active traders. Check which
           fits and you’re set to go.

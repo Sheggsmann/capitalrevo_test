@@ -108,7 +108,7 @@ const CopyTrading = () => {
           ))}
         </div>
         <InvestmentBox
-          heading="Start Investing Now"
+          heading="Start copytrading now"
           text="Our copytrading platform lets our clients access the opportunities of trading without any advanced technical skills."
           image={CopyTradingSectionImg}
         />

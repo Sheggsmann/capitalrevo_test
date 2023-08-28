@@ -128,7 +128,7 @@ const Home = () => {
 
         <section className="home_trading">
           <div className="home_tradingHeading">
-            <h2>
+            <h2 className="text-primary">
               Trade <span className="accent"> 100+ Instruments </span>
               with an Award-Winning Broker
             </h2>
@@ -166,7 +166,7 @@ const Home = () => {
         />
 
         <section className="home_startSteps">
-          <h3>Start in less than 5 minutes</h3>
+          <h3 className="text-primary">Start in less than 5 minutes</h3>
 
           <div className="home_startStepsMain">
             {StartSteps.map((d, i) => (
