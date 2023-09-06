@@ -64,8 +64,8 @@
 
     @include md {
       grid-template-areas:
-        "contentMain item1 item2 "
-        "contentMain item3 item4"
+        "contentMain"
+        "contentMain"
         "  footerDescription footerDescription footerDescription";
 
       row-gap: 1.5rem;
@@ -74,8 +74,6 @@
     @include sm {
       grid-template-areas:
         "contentMain contentMain  "
-        "item1  item2 "
-        " item3 item4"
         "  footerDescription footerDescription ";
 
       row-gap: 1.5rem;
@@ -138,6 +136,12 @@
       &:hover {
         opacity: 0.7;
       }
+    }
+  }
+
+  .footer_item {
+    @include md {
+      display: none;
     }
   }
 

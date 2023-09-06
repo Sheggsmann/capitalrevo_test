@@ -90,6 +90,7 @@ const Footer = ({ dark = false }) => {
           <span>Knowledge Base</span>
           <span onClick={() => navigate("/contact")}>Contact</span>
         </div>
+
         <div className="footer_description footer_text">
           Contracts for Difference (“CFDs”) are leveraged products and carry a
           high level of risk to your capital as prices may move rapidly against
