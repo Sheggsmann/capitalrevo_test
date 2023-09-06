@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.scss";
 import Navbar from "../../components/Navbar";
 import Button from "../../components/Button";
@@ -64,6 +65,8 @@ const StartSteps = [
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="home">
       <div className="home_top">
@@ -140,13 +143,15 @@ const Home = () => {
 
           <div className="home_tradingMain">
             {TradingInstrumentsData.map((d, i) => (
-              <div key={i} className="home_tradingBox">
-                <img src={d.image} alt="dollar" loading="lazy" />
-                <p>{d.name}</p>
-                <button>
-                  <img src={PlusCircleIcon} alt="plus" loading="lazy" />
-                </button>
-              </div>
+              <a href="https://client.kwakolmarkets.com/login">
+                <div key={i} className="home_tradingBox">
+                  <img src={d.image} alt="dollar" loading="lazy" />
+                  <p>{d.name}</p>
+                  <button>
+                    <img src={PlusCircleIcon} alt="plus" loading="lazy" />
+                  </button>
+                </div>
+              </a>
             ))}
           </div>
           <div className="home_tradingButton">

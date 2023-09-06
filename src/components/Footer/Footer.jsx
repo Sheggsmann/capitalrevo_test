@@ -48,6 +48,13 @@ const Footer = ({ dark = false }) => {
             Suite 305, Beachmont, <br />
             Kingstown,St Vincent and Grenadines
           </div>
+
+          <br />
+          <div className="footer_descriptionLinks">
+            <span>Privacy</span>
+            <span>Cookie Policy</span>
+          </div>
+
           <div className="footer_media">
             {MediaLogos.map((l, i) => (
               <img key={i} src={l} alt="logo" />
@@ -97,11 +104,6 @@ const Footer = ({ dark = false }) => {
           Capital Revo products and services are not intended for Belgium, US
           and Canada residents.
           <br />
-          <br />
-          <div className="footer_descriptionLinks">
-            <span>Privacy</span>
-            <span>Cookie Policy</span>
-          </div>
         </div>
       </div>
     </footer>

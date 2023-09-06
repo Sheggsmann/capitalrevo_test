@@ -23,9 +23,24 @@
     gap: 2rem;
     padding: 4.5rem 0;
     flex-wrap: wrap;
+    
 
     @include md {
       gap: 1rem;
+      width: 90vw;
+      max-width: 90vw;
+      overflow-x: auto;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     img {
@@ -106,6 +121,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
   }
 
@@ -148,6 +164,8 @@
   .footer_descriptionLinks {
     display: flex;
     gap: 1rem;
+    font-size: 0.75rem;
+    color: #717171;
 
     span {
       cursor: pointer;
