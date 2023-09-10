@@ -3,24 +3,27 @@ import { useNavigate } from "react-router-dom";
 import { useClickOutside, useMediaQuery } from "../../hooks";
 import Button from "../Button";
 import LogoIcon from "../../assets/logo.svg";
-import EnglishFlag from "../../assets/eng-flag.png";
+import EnglishFlag from "../../assets/eng-flag.svg";
 import MenuIcon from "../../assets/menu.svg";
 import ChevronDown from "../../assets/chevron-down.svg";
 import ChevronUp from "../../assets/chevron-up.svg";
 import MobileLogo from "./MobileLogo.svg";
 import "./Navbar.scss";
 
-const MobileLink = ({ link, text, dropdowns }) => {
+const MobileLink = ({
+  link,
+  text,
+  dropdowns,
+  currentOpenMenu,
+  handleMenuToggle,
+}) => {
   const navigate = useNavigate();
   const location = window.location.pathname;
-  const [isOpen, setIsOpen] = useState(false);
+  const isOpen = currentOpenMenu === text;
 
   return (
     <div className="mobile_link">
-      <div
-        className="dropdown_header"
-        onClick={() => setIsOpen((prev) => !prev)}
-      >
+      <div className="dropdown_header" onClick={() => handleMenuToggle(text)}>
         <div className={`${location.includes(link) ? "navbar_bold" : ""}`}>
           {text}
         </div>
@@ -72,6 +75,7 @@ const WebLink = ({ link, text }) => {
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentOpenMenu, setCurrentOpenMenu] = useState(null);
   const location = window.location.pathname;
 
   const navigate = useNavigate();
@@ -84,6 +88,14 @@ const Navbar = () => {
     if (!isMobile) return;
     setMenuOpen(false);
   });
+
+  const handleMenuToggle = (menu) => {
+    if (currentOpenMenu === menu) {
+      setCurrentOpenMenu(null);
+    } else {
+      setCurrentOpenMenu(menu);
+    }
+  };
 
   return (
     <nav className="navbar">
@@ -102,11 +114,11 @@ const Navbar = () => {
               link="/accounts"
               dropdowns={[
                 { text: "Accounts", link: "/accounts" },
-                { text: "Instruments", link: "" },
                 { text: "Withdrawals", link: "/deposits" },
                 { text: "Copytrading", link: "/copy-trading" },
-                { text: "Synthetic Trading", link: "" },
               ]}
+              currentOpenMenu={currentOpenMenu}
+              handleMenuToggle={handleMenuToggle}
             />
           ) : (
             <WebLink text="Trading" link="/accounts" />
@@ -116,11 +128,11 @@ const Navbar = () => {
             <MobileLink
               text="Tools"
               dropdowns={[
-                { text: "Web Trader", link: "" },
-                { text: "Mobile App", link: "" },
                 { text: "Trading Calendar", link: "/calendar" },
                 { text: "Forex Calculator", link: "/calculator" },
               ]}
+              currentOpenMenu={currentOpenMenu}
+              handleMenuToggle={handleMenuToggle}
             />
           ) : (
             <WebLink text="Tools" link="/calculator" />
@@ -133,6 +145,8 @@ const Navbar = () => {
                 { text: "Introducing Broker", link: "/partnership" },
                 { text: "Become a partner", link: "/partnership" },
               ]}
+              currentOpenMenu={currentOpenMenu}
+              handleMenuToggle={handleMenuToggle}
             />
           ) : (
             <WebLink text="Partnership" link="/partnership" />
@@ -147,6 +161,8 @@ const Navbar = () => {
                 { text: "Knowledge Base", link: "/contact" },
                 { text: "Contact", link: "/contact" },
               ]}
+              currentOpenMenu={currentOpenMenu}
+              handleMenuToggle={handleMenuToggle}
             />
           ) : (
             <WebLink text="Help" link="/contact" />
@@ -169,7 +185,9 @@ const Navbar = () => {
           <a href="https://client.kwakolmarkets.com/register">
             <Button>Sign up</Button>
           </a>
+
           <img src={EnglishFlag} alt="flag" className="navbar_language" />
+
           {isMobile && (
             <a
               href="https://client.kwakolmarkets.com/login"

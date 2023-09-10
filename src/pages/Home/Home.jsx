@@ -19,7 +19,6 @@ import BarrelLogo from "../../assets/barrel-outline.svg";
 import FinanceLogo from "../../assets/finance.svg";
 import GoldLogo from "../../assets/gold.svg";
 import BTCLogo from "../../assets/currency-btc.svg";
-import EarthBox from "../../components/EarthBox/EarthBox";
 import SectionBox from "../../components/SectionBox/SectionBox";
 import HomeHandomseMan from "../../assets/home_handomse_man.png";
 

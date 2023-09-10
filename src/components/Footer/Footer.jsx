@@ -43,7 +43,6 @@ const Footer = ({ dark = false }) => {
           <img src={LogoDark} alt="logo" />
           <div className="footer_text">
             © 2023 Capital Revo · All rights reserved <br />
-            <br />
             Griffith Corporate Centre <br />
             Suite 305, Beachmont, <br />
             Kingstown,St Vincent and Grenadines

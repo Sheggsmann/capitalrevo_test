@@ -13,6 +13,7 @@
  font-size: 16px;
  cursor: pointer;
  white-space: nowrap;
+ transition: ease-in-out 300ms;
 
     &:hover {
         background-color: #008425;
@@ -34,6 +35,13 @@
 .button_outline {
  background-color: transparent !important;
  border: 1px solid $White;
+ transition: ease-in-out 300ms;
+
+ &:hover {
+    background-color: $Primary_Bg !important;
+    border-color: $Primary_Bg !important;
+    color: $White;
+ }
 }
 
 .button_body {

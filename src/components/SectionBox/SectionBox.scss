@@ -14,7 +14,7 @@
 
   @include md {
     padding: 5rem 0;
-    background-position: center;
+    background-position: 60% center;
   }
 }
 
@@ -36,6 +36,7 @@
 
   @include md {
     width: 80%;
+    text-align: center;
   }
 
   h3 {
@@ -73,6 +74,7 @@
     @include md {
       padding: 0.25rem 1rem;
       width: 100%;
+      text-align: center;
     }
   }
 }

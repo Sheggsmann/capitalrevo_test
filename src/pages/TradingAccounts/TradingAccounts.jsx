@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
@@ -15,16 +15,6 @@ import CustomerSupportLogo from "../../assets/face-agent.svg";
 import TechAnalysisLogo from "../../assets/chart-waterfall.svg";
 import ProfessionalLogo from "../../assets/professional.svg";
 import "./TradingAccounts.scss";
-
-const Tabs = [
-  "Basic",
-  "Advanced",
-  "Gold",
-  "Platinum",
-  "Diamond",
-  "Premium",
-  "VIP",
-];
 
 const AccountsDetails = [
   {
@@ -108,8 +98,6 @@ const AccountsDetails = [
 ];
 
 const TradingAccounts = () => {
-  const [selectedTab, setSelectedTab] = useState(Tabs[0]);
-
   return (
     <div className="tradingAccounts">
       <Hero
@@ -133,18 +121,6 @@ const TradingAccounts = () => {
             Choose from Basic, Advanced, Gold, Platinum, Diamond, and VIP
             options for personalized trading experiences and exclusive benefits.
           </p>
-        </div>
-
-        <div className="tradingAccounts_tabs">
-          {Tabs.map((t, i) => (
-            <span
-              onClick={() => setSelectedTab(t)}
-              key={i}
-              className={`${selectedTab === t ? "active" : ""}`}
-            >
-              {t}
-            </span>
-          ))}
         </div>
 
         <div className="tradingAccounts_boxes">

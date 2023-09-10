@@ -21,6 +21,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -45,8 +52,8 @@ body {
 }
 
 .heading-1 {
-  font-style: bold;
-  font-size: 3.5rem;
+  font-weight: 700;
+  font-size: 56px;
   color: $White;
   line-height: 1.2;
   font-family: "CenturyGothic", sans-serif;
@@ -78,6 +85,11 @@ h2 {
 
 .text-primary {
   color: $Primary !important;
+
+  @include sm {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .accent {

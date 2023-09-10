@@ -63,7 +63,7 @@ const CopyTrading = () => {
             profitability.
           </p>
         </div>
-
+ 
         <div className="copyTrading_steps">
           {StartSteps.map((d, i) => (
             <div key={i} className="copyTrading_stepsBox">
