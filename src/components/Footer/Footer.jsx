@@ -69,12 +69,9 @@ const Footer = ({ dark = false }) => {
             Withdrawals and Deposits
           </span>
           <span onClick={() => navigate("/copy-trading")}>Copytrading</span>
-          <span>Synthetic Trading</span>
         </div>
         <div className="footer_item footer_item2">
           <h4>TOOLS</h4>
-          <span>Web Trader</span>
-          <span>Mobile App</span>
           <span onClick={() => navigate("/calendar")}>Trading Calendar</span>
           <span onClick={() => navigate("/calculator")}>Forex Calculator</span>
         </div>
@@ -86,7 +83,6 @@ const Footer = ({ dark = false }) => {
         <div className="footer_item footer_item4">
           <h4>HELP</h4>
           <span onClick={() => navigate("/faq")}>FAQ</span>
-          <span>Knowledge Base</span>
           <span onClick={() => navigate("/contact")}>Contact</span>
         </div>
 

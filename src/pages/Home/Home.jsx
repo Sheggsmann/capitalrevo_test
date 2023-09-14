@@ -64,8 +64,6 @@ const StartSteps = [
 ];
 
 const Home = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="home">
       <div className="home_top">
