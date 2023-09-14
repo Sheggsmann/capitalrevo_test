@@ -3,7 +3,7 @@
 .accounts {
   .accounts_content {
     text-align: center;
-    width: 588px;
+    width: 620px;
     max-width: 90vw;
     margin: 0 auto;
     margin-bottom: 5.5rem;
@@ -54,6 +54,13 @@
     .button {
       width: 100%;
     }
+  }
+
+  .accounts_btn {
+    z-index: 9999;
+    text-align: center;
+    margin-top: 3rem;
+    // background-color: red;
   }
 
   .accounts_boxHeader {

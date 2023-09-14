@@ -82,6 +82,13 @@ const Accounts = () => {
           </div>
         ))}
       </div>
+      <div className="accounts_btn">
+        <a href="/accounts">
+          <Button outline color="body">
+            View Accounts
+          </Button>
+        </a>
+      </div>
     </div>
   );
 };

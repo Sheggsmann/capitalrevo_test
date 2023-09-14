@@ -8,7 +8,7 @@ const PaymentSystems = [
   {
     question: "What is the minimum amount to trade?",
     answer:
-      "You can start trading on Kwakol with as low as $250 deposit and enjoy lightning-fast execution, tight spreads and low commissions.",
+      "You can start trading on CapitalRevo with as low as $250 deposit and enjoy lightning-fast execution, tight spreads and low commissions.",
   },
   {
     question:
