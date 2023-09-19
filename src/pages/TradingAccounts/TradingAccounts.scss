@@ -26,9 +26,9 @@
 
     .tradingAccounts_bg2 {
       position: absolute;
-      top: 10%;
+      bottom: 0;
       left: 0;
-      height: 100%;
+      height: calc(100% + 10rem);
       width: 100%;
       z-index: 0;
       background: linear-gradient(
@@ -38,10 +38,10 @@
           #ffffff 100%
         ),
         url("../../assets/bg.jpeg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-y: top;
-      filter: blur(5px);
+      transform: translateY(2rem);
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      filter: blur(2px);
     }
 
     // .tradingAccounts_lines {
