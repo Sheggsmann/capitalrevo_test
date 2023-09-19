@@ -1,0 +1,418 @@
+{
+    "common": {
+        "startTrading": "Start Trading",
+        "recommended": "Recommended",
+        "excellent": "Excellent",
+        "reviewsOn": "reviews on"
+    },
+
+
+    "nav": {
+        "trading": "Handel",
+        "tools": "Werkzeuge",
+        "partnership": "Partnerschaft",
+        "help": "Hilfe",
+        "about": "Über uns",
+        "accounts": "Konten",
+        "instruments": "Instrumente",
+        "withdrawalsDeposits": "Auszahlungen und Einzahlungen",
+        "copytrading": "CopyTrading",
+        "faq": "FAQ",
+        "becomeAPartner": "Werden Sie Partner",
+        "introducingBroker": "Einführender Broker",
+        "knowledgeBase": "Wissensdatenbank",
+        "contact": "Kontakt",
+        "webTrader": "Web-Trader",
+        "tradingCalendar": "Handelskalender",
+        "forexCalculator": "Forex-Rechner",
+        "withdrawals": "Abhebungen",
+        "login": "Anmelden",
+        "signup": "Registrieren"
+    },    
+    
+
+    "footer": {
+        "bottomText": "Contracts for Difference (“CFDs”) are leveraged products and carry a high level of risk to your capital as prices may move rapidly against you. Losses can exceed your deposits and you may be required to make further payments. These products may not be suitable for all clients therefore ensure you understand the risks and seek independent advice.Capital Revo Limited with its registered office at No 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group is a financial technology provider registered under the number 1713236 in BVI. Capital Revo products and services are not intended for Belgium, US and Canada residents."
+    },
+
+
+    "tradeAccounts": {
+        "basic": {
+            "title": "Basic",
+            "description": "For beginners who want to trade forex at fixed spreads with guaranteed stop loss",
+            "benefit1": "Leverage up to 1:100",
+            "benefit2": "Spread from 3 pips",
+            "benefit3": "Free account manager session",
+            "benefit4": "Customer support 24/7",
+            "benefit5": "Minimum deposit $250"
+        },
+        "advanced": {
+            "title": "Advanced",
+            "description": "For more experienced traders who need a professional advantage",
+            "benefit1": "Leverage up to 1:200",
+            "benefit2": "Spread from 2.25 pips",
+            "benefit3": "Senior account manager",
+            "benefit4": "Quarterly portfolio evaluation",
+            "benefit5": "Customer support 24/7",
+            "benefit6": "Minimum deposit $10,000"
+        },
+        "diamond": {
+            "title": "Diamond",
+            "description": "For big players who require a more personalized approach",
+            "benefit1": "Leverage up to 1:500",
+            "benefit2": "Spread from 0.9 pips",
+            "benefit3": "Senior account manager",
+            "benefit4": "Daily portfolio evaluation",
+            "benefit5": "Customer support 24/7",
+            "benefit6": "Minimum deposit $250,000"
+        }
+    },
+
+
+    "home": {
+        "title": "Trade forex and CFDs with the world's #1 broker",
+        "titleDescription": "Trade forex with unbeatable spreads, negative balance protection, and award winning 24/7 support",
+
+        "section1": "Trade 100+ Instruments with an Award-Winning Broker",
+        "section1Description": "Diversify your investment portfolio by trading CFDs on more than just Forex.",
+        "forex": "Forex",
+        "energy": "energy",
+        "stocks": "Stocks",
+        "Metals": "Metals",
+        "CryptoCurrency CFDs": "CryptoCurrency CFD's",
+
+        "section2Title": "Why trade with Capital Revo",
+        "section2Description": "Capital Revo founded in 2015 is a leading online trading provider, offering trading with Forex, Indices, Precious Metals and Energy.",
+        "easyWithdrawals": "Easy Withdrawals",
+        "flexibleDeposits": "Flexible deposit options",
+        "customerSupport": "24/7 customer support",
+        "accountManager": "Account Manager",
+
+        "section3Title": "Start in Less Than 5 Minutes",
+        "card1": {
+            "title": "Register",
+            "description": "Register and activate your account"
+        },
+        "card2": {
+            "title": "Deposit",
+            "description": "Make a deposit via bank transfer wire or debit card"
+        },
+        "card3": {
+            "title": "Trade",
+            "description": "Get approved and start trading"
+        },
+
+        "section4Title": "Account For Every Trader",
+        "description": "We have accounts for both new and more active traders. Check which fits and you're set to go."
+    },
+
+
+    "accounts": {
+        "title": "Trading Accounts",
+        "titleDescription": "Capital Revo offers a wide range of account types, all designed to suit a diverse range of trading styles.",
+
+        "section1Title": "Accounts For Every Trader",
+        "section1Description": "Unlock your trading potential with our diverse range of accounts. Choose from Basic, Advanced, Gold, Platinum, Diamond, and VIP options for personalized trading experiences and exclusive benefits.",   
+
+        "accountType": "Account Type",
+        "accounts": {
+            "basic": {
+                "title": "Basic",
+                "description": "Start your trading journey with our Basic Account. Access essential trading tools and market research to make informed decisions."
+            },
+            "advanced": {
+                "title": "Advanced",
+                "description": "Take your trading skills to the next level with our Advanced Account. Enjoy advanced charting features and personalized support."
+            },
+            "gold": {
+                "title": "Gold",
+                "description": "Experience the benefits of our Gold Account. Unlock premium trading features, exclusive market insights, and priority customer service."
+            },
+            "platinum": {
+                "title": "Platinum",
+                "description": "Basic account is ideal for traders looking for a traditional trading experience. The Standard account offers ultra-competitive spreads without any commissions."
+            },
+            "diamond": {
+                "title": "Diamond",
+                "description": "Elevate your trading experience with our Platinum Account. Enjoy enhanced trading conditions, dedicated account manager, and tailored investment strategies."
+            },
+            "vip": {
+                "title": "VIP",
+                "description": "Join our most privileged traders with our VIP Account. Enjoy unparalleled benefits, personalized services, and exclusive perks for your trading success."
+            }
+        },
+        "minimumDeposit": "Minimum Deposit",
+        "spread": "Spread",
+        "leverage": "Leverage",
+        "accountManager": "Account Manager",
+        "customerSupport": "Customer Support",
+        "technicalAnalysis": "Technical analysis, market news",
+        "recommended": "Recommended",
+        "openAccount": "Open Account"
+    },
+
+
+    "about": {
+        "title": "Global Leading Online Trading Provider",
+        "titleDescription": "Capital Revo is a leading global online trading provider, offering trading with forex and CFDs, indices, precious metals, energy and cryptocurrencies.",
+
+        "section1Title": "Capital Revo - A Trusted Broker",
+        "section1Description": "Our mission is to provide our clients with a comprehensive trading experience that is educational, intuitive, and empowering",
+
+        "card1": {
+            "title": "Licences and regulation",
+            "description": "CapitalRevo operates under Kwakol Markets PTY Limited, an authorized Finance company, by Australia Security and Investment Commission (ASIC) with the A.C.N 656 656 665. Kwakol Markets is an authorized money service business by FINTRAC Money Services Canada; the registration number is M22600427."
+        },
+        "card2": {
+            "title": "Reliability, security and speed",
+            "description": "We offer Contracts for Difference (CFDs) on 6 asset classes: Forex, Shares, Spot Indices, Futures, Spot Metals and Spot Energy. We provide our clients with access to top-tier liquidity and advanced trade execution with no dealing desk intervention."
+        },
+
+        "section2Title": "Certified Investment",
+        "section2Description": "Deposits to trading accounts can be made in most national currencies. Additionally, if you want to protect your capital from currency fluctuation, you can have multiple trading accounts in different currencies at the same time.",
+
+        "section3Title": "Why Trade With Capital Revo",
+        "section3Description": "Our strong dedication to state-of-the-art software and quality assurance means that our clients receive the best, most transparent trading experience.",
+
+        "benefit1": {
+            "title": "Global Presence",
+            "description": "Trade  in global markets with our expansive network and international expertise."
+        },
+        "benefit2": {
+            "title": "Award-Winning Technology",
+            "description": "Experience trading excellence with our cutting-edge platform and innovative tools."
+        },
+        "benefit3": {
+            "title": "24/7 Customer Service",
+            "description": "Get round-the-clock support from our dedicated team, ensuring prompt assistance whenever you need it."
+        },
+        "benefit4": {
+            "title": "Flexible Deposit Options",
+            "description": "Enjoy funding methods tailored to your preferences, providing flexibility for your trading needs."
+        },
+        "benefit5": {
+            "title": "Trading Education",
+            "description": "Expand your knowledge and skills with our comprehensive educational resources, to make informed decisions."
+        },
+        "benefit6": {
+            "title": "Technical Analysis",
+            "description": "Stay ahead of the game with in-depth market insights and analysis, helping you identify profitable trading opportunities."
+        }
+    },
+
+
+    "deposits": {
+        "title": "Deposits and Withdrawals",
+        "titleDescription": "Choose from flexible payment options in local currencies, including the world's most popular payment systems, e-wallets, and crypto wallets.",
+
+        "section1Title": "Instant Withdrawals, Easy Deposits",
+        "section1Description": "Our deposits and withdrawals are carried out in seconds with no manual processing, including on weekends.",
+
+        "card1": {
+            "title": "Withdraw/deposit with a bank card",
+            "description": "The total amount you fund your CapitalRevo account with your Credit or Debit card is the total amount we are legally allowed return to that card. Profits can be withdrawn using either Bitcoin or wire/bank transfer."
+        },
+        "card2": {
+            "title": "Withdraw/deposit to your bank account",
+            "description": "Wire Transfer is the most wide-spread money transfer method in the world. Transfer money from your CapitalRevo wallet to your bank account. We charge $0 for fees deposits of up $5,000, and $25 fee on withdrawals of $5,000 and above."
+        },
+        "card3": {
+            "title": "Withdraw/deposit with crypto",
+            "description": "CapitalRevo can send your profits to you via Crypto. All you need to do is to create a withdraw request on your account and our team will process your request same day. The progress of this transaction can be tracked on blockchain.info."
+        },
+        "card4": {
+            "title": "Instant and secure withdrawals",
+            "description": "Transactions are carried out within a few seconds without manual processing. 3-D Secure technology is an additional security layer for online payments and has also been adopted by VISA and Mastercard."
+        },
+
+        "section2Title": "Ready to trade?",
+        "section2Description": "Access the most popular markets through a single account. Discover CFD on Stocks, ETFs, Crypto and more. Start trading in less than 5 minutes!"
+    },
+
+
+    "copyTrading": {
+        "title": "Copytrading Platform",
+        "titleDescription": "Follow successful traders, automatically replicate their strategies, and maximize your trading potential.",
+
+        "section1Title": "Why copy the best traders?",
+        "section1Description": "Copytrading can be beneficial as it allows you to replicate the trades of successful traders, potentially increasing your chances of profitability.",
+
+        "card1": {
+            "title": "Benefit from experts' work",
+            "description": "Gain from proven trading strategies of experienced professionals."
+        },
+        "card2": {
+            "title": "Save time",
+            "description": "Skip the research and analysis by automatically copying trades of successful traders."
+        },
+        "card3": {
+            "title": "Less risk",
+            "description": "Mitigate potential losses by diversifying your portfolio through copytrading."
+        },
+
+        "section2Title": "Top Traders By ROI",
+        "section2Description": "Traders that have earned the highest ROI in the last 7 days.",
+
+        "section3Title": "Top Intra-Day Traders",
+        "section3Description": "Intra-day traders with over 20% ROI and a win-rate of more than 20% in the last 7 days",
+
+        "section4Title": "Lowest Drawdown",
+        "section4Description": "Traders with over 10% ROI and a max. drawdown of less than 20% in the last 30 days.",
+
+        "section5Title": "Start copytrading now",
+        "section5Description": "Our copytrading platform lets our clients access the opportunities of trading without any advanced technical skills.",
+
+        "copyTradingFooter": "Capital Revo Copytrading is a system that facilitates the management of funds placed in multiple separate accounts to be managed by one or more account holder(s), the manager(s). Past performance is not indicative of future results and no representation is being made by the Company in relation to certain results that may be achieved by investing in a PAMM Manager or that clients will or are likely to achieve profits or incur losses comparable to those that may be shown. Prior to investing in a PAMM Manager you need to carefully consider any risks including but not limited to those involved in trading. The Company does not recommend the selection of any PAMM Manager. This responsibility lies solely with the investor. Therefore, Capital Revo Ltd. is under no circumstances, liable and/or responsible for any losses that arise out of the use of Copytrading. Even if all reasonable efforts have been made by the Company to ensure the proper statistical reporting of PAMM Managers Performance, the Company cannot guarantee the accuracy of performance and/or results of any PAMM Manager."
+    },
+
+
+    "tradingCalculator": {
+        "title": "Forex Trading Calculator",
+        "titleDescription": "Forex trading calculator shows how much money will be immediately engaged in the order with your chosen parameters.",
+
+        "calculatorText": "Set the symbol and adjust the leverage and volume to calculate the required margin, pip value, and fees that you are comfortable with.",
+
+        "section1Title": "Start trading in less than 5 minutes",
+        "card1": {
+            "title": "Register",
+            "description": "Register and and activate your account"
+        },
+        "card2": {
+            "title": "Deposit",
+            "description": "Make a deposit via bank transfer, wire or debit card"
+        },
+        "card3": {
+            "title": "Trade",
+            "description": "Get approved and start trading"
+        },
+
+        "calculate": "Calculate"
+    },
+
+
+    "economicCalendar": {
+        "title": "Economic Calendar",
+        "description": "Keep an eye on key upcoming economic events, announcements, and news. Plus, set up filters in a few clicks, selecting for event importance and affected currencies.",
+
+        "section1Title": "Stay updated in the financial markets",
+        "section1Description": "Stay informed and make strategic trading decisions with our comprehensive Economic Calendar. Track key events, indicators, and market impact.",
+
+        "section2Title": "About the Economic Calendar",
+        "section2Description": "An economic calendar is a tool that provides a schedule of upcoming economic events, announcements, and indicators affecting financial markets.",
+
+        "card1": {
+            "title": "What is Economic Calendar?",
+            "description": "The Economic Calendar is a tool that helps traders to monitor and analyze market-moving events, and predict further price movements. It highlights upcoming national and international news around the world in chronological order by date. These major events can have a high impact on the financial markets and are usually announced or released in reports."
+        },
+        "card2": {
+            "title": "How to use the Economic Calendar?",
+            "description": "You can choose multiple currencies and stocks from the dropdown list. By default, all will be selected. After making your selection, you can view the upcoming events in the table below the dropdown menu. It should be noted that the number of trading instruments in the calendar changes dynamically, and depends on the number of upcoming events and news."
+        },
+        "card3": {
+            "title": "Why you should use the Economic Calendar?",
+            "description": "The Economic Calendar is indispensable if you want to keep track of upcoming news, reports and announcements at a glance. The events may highly impact the volatility of forex currency pairs, stocks and other markets. Thus, traders often use the calendar to plan their trades and stay informed on chart patterns and indicators that may be affected by the events."
+        },
+        "card4": {
+            "title": "How to read the Economic Calendar?",
+            "description": "After selecting your desired instruments, you will see a list of events displayed in the calendar.  There are two key figures in the table, which are the 'Actual' and 'Forecast' numbers. A significant difference between the two numbers indicates that there might be some volatility in the chart of the related trading instruments. Generally, Volatility spikes pre-event and subsides post-event."
+        },
+
+        "section3Title": "Accounts For Every Trader",
+        "section3Description": "We have accounts for both new and more active traders. Check which fits and you're set to go."
+    },
+
+
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Discover answers to common questions and find helpful solutions. Simplify your trading journey with our expert guidance.",
+
+        "paymentSystems": {
+            "title": "Payment Systems",
+            
+            "question1": "What is the minimum amount to trade?",
+            "answer1": "You can start trading on Kwakol with as low as a $250 deposit and enjoy lightning-fast execution, tight spreads, and low commissions.",
+
+            "question2": "How do I make a withdrawal if I deposit funds with multiple payment methods?",
+
+            "question3": "How can I be sure my payment is safe?",
+            "question4": "Can I use my card to deposit?"
+        },
+
+        "trading": {
+            "title": "Trading",
+            
+            "question1": "Is Capital Revo regulated?",
+            "question2": "How do I place a limit order?",
+            "question3": "How do I check my trading history?",
+            "question4": "Can I trade during the weekend?"
+        },
+
+        "general": {
+            "title": "General",
+
+            "question1": "I can't register on the CapitalRevo platform.",
+            "question2": "I'm unable to set up a password during registration",
+            "question3": "Why has my deposit/withdrawal been rejected?",
+            "question4": "How to clear your browser's cache and cookies?"
+        }
+    },
+
+
+    "partnership": {
+        "title": "Partnership",
+        "titleDescription": "Unlock lucrative opportunities with our online trading website's partnership program. Earn generous commissions and exclusive benefits.",
+
+        "section1Title": "What you get as a partner",
+        "section1Description": "An online trading partnership program offers individuals the opportunity to earn commissions by referring clients to a trading platform.",
+
+        "card1": {
+            "title": "Five level commission structure",
+            "description": "Earn rewards at multiple tiers for referring others to the platform."
+        },
+        "card2": {
+            "title": "Dedicated affiliate manager",
+            "description": "Get personalized support and guidance from a dedicated affiliate manager."
+        },
+        "card3": {
+            "title": "Instant withdrawals",
+            "description": "Enjoy quick and hassle-free withdrawal of your earnings whenever you need them."
+        },
+        "card4": {
+            "title": "Everlasting commission",
+            "description": "Keep earning commissions on your referred traders' activities indefinitely."
+        },
+        "card5": {
+            "title": "Weekly commission payouts",
+            "description": "Receive your commission earnings on a weekly basis for consistent cash flow."
+        },
+        "card6": {
+            "title": "Motivating revenue sharing model",
+            "description": "Rewarding revenue sharing model that keeps you motivated to grow your affiliate business."
+        },
+
+        "section2Title": "Grow your revenue",
+        "section2Description": "Start promoting the Capital Revo brand and earn commission each time new clients sign up to our platform with our Multi-Level partnership program. Join today to grow your revenue."
+    },
+
+
+    "contactUs": {
+        "title": "Contact Us",
+        "titleDescription": "Need help? Our 5-star support team is ready to help you Monday through Sunday, 9:00 a.m. to 6:00 p.m. UTC+2",
+
+        "section1Title": "Your 24/7 customer service",
+        "section1Description": "Contact our customer service team who are available 24/7 to assist you",
+
+        "card1": {
+            "title": "Email us",
+            "description": "Send us an email to"
+        },
+        "card2": {
+            "title": "Phone support",
+            "description": "Call us at"
+        },
+        "card3": {
+            "title": "Live chat support",
+            "description": "Chat with us, get an instant reply"
+        }
+    }
+}

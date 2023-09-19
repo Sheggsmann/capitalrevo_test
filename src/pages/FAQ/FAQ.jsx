@@ -2,6 +2,7 @@ import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
 import Accordion from "../../components/Accordion/Accordion";
 import FAQ_BG from "../../assets/faq_bg.png";
+import Lines from "../../assets/lines.svg";
 import "./FAQ.scss";
 
 const PaymentSystems = [
@@ -74,6 +75,7 @@ const FAQ = () => {
 
       <div className="faq_main">
         <div className="faq_bg1" />
+        <img src={Lines} alt="faq_lines" className="faqLines" />
         {/* <div className="contact_bg2" /> */}
 
         <div className="faq_content">

@@ -8,6 +8,7 @@ import MenuIcon from "../../assets/menu.svg";
 import ChevronDown from "../../assets/chevron-down.svg";
 import ChevronUp from "../../assets/chevron-up.svg";
 import MobileLogo from "./MobileLogo.svg";
+import { useTranslation } from "react-i18next";
 import "./Navbar.scss";
 
 const MobileLink = ({
@@ -74,8 +75,10 @@ const WebLink = ({ link, text }) => {
 };
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentOpenMenu, setCurrentOpenMenu] = useState(null);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
   const location = window.location.pathname;
 
   const navigate = useNavigate();
@@ -87,6 +90,7 @@ const Navbar = () => {
   useClickOutside(menuRef, () => {
     if (!isMobile) return;
     setMenuOpen(false);
+    setLangMenuOpen(false);
   });
 
   const handleMenuToggle = (menu) => {
@@ -95,6 +99,11 @@ const Navbar = () => {
     } else {
       setCurrentOpenMenu(menu);
     }
+  };
+
+  const handleLangMenuClick = (lang) => {
+    i18n.changeLanguage(lang);
+    setLangMenuOpen(false);
   };
 
   return (
@@ -110,62 +119,62 @@ const Navbar = () => {
         <div className={`navbar_links ${menuOpen ? "open" : ""}`}>
           {isMobile ? (
             <MobileLink
-              text="Trading"
+              text={t("nav.trading")}
               link="/accounts"
               dropdowns={[
-                { text: "Accounts", link: "/accounts" },
-                { text: "Withdrawals", link: "/deposits" },
-                { text: "Copytrading", link: "/copy-trading" },
+                { text: t("nav.accounts"), link: "/accounts" },
+                { text: t("nav.withdrawals"), link: "/deposits" },
+                { text: t("nav.copytrading"), link: "/copy-trading" },
               ]}
               currentOpenMenu={currentOpenMenu}
               handleMenuToggle={handleMenuToggle}
             />
           ) : (
-            <WebLink text="Trading" link="/accounts" />
+            <WebLink text={t("nav.trading")} link="/accounts" />
           )}
 
           {isMobile ? (
             <MobileLink
-              text="Tools"
+              text={t("nav.tools")}
               dropdowns={[
-                { text: "Trading Calendar", link: "/calendar" },
-                { text: "Forex Calculator", link: "/calculator" },
+                { text: t("nav.tradingCalendar"), link: "/calendar" },
+                { text: t("nav.forexCalculator"), link: "/calculator" },
               ]}
               currentOpenMenu={currentOpenMenu}
               handleMenuToggle={handleMenuToggle}
             />
           ) : (
-            <WebLink text="Tools" link="/calculator" />
+            <WebLink text={t("nav.tools")} link="/calculator" />
           )}
 
           {isMobile ? (
             <MobileLink
-              text="Partnership"
+              text={t("nav.partnership")}
               dropdowns={[
-                { text: "Introducing Broker", link: "/partnership" },
-                { text: "Become a partner", link: "/partnership" },
+                { text: t("nav.introducingBroker"), link: "/partnership" },
+                { text: t("nav.becomeAPartner"), link: "/partnership" },
               ]}
               currentOpenMenu={currentOpenMenu}
               handleMenuToggle={handleMenuToggle}
             />
           ) : (
-            <WebLink text="Partnership" link="/partnership" />
+            <WebLink text={t("nav.partnership")} link="/partnership" />
           )}
 
           {isMobile ? (
             <MobileLink
-              text="Help"
+              text={t("nav.help")}
               link="/contact"
               dropdowns={[
-                { text: "FAQ", link: "/faq" },
-                { text: "Knowledge Base", link: "/contact" },
-                { text: "Contact", link: "/contact" },
+                { text: t("nav.faq"), link: "/faq" },
+                { text: t("nav.knowledgeBase"), link: "/contact" },
+                { text: t("nav.contact"), link: "/contact" },
               ]}
               currentOpenMenu={currentOpenMenu}
               handleMenuToggle={handleMenuToggle}
             />
           ) : (
-            <WebLink text="Help" link="/contact" />
+            <WebLink text={t("nav.help")} link="/contact" />
           )}
 
           {!isMobile && (
@@ -173,20 +182,68 @@ const Navbar = () => {
               className={`${location.includes("/about") ? "navbar_bold" : ""}`}
               onClick={() => navigate("/about")}
             >
-              About
+              {t("nav.about")}
             </span>
           )}
         </div>
 
         <div className="navbar_buttonsContainer">
           <a href="https://client.kwakolmarkets.com/login" className="login">
-            <Button outline>Log in</Button>
+            <Button outline>{t("nav.login")}</Button>
           </a>
           <a href="https://client.kwakolmarkets.com/register">
-            <Button>Sign up</Button>
+            <Button>{t("nav.signup")}</Button>
           </a>
 
-          <img src={EnglishFlag} alt="flag" className="navbar_language" />
+          <div className="navbar_language">
+            <img
+              src={EnglishFlag}
+              alt="flag"
+              className="navbar_language"
+              onClick={() => setLangMenuOpen(true)}
+            />
+
+            {langMenuOpen && (
+              <div className="languages_container">
+                <div
+                  className="language"
+                  onClick={() => handleLangMenuClick("en")}
+                >
+                  English
+                </div>
+                <div
+                  className="language"
+                  onClick={() => handleLangMenuClick("it")}
+                >
+                  Italian
+                </div>
+                <div
+                  className="language"
+                  onClick={() => handleLangMenuClick("it")}
+                >
+                  Spanish
+                </div>
+                <div
+                  className="language"
+                  onClick={() => handleLangMenuClick("it")}
+                >
+                  Arab
+                </div>
+                <div
+                  className="language"
+                  onClick={() => handleLangMenuClick("it")}
+                >
+                  Portuguese
+                </div>
+                <div
+                  className="language"
+                  onClick={() => handleLangMenuClick("it")}
+                >
+                  Indian
+                </div>
+              </div>
+            )}
+          </div>
 
           {isMobile && (
             <a

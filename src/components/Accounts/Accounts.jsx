@@ -4,6 +4,7 @@ import Button from "../Button";
 import BeginnerLogo from "../../assets/beginner-logo.svg";
 import StandardLogo from "../../assets/standard.svg";
 import ProfessionalLogo from "../../assets/professional.svg";
+import { useTranslation } from "react-i18next";
 
 const AccountsData = [
   {
@@ -48,13 +49,15 @@ const AccountsData = [
 ];
 
 const Accounts = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="accounts">
       <div className="accounts_content">
         <h2 className="text-primary">Accounts For Every Trader</h2>
         <p>
           We have accounts for both new and more active traders. Check which
-          fits and you’re set to go.
+          fits and you're set to go.
         </p>
       </div>
 
@@ -77,7 +80,7 @@ const Accounts = () => {
               ))}
             </ul>
             <a href="https://client.kwakolmarkets.com/register">
-              <Button>Start Trading</Button>
+              <Button>{t("common.startTrading")}</Button>
             </a>
           </div>
         ))}

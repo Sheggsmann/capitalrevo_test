@@ -16,6 +16,7 @@ import SchoolOutlineLogo from "../../assets/about/school-outline.svg";
 import ChartBarLogo from "../../assets/about/chart-bar.svg";
 import Button from "../../components/Button";
 import AboutBg from "../../assets/about_bg.png";
+import Lines from "../../assets/lines.svg";
 
 const CurrencyData = [
   {
@@ -92,7 +93,8 @@ const About = () => {
       <div className="about_main">
         <div className="about_bg1" />
         <div className="about_bg2" />
-        <div className="about_lines" />
+        {/* <div className="about_lines" /> */}
+        <img src={Lines} alt="aboutLines" className="aboutLines" />
 
         <div className="about_currencies">
           {CurrencyData.map((d, i) => (

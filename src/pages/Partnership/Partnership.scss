@@ -63,6 +63,15 @@
             background-size: cover;
             background-position: center;
         }
+
+        .partnershipLines {
+            position: absolute;
+            z-index: 0;
+            top: 55%;
+            right: 0;
+            width: 100%;
+            opacity: 0.5;
+        }
     }   
     
     .partnership_content {

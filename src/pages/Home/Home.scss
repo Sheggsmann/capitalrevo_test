@@ -34,7 +34,7 @@
     right: 0;
     z-index: 10;
     width: 70%;
-    opacity: 0.5;
+    opacity: 0.2;
   }
 
   .header {
@@ -177,15 +177,35 @@
       filter: blur(2px);
     }
 
+    .homeLines {
+      position: absolute;
+      z-index: 0;
+      top: 37%;
+      right: 0;
+      width: 100%;
+      opacity: 0.5;
+    }
+
+    // .home_mainLines {
+    //   position: absolute;
+    //   top: 40%;
+    //   left: 0;
+    //   height: 100%;
+    //   width: 100%;
+    //   z-index: 0;
+    //   // background: url("../../assets/main-horizontal-lines.png");
+    //   background: url("../../assets/home/lines.svg"), no-repeat;
+    //   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    // }
+
     .home_mainLines {
       position: absolute;
       top: 40%;
-      left: 0;
-      height: 60%;
-      width: 100%;
+      right: 0;
       z-index: 0;
-      background: url("../../assets/main-horizontal-lines.png");
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      background: url("../../assets/home/lines.png");
+      width: 500px;
+      height: 500px;
     }
   }
 
@@ -334,7 +354,7 @@
     h3 {
       font-size: 48px;
       font-weight: 700;
-      font-family: "Gothic A1", sans-serif;
+      font-family: "CenturyGothic", sans-serif;
       text-align: center;
       margin-bottom: 4rem;
       line-height: 1.2;

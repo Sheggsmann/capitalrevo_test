@@ -50,6 +50,15 @@
             filter: blur(5px);
             background-position-x: center;
         }
+
+        .faqLines {
+            position: absolute;
+            z-index: 0;
+            top: 55%;
+            right: 0;
+            width: 100%;
+            opacity: 0.5;
+        }
     }   
     
     .faq_content {

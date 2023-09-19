@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./Home.scss";
 import Navbar from "../../components/Navbar";
 import Button from "../../components/Button";
@@ -21,49 +20,53 @@ import GoldLogo from "../../assets/gold.svg";
 import BTCLogo from "../../assets/currency-btc.svg";
 import SectionBox from "../../components/SectionBox/SectionBox";
 import HomeHandomseMan from "../../assets/home_handomse_man.png";
-
-const TradingInstrumentsData = [
-  {
-    name: "Forex",
-    image: DollarCircleIcon,
-  },
-  {
-    name: "Energy",
-    image: BarrelLogo,
-  },
-  {
-    name: "Stocks",
-    image: FinanceLogo,
-  },
-  {
-    name: "Metals",
-    image: GoldLogo,
-  },
-  {
-    name: "Cryptocurrency CFDs",
-    image: BTCLogo,
-  },
-];
-
-const StartSteps = [
-  {
-    image: JoinLogo,
-    name: "Register",
-    details: "Register and activate your account",
-  },
-  {
-    image: Step2Logo,
-    name: "Deposit",
-    details: "Make a deposit via bank transfer, wire or debit card",
-  },
-  {
-    image: DepositLogo,
-    name: "Trade",
-    details: "Get approved and start trading",
-  },
-];
+import Lines from "../../assets/lines.svg";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
+
+  const TradingInstrumentsData = [
+    {
+      name: t("home.forex"),
+      image: DollarCircleIcon,
+    },
+    {
+      name: t("home.energy"),
+      image: BarrelLogo,
+    },
+    {
+      name: t("home.stocks"),
+      image: FinanceLogo,
+    },
+    {
+      name: t("home.metals"),
+      image: GoldLogo,
+    },
+    {
+      name: t("home.cryptocurrencyCfd"),
+      image: BTCLogo,
+    },
+  ];
+
+  const StartSteps = [
+    {
+      image: JoinLogo,
+      name: t("home.card1.title"),
+      details: t("home.card1.description"),
+    },
+    {
+      image: Step2Logo,
+      name: t("home.card2.title"),
+      details: t("home.card2.description"),
+    },
+    {
+      image: DepositLogo,
+      name: t("home.card3.title"),
+      details: t("home.card3.description"),
+    },
+  ];
+
   return (
     <div className="home">
       <div className="home_top">
@@ -87,19 +90,16 @@ const Home = () => {
           <div className="header_content">
             <div className="header_details">
               <h1 className="heading-1 mb-1">
-                Trade Forex with CFDs with the
-                <span className="accent"> world's # 1 broker</span>
+                {t("home.title").substring(0, 30)}
+                <span className="accent"> {t("home.title").substring(30)}</span>
               </h1>
-              <p className="body-large mb-3">
-                Trade forex with unbeatable spreads, negative balance
-                protection, 0% commissions, and award winning 24/7 support
-              </p>
+              <p className="body-large mb-3">{t("home.titleDescription")}</p>
 
               <a
                 href="https://client.kwakolmarkets.com/register"
                 className="header-cta"
               >
-                <Button>Start Trading</Button>
+                <Button>{t("common.startTrading")}</Button>
               </a>
             </div>
 
@@ -111,7 +111,7 @@ const Home = () => {
               href="https://client.kwakolmarkets.com/register"
               className="header-cta-mobile"
             >
-              <Button>Start Trading</Button>
+              <Button>{t("common.startTrading")}</Button>
             </a>
           </div>
 
@@ -124,7 +124,8 @@ const Home = () => {
       <div className="home_main">
         <div className="home_bg1" />
         <div className="home_bg2" />
-        <div className="home_mainLines" />
+        {/* <div className="home_mainLines" /> */}
+        <img src={Lines} alt="homeLines" className="homeLines" />
 
         <section className="home_trading">
           <div className="home_tradingHeading">
@@ -132,10 +133,7 @@ const Home = () => {
               Trade <span className="accent"> 100+ Instruments </span>
               with an Award-Winning Broker
             </h2>
-            <p className="body-large ">
-              Diversify your investment portfolio by trading CFDs on more than
-              just Forex.
-            </p>
+            <p className="body-large ">{t("home.section1Description")}</p>
           </div>
 
           <div className="home_tradingMain">
@@ -153,7 +151,7 @@ const Home = () => {
           </div>
           <div className="home_tradingButton">
             <a href="https://client.kwakolmarkets.com/register">
-              <Button>Start trading</Button>
+              <Button>{t("common.startTrading")}</Button>
             </a>
             {/* <p>or try Demo Account</p> */}
           </div>
@@ -168,7 +166,7 @@ const Home = () => {
         />
 
         <section className="home_startSteps">
-          <h3 className="text-primary">Start in less than 5 minutes</h3>
+          <h3 className="text-primary">{t("home.section3Title")}</h3>
 
           <div className="home_startStepsMain">
             {StartSteps.map((d, i) => (
@@ -183,7 +181,7 @@ const Home = () => {
           </div>
           <div className="home_startStepsButton">
             <a href="https://client.kwakolmarkets.com/register">
-              <Button>Start trading</Button>
+              <Button>{t("common.startTrading")}</Button>
             </a>
             {/* <p>or try Demo Account</p> */}
           </div>

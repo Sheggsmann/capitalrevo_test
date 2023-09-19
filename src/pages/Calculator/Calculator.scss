@@ -60,6 +60,15 @@
         background-position: center;
       }
     }
+
+    .calculatorLines {
+      position: absolute;
+      z-index: 0;
+      top: 35%;
+      right: 0;
+      width: 100%;
+      opacity: 0.5;
+    }
   }
 
   .calculator_currencies {

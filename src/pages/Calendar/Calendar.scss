@@ -72,6 +72,15 @@
         background-position: center;
       }
     }
+
+    .calendarLines {
+      position: absolute;
+      z-index: 0;
+      top: 18%;
+      right: 0;
+      width: 100%;
+      opacity: 0.5;
+    }
   }
 
   .calendar_currencies {

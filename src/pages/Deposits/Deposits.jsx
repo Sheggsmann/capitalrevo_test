@@ -2,17 +2,16 @@ import React from "react";
 import "./Deposits.scss";
 import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
-import EarthBox from "../../components/EarthBox";
 import Rating from "../../components/Rating";
 import SafetyLogo from "../../assets/safety.svg";
 import CardLogo from "../../assets/card.svg";
 import WalletLogo from "../../assets/wallet-1.svg";
 import WithdrawalsLogo from "../../assets/withdrawal.svg";
 import ContentBox from "../../components/ContentBox";
-import SectionBox from "../../components/SectionBox";
 import SectionBox2 from "../../components/SectionBox2";
 import DepositBg from "../../assets/deposit_bg.png";
 import DepositBag from "../../assets/deposits_bag.png";
+import Lines from "../../assets/lines.svg";
 // import CheckdecagramIcon from "../../assets/check-decagram.svg";
 // import CurrencyUSDLogo from "../../assets/currency-usd.svg";
 // import ArrowSplitLogo from "../../assets/arrow-split-vertical.svg";
@@ -130,7 +129,8 @@ const Deposits = () => {
       <div className="deposits_main">
         <div className="deposits_bg1" />
         <div className="deposits_bg2" />
-        <div className="deposits_lines" />
+        {/* <div className="deposits_lines" /> */}
+        <img src={Lines} alt="depositLines" className="depositLines" />
 
         <div className="deposits_textContainer">
           <h2>

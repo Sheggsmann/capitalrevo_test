@@ -12,6 +12,7 @@ import Step2Logo from "../../assets/step-2-1.svg";
 import DepositLogo from "../../assets/deposit.svg";
 import StepBox from "../../components/StepBox";
 import CalculatorBg from "../../assets/calculator_bg.png";
+import Lines from "../../assets/lines.svg";
 
 const CurrencyData = [
   {
@@ -75,7 +76,8 @@ const Calculator = () => {
       />
       <div className="calculator_main">
         <div className="calculator_bg1" />
-        <div className="calculator_lines" />
+        {/* <div className="calculator_lines" /> */}
+        <img src={Lines} alt="line calculator" className="calculatorLines" />
 
         <div className="calculator_currencies">
           {CurrencyData.map((d, i) => (

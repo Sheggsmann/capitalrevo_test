@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'CenturyGothic';
-  src: url('../assets/fonts/CenturyGothic.ttf') format('ttf');
+  src: url('../assets/fonts/CenturyGothic.ttf') format('truetype');
 }
 
 * {
@@ -63,7 +63,7 @@ body {
   }
 
   @include md {
-    font-size: 2rem;
+    font-size: 30px;
   }
 }
 

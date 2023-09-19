@@ -9,6 +9,7 @@ import HexagonLogo from "../../assets/copy_trading/professional-hexagon.svg";
 import TimerCheckLogo from "../../assets/copy_trading/timer-check-outline.svg";
 import CopyTradingBg from "../../assets/copytrading_bg.png";
 import CopyTradingSectionImg from "../../assets/copy_trading_section.png";
+import Lines from "../../assets/lines.svg";
 
 const StartSteps = [
   {
@@ -53,7 +54,8 @@ const CopyTrading = () => {
       <div className="copyTrading_main">
         <div className="copyTrading_bg1" />
         <div className="copyTrading_bg2" />
-        <div className="copyTrading_lines" />
+        {/* <div className="copyTrading_lines" /> */}
+        <img src={Lines} alt="copyTrading Lines" className="copyTradingLines" />
 
         <div className="copyTrading_content1">
           <h2>Why copy the best traders?</h2>
@@ -63,7 +65,7 @@ const CopyTrading = () => {
             profitability.
           </p>
         </div>
- 
+
         <div className="copyTrading_steps">
           {StartSteps.map((d, i) => (
             <div key={i} className="copyTrading_stepsBox">

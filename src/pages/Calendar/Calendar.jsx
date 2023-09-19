@@ -9,6 +9,7 @@ import ContentBox from "../../components/ContentBox";
 import Accounts from "../../components/Accounts";
 import HelpCircleIcon from "../../assets/help-circle-outline.svg";
 import CalendarBg from "../../assets/calendar_bg.png";
+import Lines from "../../assets/lines.svg";
 
 const CurrencyData = [
   {
@@ -150,7 +151,8 @@ const Calendar = () => {
       <div className="calendar_main">
         <div className="calendar_bg1" />
         <div className="calendar_bg2" />
-        <div className="calendar_lines" />
+        {/* <div className="calendar_lines" /> */}
+        <img src={Lines} alt="calendar lines" className="calendarLines" />
 
         <div className="calendar_currencies">
           {CurrencyData.map((d, i) => (

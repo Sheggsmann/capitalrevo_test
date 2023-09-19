@@ -14,6 +14,7 @@ import AccountManagerLogo from "../../assets/account-star-outline.svg";
 import CustomerSupportLogo from "../../assets/face-agent.svg";
 import TechAnalysisLogo from "../../assets/chart-waterfall.svg";
 import ProfessionalLogo from "../../assets/professional.svg";
+import Lines from "../../assets/lines.svg";
 import "./TradingAccounts.scss";
 
 const AccountsDetails = [
@@ -109,7 +110,8 @@ const TradingAccounts = () => {
       <div className="tradingAccounts_main">
         <div className="tradingAccounts_bg1" />
         <div className="tradingAccounts_bg2" />
-        <div className="tradingAccounts_lines" />
+        {/* <div className="tradingAccounts_lines" /> */}
+        <img src={Lines} alt="tradingLines" className="tradingLines" />
 
         <div className="tradingAccounts_text">
           <h2>

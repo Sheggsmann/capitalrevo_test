@@ -150,9 +150,34 @@
     }
   }
 
+
+
   .navbar_language {
-    height: 2rem;
-    cursor: pointer;
+    position: relative;
+    margin-top: 5px;
+
+    img {
+      height: 2rem;
+      cursor: pointer;
+    }
+
+    .languages_container {
+      position: absolute;
+      top: 3em;
+      left: -1em;
+      min-width: 90px;
+      padding: 10px;
+      background-color: $White;
+    }
+
+    .language {
+      cursor: pointer;
+    }
+
+    .language:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
   }
 
   .navbar_user_icon {

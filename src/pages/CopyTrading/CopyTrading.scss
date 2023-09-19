@@ -74,6 +74,15 @@
       background-repeat: no-repeat;
     }
 
+    .copyTradingLines {
+      position: absolute;
+      z-index: 0;
+      top: 12%;
+      right: 0;
+      width: 100%;
+      opacity: 0.5;
+    }
+
     & > p {
       color: $Body;
       width: 1310px;

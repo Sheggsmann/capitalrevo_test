@@ -8,7 +8,8 @@ import CalendarSyncLogo from "../../assets/partnership/calendar-sync-outline.svg
 import CalendarWeekLogo from "../../assets/partnership/calendar-week-outline.svg";
 import SourceBranchLogo from "../../assets/partnership/source-branch.svg";
 import PartnershipBg from "../../assets/partnership_bg.png";
-import PartnershipSection from "../../assets/partnership_section.png"
+import PartnershipSection from "../../assets/partnership_section.png";
+import Lines from "../../assets/lines.svg";
 import "./Partnership.scss";
 
 const PartnershipBoxes = [
@@ -56,7 +57,8 @@ const Partnership = () => {
       <div className="partnership_main">
         <div className="partnership_bg1" />
         <div className="partnership_bg2" />
-        <div className="partnership_lines" />
+        {/* <div className="partnership_lines" /> */}
+        <img src={Lines} alt="partnership lines" className="partnershipLines" />
 
         <div className="partnership_content">
           <h2>What you get as a partner</h2>
