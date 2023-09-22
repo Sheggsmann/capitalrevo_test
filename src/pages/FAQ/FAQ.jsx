@@ -3,74 +3,75 @@ import Footer from "../../components/Footer";
 import Accordion from "../../components/Accordion/Accordion";
 import FAQ_BG from "../../assets/faq_bg.png";
 import Lines from "../../assets/lines.svg";
+import { useTranslation } from "react-i18next";
 import "./FAQ.scss";
 
-const PaymentSystems = [
-  {
-    question: "What is the minimum amount to trade?",
-    answer:
-      "You can start trading on CapitalRevo with as low as $250 deposit and enjoy lightning-fast execution, tight spreads and low commissions.",
-  },
-  {
-    question:
-      "How do I make a withdrawal if I deposit funds with multiple payment methods?",
-    answer: "",
-  },
-  {
-    question: "How can I be sure my payment is safe?",
-    answer: "",
-  },
-  {
-    question: "Can I use my card to deposit?",
-    answer: "",
-  },
-];
-
-const Trading = [
-  {
-    question: "Is Capital Revo regulated?",
-    answer: "",
-  },
-  {
-    question: "How do I place a limit order?",
-    answer: "",
-  },
-  {
-    question: "How do I check my trading history?",
-    answer: "",
-  },
-  {
-    question: "Can I trade during the weekend?",
-    answer: "",
-  },
-];
-
-const General = [
-  {
-    question: "I can't register on the CapitalRevo platform",
-    answer: "",
-  },
-  {
-    question: "I'm unable to set up a password during registration",
-    answer: "",
-  },
-  {
-    question: "Why has my deposit/withdrawal been rejected?",
-    answer: "",
-  },
-  {
-    question: "How to clear your browser's cache and cookies?",
-    answer: "",
-  },
-];
-
 const FAQ = () => {
+  const { t } = useTranslation();
+
+  const PaymentSystems = [
+    {
+      question: t("faq.paymentSystems.question1"),
+      answer: t("faq.paymentSystems.answer1"),
+    },
+    {
+      question: t("faq.paymentSystems.question2"),
+      answer: t("faq.paymentSystems.answer2"),
+    },
+    {
+      question: t("faq.paymentSystems.question3"),
+      answer: "",
+    },
+    {
+      question: t("faq.paymentSystems.question4"),
+      answer: "",
+    },
+  ];
+
+  const Trading = [
+    {
+      question: t("faq.trading.question1"),
+      answer: "",
+    },
+    {
+      question: t("faq.trading.question2"),
+      answer: "",
+    },
+    {
+      question: t("faq.trading.question3"),
+      answer: "",
+    },
+    {
+      question: t("faq.trading.question4"),
+      answer: "",
+    },
+  ];
+
+  const General = [
+    {
+      question: t("faq.general.question1"),
+      answer: "",
+    },
+    {
+      question: t("faq.general.question2"),
+      answer: "",
+    },
+    {
+      question: t("faq.general.question3"),
+      answer: "",
+    },
+    {
+      question: t("faq.general.question4"),
+      answer: "",
+    },
+  ];
+
   return (
     <div className="faq">
       <Hero
         bgImage={FAQ_BG}
-        heading="Frequently Asked Questions"
-        text="Discover answers to common questions and find helpful solutions. Simplify your trading journey with our expert guidance."
+        heading={t("faq.title")}
+        text={t("faq.description")}
       />
 
       <div className="faq_main">
@@ -81,7 +82,7 @@ const FAQ = () => {
         <div className="faq_content">
           <div className="faq_contentBox">
             <div className="faq_header">
-              <h2>Payment systems</h2>
+              <h2>{t("faq.paymentSystems.title")}</h2>
             </div>
 
             {PaymentSystems.map((p, i) => (
@@ -91,7 +92,7 @@ const FAQ = () => {
 
           <div className="faq_contentBox">
             <div className="faq_header">
-              <h2>Trading</h2>
+              <h2>{t("faq.trading.title")}</h2>
             </div>
 
             {Trading.map((p, i) => (
@@ -101,7 +102,7 @@ const FAQ = () => {
 
           <div className="faq_contentBox">
             <div className="faq_header">
-              <h2>General</h2>
+              <h2>{t("faq.general.title")}</h2>
             </div>
 
             {General.map((p, i) => (

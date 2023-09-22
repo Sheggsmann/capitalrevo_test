@@ -10,48 +10,51 @@ import SourceBranchLogo from "../../assets/partnership/source-branch.svg";
 import PartnershipBg from "../../assets/partnership_bg.png";
 import PartnershipSection from "../../assets/partnership_section.png";
 import Lines from "../../assets/lines.svg";
+import { useTranslation } from "react-i18next";
 import "./Partnership.scss";
 
-const PartnershipBoxes = [
-  {
-    logo: NumericLogo,
-    heading: "Fine level commission structure",
-    text: "Earn rewards at multiple tiers for referring others to the platform.",
-  },
-  {
-    logo: AccountCheckLogo,
-    heading: "Deficated affiliate manager",
-    text: "Get personalized support and guidance from a dedicated affiliate manager.",
-  },
-  {
-    logo: CashFastLogo,
-    heading: "Instanct withdrawals",
-    text: "Enjoy quick and hassle-free withdrawal of your earnings whenver you need them.",
-  },
-  {
-    logo: CalendarSyncLogo,
-    heading: "Everlasting commision",
-    text: "Keep earning commissions on your referred trader's activities indefinitely.",
-  },
-  {
-    logo: CalendarWeekLogo,
-    heading: "Weekly commission payouts",
-    text: "Receive your commission earnings on a weekly basis for consistent cash flow.",
-  },
-  {
-    logo: SourceBranchLogo,
-    heading: "Motivating revenue sharing model",
-    text: "Rewarding revenue sharing model that keeps you motivated to grow your affiliate business.",
-  },
-];
-
 const Partnership = () => {
+  const { t } = useTranslation();
+
+  const PartnershipBoxes = [
+    {
+      logo: NumericLogo,
+      heading: t("partnership.card1.title"),
+      text: t("partnership.card1.description"),
+    },
+    {
+      logo: AccountCheckLogo,
+      heading: t("partnership.card2.title"),
+      text: t("partnership.card2.description"),
+    },
+    {
+      logo: CashFastLogo,
+      heading: t("partnership.card3.title"),
+      text: t("partnership.card3.description"),
+    },
+    {
+      logo: CalendarSyncLogo,
+      heading: t("partnership.card4.title"),
+      text: t("partnership.card4.description"),
+    },
+    {
+      logo: CalendarWeekLogo,
+      heading: t("partnership.card5.title"),
+      text: t("partnership.card5.description"),
+    },
+    {
+      logo: SourceBranchLogo,
+      heading: t("partnership.card6.title"),
+      text: t("partnership.card6.description"),
+    },
+  ];
+
   return (
     <div className="partnership">
       <Hero
         bgImage={PartnershipBg}
-        heading="Partnership program"
-        text="Unlock lucrative opportunities with our onlien trading website's partnership program. Earn generous commissions and exclusive benefits."
+        heading={t("partnership.title")}
+        text={t("partnership.titleDescription")}
       />
 
       <div className="partnership_main">
@@ -61,12 +64,8 @@ const Partnership = () => {
         <img src={Lines} alt="partnership lines" className="partnershipLines" />
 
         <div className="partnership_content">
-          <h2>What you get as a partner</h2>
-          <p className="body-large">
-            An online trading partnership program offers individuals the
-            opportunity to earn commissions by referring clients to a trading
-            platform.
-          </p>
+          <h2>{t("partnership.section1Title")}</h2>
+          <p className="body-large">{t("partnership.section1Description")}</p>
         </div>
 
         <div className="partnership_offer">
@@ -83,9 +82,9 @@ const Partnership = () => {
 
         <div className="partnership_investmentBox">
           <InvestmentBox
-            heading="Grow your revenue"
-            text="Start promoting the Capital Revo brand and earn commision each time new clients sign up to our platform with our Multi-Level partnership program. Join today to grow your revenue."
-            buttonText="Become a partner"
+            heading={t("partnership.section2Title")}
+            text={t("partnership.section2Description")}
+            buttonText={t("nav.becomeAPartner")}
             image={PartnershipSection}
           />
         </div>

@@ -1,417 +1,351 @@
 {
     "common": {
-        "startTrading": "Start Trading",
-        "recommended": "Recommended",
-        "excellent": "Excellent",
-        "reviewsOn": "reviews on"
+        "startTrading": "Inizia a Fare Trading",
+        "recommended": "Consigliati",
+        "excellent": "Ottimo",
+        "reviewsOn": "Tutte le recensioni"
     },
-
-
     "nav": {
         "trading": "Trading",
         "tools": "Strumenti",
         "partnership": "Partnership",
         "help": "Aiuto",
-        "about": "Informazioni",
-        "accounts": "Account",
+        "about": "Informazioni generali",
+        "accounts": "Conti",
         "instruments": "Strumenti",
-        "withdrawalsDeposits": "Prelievi e Depositi",
+        "withdrawalsDeposits": "Prelievi e depositi",
         "copytrading": "CopyTrading",
-        "faq": "Domande frequenti",
-        "becomeAPartner": "Diventa un Partner",
-        "introducingBroker": "Broker Introduttivo",
-        "knowledgeBase": "Knowledge Base",
+        "faq": "FAQ",
+        "becomeAPartner": "Diventa un partner",
+        "introducingBroker": "Introducing Broker",
+        "knowledgeBase": "Base di conoscenza",
         "contact": "Contatto",
         "webTrader": "Web Trader",
-        "tradingCalendar": "Calendario di Trading",
-        "forexCalculator": "Calcolatore Forex",
+        "tradingCalendar": "Calendario di Borsa e Orari di Negoziazione",
+        "forexCalculator": "Forex ForexCalculator",
         "withdrawals": "Prelievi",
         "login": "Accedi",
         "signup": "Registrati"
-    },    
-
-    "footer": {
-        "bottomText": "Contracts for Difference (“CFDs”) are leveraged products and carry a high level of risk to your capital as prices may move rapidly against you. Losses can exceed your deposits and you may be required to make further payments. These products may not be suitable for all clients therefore ensure you understand the risks and seek independent advice.Capital Revo Limited with its registered office at No 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group is a financial technology provider registered under the number 1713236 in BVI. Capital Revo products and services are not intended for Belgium, US and Canada residents."
     },
-
-
+    "footer": {
+        "bottomText": "I Contratti per Differenza ('CFD') sono prodotti con leva finanziaria e comportano un elevato livello di rischio per il tuo capitale poiché i prezzi potrebbero muoversi rapidamente a tuo sfavore. Le perdite possono superare i tuoi depositi e ti potrebbe essere richiesto di effettuare ulteriori pagamenti. Questi prodotti potrebbero non essere adatti a tutti i clienti, pertanto assicurati di comprendere i rischi e di chiedere una consulenza indipendente. Capital Revo Limited con sede legale al n. 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group è un fornitore di tecnologia finanziaria registrato con il numero 1713236 in BVI. I prodotti e i servizi Capital Revo non sono destinati ai residenti in Belgio, Stati Uniti e Canada."
+    },
     "tradeAccounts": {
         "basic": {
-            "title": "Basic",
-            "description": "For beginners who want to trade forex at fixed spreads with guaranteed stop loss",
-            "benefit1": "Leverage up to 1:100",
-            "benefit2": "Spread from 3 pips",
-            "benefit3": "Free account manager session",
-            "benefit4": "Customer support 24/7",
-            "benefit5": "Minimum deposit $250"
+            "title": "Base",
+            "description": "Per i principianti che vogliono negoziare forex a spread fissi con stop loss garantito",
+            "benefit1": "Leva: fino a 1:100",
+            "benefit2": "Spread a partire da 0,0 pip",
+            "benefit3": "Sessione gratuita dell'account manager",
+            "benefit4": "Assistenza clienti 24 ore su 24, 7 giorni su 7",
+            "benefit5": "Deposito Minimo: 250"
         },
         "advanced": {
-            "title": "Advanced",
-            "description": "For more experienced traders who need a professional advantage",
-            "benefit1": "Leverage up to 1:200",
-            "benefit2": "Spread from 2.25 pips",
-            "benefit3": "Senior account manager",
-            "benefit4": "Quarterly portfolio evaluation",
-            "benefit5": "Customer support 24/7",
-            "benefit6": "Minimum deposit $10,000"
+            "title": "Avanzato",
+            "description": "Per i trader più esperti che hanno bisogno di un vantaggio professionale",
+            "benefit1": "Leva fino a 1:200",
+            "benefit2": "Spread da 2,25 pip",
+            "benefit3": "Senior Account Manager.",
+            "benefit4": "Valutazione trimestrale del portafoglio",
+            "benefit5": "Assistenza clienti 24 ore su 24, 7 giorni su 7",
+            "benefit6": "Deposito minimo 10.000$"
         },
         "diamond": {
-            "title": "Diamond",
-            "description": "For big players who require a more personalized approach",
-            "benefit1": "Leverage up to 1:500",
-            "benefit2": "Spread from 0.9 pips",
-            "benefit3": "Senior account manager",
-            "benefit4": "Daily portfolio evaluation",
-            "benefit5": "Customer support 24/7",
-            "benefit6": "Minimum deposit $250,000"
+            "title": "Diamante",
+            "description": "Per i grandi player che richiedono un approccio più personalizzato",
+            "benefit1": "Leva: fino a 1:500",
+            "benefit2": "Spread a partire da 0,0 pip",
+            "benefit3": "Senior Account Manager.",
+            "benefit4": "Valutazione giornaliera del portafoglio",
+            "benefit5": "Assistenza clienti 24 ore su 24, 7 giorni su 7",
+            "benefit6": "Deposito minimo 250.000$"
         }
     },
-
-
     "home": {
-        "title": "Negozia forex e CFD con il broker #1 al mondo",
-        "titleDescription": "Trade forex with unbeatable spreads, negative balance protection, and award winning 24/7 support",
-
-        "section1": "Trade 100+ Instruments with an Award-Winning Broker",
-        "section1Description": "Diversify your investment portfolio by trading CFDs on more than just Forex.",
+        "title": "Fai trading su forex e CFD con il broker numero1 al mondo",
+        "titleDescription": "Fai trading sul forex con spread imbattibili, protezione dal saldo negativo e un premiato supporto 24 ore su 24, 7 giorni su 7",
+        "section1Title": "Fai trading suoltre 100 strumenti con un broker pluripremiato",
+        "section1Description": "Diversifica il tuo portafoglio di investimenti facendo trading di CFD su qualcosa di più del semplice Forex.",
         "forex": "Forex",
-        "energy": "energy",
-        "stocks": "Stocks",
-        "Metals": "Metals",
-        "CryptoCurrency CFDs": "CryptoCurrency CFD's",
-
-        "section2Title": "Why trade with Capital Revo",
-        "section2Description": "Capital Revo founded in 2015 is a leading online trading provider, offering trading with Forex, Indices, Precious Metals and Energy.",
-        "easyWithdrawals": "Easy Withdrawals",
-        "flexibleDeposits": "Flexible deposit options",
-        "customerSupport": "24/7 customer support",
+        "energy": "Energia",
+        "stocks": "Scorte",
+        "Metals": "Metalli",
+        "CryptoCurrency CFDs": "CFD su criptovaluta",
+        "section2Title": "Perché fare trading con Capital Revo",
+        "section2Description": "Capital Revo fondata nel 2015 è un fornitore leader di trading online, che offre trading con Forex, Indici, Metalli Preziosi ed Energia.",
+        "easyWithdrawals": "Prelievi facili",
+        "flexibleDeposits": "Opzioni di deposito flessibili",
+        "customerSupport": "Assistenza clienti 24 ore su 24, 7 giorni su 7",
         "accountManager": "Account Manager",
-
-        "section3Title": "Start in Less Than 5 Minutes",
+        "section3Title": "Inizia in meno di 5 minuti",
         "card1": {
-            "title": "Register",
-            "description": "Register and activate your account"
+            "title": "Registrati",
+            "description": "Registrati e attiva il tuo account"
         },
         "card2": {
-            "title": "Deposit",
-            "description": "Make a deposit via bank transfer wire or debit card"
+            "title": "Deposito",
+            "description": "Effettua un deposito tramite bonifico bancario o carta di debito"
         },
         "card3": {
-            "title": "Trade",
-            "description": "Get approved and start trading"
+            "title": "Commerciali",
+            "description": "Ottieni l'approvazione e inizia a fare trading"
         },
-
-        "section4Title": "Account For Every Trader",
-        "description": "We have accounts for both new and more active traders. Check which fits and you're set to go."
+        "section4Title": "Account per ogni trader",
+        "section4Description": "Abbiamo account sia per i trader nuovi che per quelli più attivi. Controlla quale si adatta e sei pronto per partire."
     },
-
-
     "accounts": {
-        "title": "Trading Accounts",
-        "titleDescription": "Capital Revo offers a wide range of account types, all designed to suit a diverse range of trading styles.",
-
-        "section1Title": "Accounts For Every Trader",
-        "section1Description": "Unlock your trading potential with our diverse range of accounts. Choose from Basic, Advanced, Gold, Platinum, Diamond, and VIP options for personalized trading experiences and exclusive benefits.",   
-
-        "accountType": "Account Type",
+        "title": "Conti di trading",
+        "titleDescription": "Capital Revo offre una vasta gamma di tipi di account, tutti progettati per adattarsi a una vasta gamma di stili di trading.",
+        "section1Title": "Conti per ogni trader",
+        "section1Description": "Sblocca il tuo potenziale di trading con la nostra vasta gamma di conti. Scegli tra le opzioni Basic, Advanced, Gold, Platinum, Diamond e VIP per esperienze di trading personalizzate e vantaggi esclusivi.",
+        "accountType": "Tipo di conto",
         "accounts": {
             "basic": {
-                "title": "Basic",
-                "description": "Start your trading journey with our Basic Account. Access essential trading tools and market research to make informed decisions."
+                "title": "Base",
+                "description": "Inizia il tuo viaggio di trading con il nostro Conto Base. Accedi agli strumenti di trading essenziali e alle ricerche di mercato per prendere decisioni informate."
             },
             "advanced": {
-                "title": "Advanced",
-                "description": "Take your trading skills to the next level with our Advanced Account. Enjoy advanced charting features and personalized support."
+                "title": "Avanzato",
+                "description": "Porta le tue abilità di trading al livello successivo con il nostro conto avanzato. Goditi le funzionalità avanzate di creazione di grafici e il supporto personalizzato."
             },
             "gold": {
-                "title": "Gold",
-                "description": "Experience the benefits of our Gold Account. Unlock premium trading features, exclusive market insights, and priority customer service."
+                "title": "Oro",
+                "description": "Scopri i vantaggi del nostro conto Gold. Sblocca funzionalità di trading premium, approfondimenti esclusivi sul mercato e un servizio clienti prioritario."
             },
             "platinum": {
-                "title": "Platinum",
-                "description": "Basic account is ideal for traders looking for a traditional trading experience. The Standard account offers ultra-competitive spreads without any commissions."
+                "title": "Platino",
+                "description": "L'account di base è ideale per i trader che cercano un'esperienza di trading tradizionale. L'account Standard offre spread ultra competitivi senza commissioni."
             },
             "diamond": {
-                "title": "Diamond",
-                "description": "Elevate your trading experience with our Platinum Account. Enjoy enhanced trading conditions, dedicated account manager, and tailored investment strategies."
+                "title": "Diamante",
+                "description": "Migliora la tua esperienza di trading con il nostro conto Platinum. Goditi condizioni di trading migliorate, un account manager dedicato e strategie di investimento su misura."
             },
             "vip": {
                 "title": "VIP",
-                "description": "Join our most privileged traders with our VIP Account. Enjoy unparalleled benefits, personalized services, and exclusive perks for your trading success."
+                "description": "Unisciti ai nostri trader più privilegiati con il nostro account VIP. Approfitta di vantaggi impareggiabili, servizi personalizzati e vantaggi esclusivi per il tuo successo nel trading."
             }
         },
-        "minimumDeposit": "Minimum Deposit",
+        "minimumDeposit": "Deposito Minimo",
         "spread": "Spread",
-        "leverage": "Leverage",
+        "leverage": "Leva Finanziaria",
         "accountManager": "Account Manager",
-        "customerSupport": "Customer Support",
-        "technicalAnalysis": "Technical analysis, market news",
-        "recommended": "Recommended",
-        "openAccount": "Open Account"
+        "customerSupport": "Assistenza clienti",
+        "technicalAnalysis": "Analisi tecnica, novità di mercato",
+        "recommended": "Consigliati",
+        "openAccount": "Apri un conto"
     },
-
-
     "about": {
-        "title": "Global Leading Online Trading Provider",
-        "titleDescription": "Capital Revo is a leading global online trading provider, offering trading with forex and CFDs, indices, precious metals, energy and cryptocurrencies.",
-
-        "section1Title": "Capital Revo - A Trusted Broker",
-        "section1Description": "Our mission is to provide our clients with a comprehensive trading experience that is educational, intuitive, and empowering",
-
+        "title": "Fornitore leader mondiale di trading online",
+        "titleDescription": "Capital Revo è un fornitore leader globale di trading online, che offre trading con forex e CFD, indici, metalli preziosi, energia e criptovalute.",
+        "section1Title": "Capital Revo - Un broker di fiducia",
+        "section1Description": "La nostra missione è fornire ai nostri clienti un'esperienza di trading completa che sia educativa, intuitiva e stimolante",
         "card1": {
-            "title": "Licences and regulation",
-            "description": "CapitalRevo operates under Kwakol Markets PTY Limited, an authorized Finance company, by Australia Security and Investment Commission (ASIC) with the A.C.N 656 656 665. Kwakol Markets is an authorized money service business by FINTRAC Money Services Canada; the registration number is M22600427."
+            "title": "Licenze e regolamento",
+            "description": "CapitalRevo opera sotto Kwakol Markets PTY Limited, una società finanziaria autorizzata, dall'Australia Security and Investment Commission (ASIC) con l'A.C.N 656 656 665. Kwakol Markets è un'azienda di servizi monetari autorizzata da FINTRAC Money Services Canada; il numero di registrazione è M22600427."
         },
         "card2": {
-            "title": "Reliability, security and speed",
-            "description": "We offer Contracts for Difference (CFDs) on 6 asset classes: Forex, Shares, Spot Indices, Futures, Spot Metals and Spot Energy. We provide our clients with access to top-tier liquidity and advanced trade execution with no dealing desk intervention."
+            "title": "Affidabilità, sicurezza e velocità",
+            "description": "Offriamo Contratti per Differenza (CFD) su 6 classi di attività: Forex, Azioni, Indici Spot, Futures, Metalli Spot ed Energia Spot. Forniamo ai nostri clienti l'accesso alla liquidità di alto livello e all'esecuzione avanzata delle negoziazioni senza alcun intervento del dealing desk."
         },
-
-        "section2Title": "Certified Investment",
-        "section2Description": "Deposits to trading accounts can be made in most national currencies. Additionally, if you want to protect your capital from currency fluctuation, you can have multiple trading accounts in different currencies at the same time.",
-
-        "section3Title": "Why Trade With Capital Revo",
-        "section3Description": "Our strong dedication to state-of-the-art software and quality assurance means that our clients receive the best, most transparent trading experience.",
-
+        "section2Title": "Investimento certificato",
+        "section2Description": "I depositi sui conti di trading possono essere effettuati nella maggior parte delle valute nazionali. Inoltre, se vuoi proteggere il tuo capitale dalle fluttuazioni valutarie, puoi avere più conti di trading in valute diverse contemporaneamente.",
+        "section3Title": "Perché fare trading con Capital Revo",
+        "section3Description": "La nostra forte dedizione al software all'avanguardia e alla garanzia della qualità significa che i nostri clienti ricevono la migliore e più trasparente esperienza di trading.",
         "benefit1": {
-            "title": "Global Presence",
-            "description": "Trade  in global markets with our expansive network and international expertise."
+            "title": "Presenza globale",
+            "description": "Commercia  nei mercati globali con la nostra rete espansiva e la nostra esperienza internazionale."
         },
         "benefit2": {
-            "title": "Award-Winning Technology",
-            "description": "Experience trading excellence with our cutting-edge platform and innovative tools."
+            "title": "Tecnologia di gestione premiata in tutto il mondo",
+            "description": "Sperimenta l'eccellenza del trading con la nostra piattaforma all'avanguardia e strumenti innovativi."
         },
         "benefit3": {
-            "title": "24/7 Customer Service",
-            "description": "Get round-the-clock support from our dedicated team, ensuring prompt assistance whenever you need it."
+            "title": "Servizio clienti 24/7",
+            "description": "Ricevi assistenza 24 ore su 24 dal nostro team dedicato, assicurandoti un'assistenza tempestiva ogni volta che ne hai bisogno."
         },
         "benefit4": {
-            "title": "Flexible Deposit Options",
-            "description": "Enjoy funding methods tailored to your preferences, providing flexibility for your trading needs."
+            "title": "Opzioni di deposito flessibili",
+            "description": "Goditi metodi di finanziamento su misura per le tue preferenze, offrendo flessibilità per le tue esigenze di trading."
         },
         "benefit5": {
-            "title": "Trading Education",
-            "description": "Expand your knowledge and skills with our comprehensive educational resources, to make informed decisions."
+            "title": "Formazione gratuita sul trading",
+            "description": "Espandi le tue conoscenze e competenze con le nostre risorse educative complete, per prendere decisioni informate."
         },
         "benefit6": {
-            "title": "Technical Analysis",
-            "description": "Stay ahead of the game with in-depth market insights and analysis, helping you identify profitable trading opportunities."
+            "title": "Analisi tecnica",
+            "description": "Rimani all'avanguardia con approfondimenti e analisi di mercato approfonditi, aiutandoti a identificare opportunità di trading redditizie."
         }
     },
-
-
     "deposits": {
-        "title": "Deposits and Withdrawals",
-        "titleDescription": "Choose from flexible payment options in local currencies, including the world's most popular payment systems, e-wallets, and crypto wallets.",
-
-        "section1Title": "Instant Withdrawals, Easy Deposits",
-        "section1Description": "Our deposits and withdrawals are carried out in seconds with no manual processing, including on weekends.",
-
+        "title": "Versamenti e prelievi",
+        "titleDescription": "Scegli tra opzioni di pagamento flessibili nelle valute locali, tra cui i sistemi di pagamento, i portafogli elettronici e i portafogli crittografici più popolari al mondo.",
+        "section1Title": "Prelievi Istantanei, Depositi Facili",
+        "section1Description": "I nostri depositi e prelievi vengono effettuati in pochi secondi senza alcuna lavorazione manuale, anche nei fine settimana.",
         "card1": {
-            "title": "Withdraw/deposit with a bank card",
-            "description": "The total amount you fund your CapitalRevo account with your Credit or Debit card is the total amount we are legally allowed return to that card. Profits can be withdrawn using either Bitcoin or wire/bank transfer."
+            "title": "Preleva/deposita con carta di credito",
+            "description": "L'importo totale che finanzi il tuo conto CapitalRevo con la tua carta di credito o di debito è l'importo totale che siamo legalmente autorizzati a restituire a quella carta. I profitti possono essere prelevati utilizzando Bitcoin o bonifico bancario."
         },
         "card2": {
-            "title": "Withdraw/deposit to your bank account",
-            "description": "Wire Transfer is the most wide-spread money transfer method in the world. Transfer money from your CapitalRevo wallet to your bank account. We charge $0 for fees deposits of up $5,000, and $25 fee on withdrawals of $5,000 and above."
+            "title": "Preleva/deposita sul tuo conto bancario",
+            "description": "Il bonifico bancario è il metodo di trasferimento di denaro più diffuso al mondo. Trasferisci denaro dal tuo portafoglio CapitalRevo al tuo conto bancario. Addebitiamo $0 per commissioni fino a $5.000 e $25 per prelievi di $5.000 e oltre."
         },
         "card3": {
-            "title": "Withdraw/deposit with crypto",
-            "description": "CapitalRevo can send your profits to you via Crypto. All you need to do is to create a withdraw request on your account and our team will process your request same day. The progress of this transaction can be tracked on blockchain.info."
+            "title": "Preleva/deposita con criptovalute",
+            "description": "CapitalRevo può inviarti i tuoi profitti tramite Crypto. Tutto quello che devi fare è creare una richiesta di prelievo sul tuo account e il nostro team elaborerà la tua richiesta lo stesso giorno. L'avanzamento di questa transazione può essere monitorato su blockchain.info."
         },
         "card4": {
-            "title": "Instant and secure withdrawals",
-            "description": "Transactions are carried out within a few seconds without manual processing. 3-D Secure technology is an additional security layer for online payments and has also been adopted by VISA and Mastercard."
+            "title": "Prelievi istantanei e sicuri",
+            "description": "Le transazioni vengono effettuate in pochi secondi senza elaborazione manuale. La tecnologia 3-D Secure è un ulteriore livello di sicurezza per i pagamenti online ed è stata adottata anche da VISA e Mastercard."
         },
-
-        "section2Title": "Ready to trade?",
-        "section2Description": "Access the most popular markets through a single account. Discover CFD on Stocks, ETFs, Crypto and more. Start trading in less than 5 minutes!"
+        "section2Title": "Pronto a fare trading?",
+        "section2Description": "Accedi ai mercati più popolari tramite un unico account. Scopri i CFD su azioni, ETF, criptovalute e altro ancora. Inizia a fare trading in meno di 5 minuti!"
     },
-
-
     "copyTrading": {
-        "title": "Copytrading Platform",
-        "titleDescription": "Follow successful traders, automatically replicate their strategies, and maximize your trading potential.",
-
-        "section1Title": "Why copy the best traders?",
-        "section1Description": "Copytrading can be beneficial as it allows you to replicate the trades of successful traders, potentially increasing your chances of profitability.",
-
+        "title": "Piattaforma di Copytrading",
+        "titleDescription": "Segui i trader di successo, replica automaticamente le loro strategie e massimizza il tuo potenziale di trading.",
+        "section1Title": "Perché copiare i migliori trader?",
+        "section1Description": "Il copytrading può essere vantaggioso in quanto consente di replicare le operazioni di trader di successo, aumentando potenzialmente le possibilità di redditività.",
         "card1": {
-            "title": "Benefit from experts' work",
-            "description": "Gain from proven trading strategies of experienced professionals."
+            "title": "Approfitta del lavoro degli esperti",
+            "description": "Guadagna dalle comprovate strategie di trading di professionisti esperti."
         },
         "card2": {
-            "title": "Save time",
-            "description": "Skip the research and analysis by automatically copying trades of successful traders."
+            "title": "Risparmiare tempo",
+            "description": "Salta la ricerca e l'analisi copiando automaticamente le operazioni dei trader di successo."
         },
         "card3": {
-            "title": "Less risk",
-            "description": "Mitigate potential losses by diversifying your portfolio through copytrading."
+            "title": "Meno rischi",
+            "description": "Mitiga le potenziali perdite diversificando il tuo portafoglio attraverso il copytrading."
         },
-
-        "section2Title": "Top Traders By ROI",
-        "section2Description": "Traders that have earned the highest ROI in the last 7 days.",
-
-        "section3Title": "Top Intra-Day Traders",
-        "section3Description": "Intra-day traders with over 20% ROI and a win-rate of more than 20% in the last 7 days",
-
-        "section4Title": "Lowest Drawdown",
-        "section4Description": "Traders with over 10% ROI and a max. drawdown of less than 20% in the last 30 days.",
-
-        "section5Title": "Start copytrading now",
-        "section5Description": "Our copytrading platform lets our clients access the opportunities of trading without any advanced technical skills.",
-
-        "copyTradingFooter": "Capital Revo Copytrading is a system that facilitates the management of funds placed in multiple separate accounts to be managed by one or more account holder(s), the manager(s). Past performance is not indicative of future results and no representation is being made by the Company in relation to certain results that may be achieved by investing in a PAMM Manager or that clients will or are likely to achieve profits or incur losses comparable to those that may be shown. Prior to investing in a PAMM Manager you need to carefully consider any risks including but not limited to those involved in trading. The Company does not recommend the selection of any PAMM Manager. This responsibility lies solely with the investor. Therefore, Capital Revo Ltd. is under no circumstances, liable and/or responsible for any losses that arise out of the use of Copytrading. Even if all reasonable efforts have been made by the Company to ensure the proper statistical reporting of PAMM Managers Performance, the Company cannot guarantee the accuracy of performance and/or results of any PAMM Manager."
+        "section2Title": "Principali trader per ROI",
+        "section2Description": "I trader che hanno guadagnato il ROI più elevato negli ultimi 7 giorni.",
+        "section3Title": "I migliori trader intragiornalieri",
+        "section3Description": "Trader infragiornalieri con un ROI superiore al 20% e un tasso di vincita superiore al 20% negli ultimi 7 giorni",
+        "section4Title": "Drawdown più basso",
+        "section4Description": "Trader con un ROI superiore al 10% e un drawdown massimo inferiore al 20% negli ultimi 30 giorni.",
+        "section5Title": "Inizia subito a fare copytrading",
+        "section5Description": "La nostra piattaforma di copytrading consente ai nostri clienti di accedere alle opportunità di trading senza alcuna competenza tecnica avanzata.",
+        "copyTradingFooter": "Capital Revo Copytrading è un sistema che facilita la gestione dei fondi collocati in più conti separati per essere gestiti da uno o più titolari del conto, il/i gestore/i. Le performance passate non sono indicative dei risultati futuri e non viene fornita alcuna rappresentazione realizzati dalla Società in relazione a determinati risultati che potrebbero essere ottenuti investendo in un Gestore PAMM o che i clienti realizzeranno o probabilmente realizzeranno profitti o subiranno perdite paragonabili a quelle che potrebbero essere mostrate.Prima di investire in un Gestore PAMM è necessario considerare attentamente tutti i rischi inclusi ma non limitati a quelli coinvolti nella negoziazione. La Società non raccomanda la selezione di alcun Gestore PAMM. Questa responsabilità spetta esclusivamente all'investitore. Pertanto, Capital Revo Ltd. non è in alcuna circostanza, responsabile e/o responsabile per eventuali perdite derivanti dall'uso del Copytrading. Anche se la Società ha compiuto tutti gli sforzi ragionevoli per garantire la corretta rendicontazione statistica delle prestazioni dei gestori PAMM, la Società non può garantire l'accuratezza delle prestazioni e/o dei risultati di qualsiasi gestore PAMM ."
     },
-
-
     "tradingCalculator": {
-        "title": "Forex Trading Calculator",
-        "titleDescription": "Forex trading calculator shows how much money will be immediately engaged in the order with your chosen parameters.",
-
-        "calculatorText": "Set the symbol and adjust the leverage and volume to calculate the required margin, pip value, and fees that you are comfortable with.",
-
-        "section1Title": "Start trading in less than 5 minutes",
+        "title": "Calcolatore di trading Forex",
+        "titleDescription": "Il calcolatore di trading Forex mostra quanti soldi saranno immediatamente impegnati nell'ordine con i parametri scelti.",
+        "calculatorText": "Imposta il simbolo e regola la leva finanziaria e il volume per calcolare il margine, il valore del pip e le commissioni richiesti con cui ti senti a tuo agio.",
+        "section1Title": "Inizia a fare trading in meno di 5 minuti",
         "card1": {
-            "title": "Register",
-            "description": "Register and and activate your account"
+            "title": "Registrati",
+            "description": "Registrati e attiva il tuo account"
         },
         "card2": {
-            "title": "Deposit",
-            "description": "Make a deposit via bank transfer, wire or debit card"
+            "title": "Deposito",
+            "description": "Effettua un deposito tramite bonifico bancario, bonifico bancario o carta di debito"
         },
         "card3": {
-            "title": "Trade",
-            "description": "Get approved and start trading"
+            "title": "Commerciali",
+            "description": "Ottieni l'approvazione e inizia a fare trading"
         },
-
-        "calculate": "Calculate"
+        "calculate": "Calcola"
     },
-
-
-    "economicCalendar": {
-        "title": "Economic Calendar",
-        "description": "Keep an eye on key upcoming economic events, announcements, and news. Plus, set up filters in a few clicks, selecting for event importance and affected currencies.",
-
-        "section1Title": "Stay updated in the financial markets",
-        "section1Description": "Stay informed and make strategic trading decisions with our comprehensive Economic Calendar. Track key events, indicators, and market impact.",
-
-        "section2Title": "About the Economic Calendar",
-        "section2Description": "An economic calendar is a tool that provides a schedule of upcoming economic events, announcements, and indicators affecting financial markets.",
-
+    "calendar": {
+        "title": "Calendario Economico",
+        "description": "Tieni d'occhio i principali eventi economici, annunci e notizie in arrivo. Inoltre, imposta i filtri in pochi clic, selezionando l'importanza dell'evento e le valute interessate.",
+        "section1Title": "Rimani aggiornato sui mercati finanziari",
+        "section1Description": "Rimani informato e prendi decisioni strategiche di trading con il nostro calendario economico completo. Tieni traccia degli eventi chiave, degli indicatori e dell'impatto sul mercato.",
+        "section2Title": "Informazioni sul calendario economico",
+        "section2Description": "429 TOO MANY REQUESTS: {\"ERROR\":{\"ROOT_CAUSE\":[{\"TYPE\":\"CIRCUIT_BREAKING_EXCEPTION\",\"REASON\":\"[PARENT] DATA TOO LARGE, DATA FOR [<HTTP_REQUEST>] WOULD BE [255703880/243.8MB], WHICH IS LARGER THAN THE LIMIT OF [255013683/243.1MB], REAL USAGE: [255703216/243.8MB], NEW BYTES RESERVED: [664/664B], USAGES [EQL_SEQUENCE=0/0B, MODEL_INFERENCE=0/0B, INFLIGHT_REQUESTS=664/664B, REQUEST=0/0B, FIELDDATA=183101/178.8KB]\",\"BYTES_WANTED\":255703880,\"BYTES_LIMIT\":255013683,\"DURABILITY\":\"PERMANENT\"}],\"TYPE\":\"CIRCUIT_BREAKING_EXCEPTION\",\"REASON\":\"[PARENT] DATA TOO LARGE, DATA FOR [<HTTP_REQUEST>] WOULD BE [255703880/243.8MB], WHICH IS LARGER THAN THE LIMIT OF [255013683/243.1MB], REAL USAGE: [255703216/243.8MB], NEW BYTES RESERVED: [664/664B], USAGES [EQL_SEQUENCE=0/0B, MODEL_INFERENCE=0/0B, INFLIGHT_REQUESTS=664/664B, REQUEST=0/0B, FIELDDATA=183101/178.8KB]\",\"BYTES_WANTED\":255703880,\"BYTES_LIMIT\":255013683,\"DURABILITY\":\"PERMANENT\"},\"STATUS\":429}",
         "card1": {
-            "title": "What is Economic Calendar?",
-            "description": "The Economic Calendar is a tool that helps traders to monitor and analyze market-moving events, and predict further price movements. It highlights upcoming national and international news around the world in chronological order by date. These major events can have a high impact on the financial markets and are usually announced or released in reports."
+            "title": "Cos' è il Calendario Economico?",
+            "description": "Il Calendario Economico è uno strumento che aiuta i trader a monitorare e analizzare gli eventi in movimento sul mercato e a prevedere ulteriori movimenti di prezzo. Mette in evidenza le prossime notizie nazionali e internazionali in tutto il mondo in ordine cronologico per data. Questi grandi eventi possono avere un forte impatto sui mercati finanziari e di solito sono annunciati o rilasciati nei rapporti."
         },
         "card2": {
-            "title": "How to use the Economic Calendar?",
-            "description": "You can choose multiple currencies and stocks from the dropdown list. By default, all will be selected. After making your selection, you can view the upcoming events in the table below the dropdown menu. It should be noted that the number of trading instruments in the calendar changes dynamically, and depends on the number of upcoming events and news."
+            "title": "Come utilizzare il Calendario Economico",
+            "description": "Puoi scegliere più valute e azioni dall'elenco a discesa. Per impostazione predefinita, verranno selezionati tutti. Dopo aver effettuato la selezione, puoi visualizzare i prossimi eventi nella tabella sotto il menu a discesa. Va notato che il numero di strumenti di trading nel calendario cambia dinamicamente e dipende dal numero di eventi e notizie imminenti."
         },
         "card3": {
-            "title": "Why you should use the Economic Calendar?",
-            "description": "The Economic Calendar is indispensable if you want to keep track of upcoming news, reports and announcements at a glance. The events may highly impact the volatility of forex currency pairs, stocks and other markets. Thus, traders often use the calendar to plan their trades and stay informed on chart patterns and indicators that may be affected by the events."
+            "title": "Perché dovresti usare il Calendario Economico?",
+            "description": "Il Calendario Economico è indispensabile se si desidera tenere traccia delle notizie, dei rapporti e degli annunci imminenti a colpo d'occhio. Gli eventi possono avere un forte impatto sulla volatilità delle coppie di valute forex, delle azioni e di altri mercati. Pertanto, i trader utilizzano spesso il calendario per pianificare le loro negoziazioni e rimanere informati sugli schemi grafici e sugli indicatori che potrebbero essere influenzati dagli eventi."
         },
         "card4": {
-            "title": "How to read the Economic Calendar?",
-            "description": "After selecting your desired instruments, you will see a list of events displayed in the calendar.  There are two key figures in the table, which are the 'Actual' and 'Forecast' numbers. A significant difference between the two numbers indicates that there might be some volatility in the chart of the related trading instruments. Generally, Volatility spikes pre-event and subsides post-event."
+            "title": "Come utilizzare il Calendario Economico",
+            "description": "Dopo aver selezionato gli strumenti desiderati, verrà visualizzato un elenco di eventi nel calendario.  Ci sono due cifre chiave nella tabella, che sono i numeri \"Effettivo\" e \"Previsione\". Una differenza significativa tra i due numeri indica che potrebbe esserci una certa volatilità nel grafico dei relativi strumenti di trading. In generale, la volatilità aumenta prima dell'evento e diminuisce dopo l'evento."
         },
-
-        "section3Title": "Accounts For Every Trader",
-        "section3Description": "We have accounts for both new and more active traders. Check which fits and you're set to go."
+        "section3Title": "Conti per ogni trader",
+        "section3Description": "Abbiamo account sia per i trader nuovi che per quelli più attivi. Controlla quale si adatta e sei pronto per partire."
     },
-
-
     "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Discover answers to common questions and find helpful solutions. Simplify your trading journey with our expert guidance.",
-
+        "title": "Domande frequenti (FAQ)",
+        "description": "Scopri le risposte alle domande più comuni e trova soluzioni utili. Semplifica il tuo viaggio di trading con la nostra guida esperta.",
         "paymentSystems": {
-            "title": "Payment Systems",
-            
-            "question1": "What is the minimum amount to trade?",
-            "answer1": "You can start trading on Kwakol with as low as a $250 deposit and enjoy lightning-fast execution, tight spreads, and low commissions.",
-
-            "question2": "How do I make a withdrawal if I deposit funds with multiple payment methods?",
-
-            "question3": "How can I be sure my payment is safe?",
-            "question4": "Can I use my card to deposit?"
+            "title": "Sistemi di Pagamento",
+            "question1": "Qual è l'importo minimo da negoziare?",
+            "answer1": "Puoi iniziare a fare trading su Kwakol con un deposito di soli $250 e goderti un'esecuzione fulminea, spread ridotti e commissioni basse.",
+            "question2": "Come posso effettuare un prelievo se deposito fondi con più metodi di pagamento?",
+            "question3": "Come posso essere sicuro che il mio pagamento sia sicuro?",
+            "question4": "Posso usare la mia carta per depositare?"
         },
-
         "trading": {
             "title": "Trading",
-            
-            "question1": "Is Capital Revo regulated?",
-            "question2": "How do I place a limit order?",
-            "question3": "How do I check my trading history?",
-            "question4": "Can I trade during the weekend?"
+            "question1": "Capital Revo è regolamentato?",
+            "question2": "Come si effettua un ordine con limite?",
+            "question3": "Come posso controllare la mia cronologia di trading?",
+            "question4": "Posso fare trading durante il fine settimana?"
         },
-
         "general": {
-            "title": "General",
-
-            "question1": "I can't register on the CapitalRevo platform.",
-            "question2": "I'm unable to set up a password during registration",
-            "question3": "Why has my deposit/withdrawal been rejected?",
-            "question4": "How to clear your browser's cache and cookies?"
+            "title": "Generale",
+            "question1": "Non riesco a registrarmi sulla piattaforma CapitalRevo.",
+            "question2": "Non riesco a impostare una password durante la registrazione",
+            "question3": "Perché il mio deposito/prelievo è stato rifiutato?",
+            "question4": "Come cancellare la cache e i cookie del browser?"
         }
     },
-
-
     "partnership": {
         "title": "Partnership",
-        "titleDescription": "Unlock lucrative opportunities with our online trading website's partnership program. Earn generous commissions and exclusive benefits.",
-
-        "section1Title": "What you get as a partner",
-        "section1Description": "An online trading partnership program offers individuals the opportunity to earn commissions by referring clients to a trading platform.",
-
+        "titleDescription": "Sblocca opportunità redditizie con il programma di partnership del nostro sito web di trading online. Guadagna commissioni generose e vantaggi esclusivi.",
+        "section1Title": "Cosa ottieni come partner",
+        "section1Description": "Un programma di partnership di trading online offre alle persone l'opportunità di guadagnare commissioni indirizzando i clienti a una piattaforma di trading.",
         "card1": {
-            "title": "Five level commission structure",
-            "description": "Earn rewards at multiple tiers for referring others to the platform."
+            "title": "Struttura delle commissioni a cinque livelli",
+            "description": "Guadagna ricompense a più livelli invitando altri utenti alla piattaforma."
         },
         "card2": {
-            "title": "Dedicated affiliate manager",
-            "description": "Get personalized support and guidance from a dedicated affiliate manager."
+            "title": "Affiliate manager dedicato",
+            "description": "Ricevi supporto e guida personalizzati da un manager di affiliazione dedicato."
         },
         "card3": {
-            "title": "Instant withdrawals",
-            "description": "Enjoy quick and hassle-free withdrawal of your earnings whenever you need them."
+            "title": "Prelievi istantanei",
+            "description": "Approfitta di un prelievo rapido e senza problemi dei tuoi guadagni ogni volta che ne hai bisogno."
         },
         "card4": {
-            "title": "Everlasting commission",
-            "description": "Keep earning commissions on your referred traders' activities indefinitely."
+            "title": "Commissione eterna",
+            "description": "Continua a guadagnare commissioni sulle attività dei trader che hai invitato a tempo indeterminato."
         },
         "card5": {
-            "title": "Weekly commission payouts",
-            "description": "Receive your commission earnings on a weekly basis for consistent cash flow."
+            "title": "Pagamenti settimanali delle commissioni",
+            "description": "Ricevi i guadagni delle commissioni su base settimanale per un flusso di cassa costante."
         },
         "card6": {
-            "title": "Motivating revenue sharing model",
-            "description": "Rewarding revenue sharing model that keeps you motivated to grow your affiliate business."
+            "title": "Modello di compartecipazione alle entrate motivante",
+            "description": "Modello di compartecipazione alle entrate gratificante che ti mantiene motivato a far crescere la tua attività di affiliazione."
         },
-
-        "section2Title": "Grow your revenue",
-        "section2Description": "Start promoting the Capital Revo brand and earn commission each time new clients sign up to our platform with our Multi-Level partnership program. Join today to grow your revenue."
+        "section2Title": "Aumenta le tue entrate",
+        "section2Description": "Inizia a promuovere il marchio Capital Revo e guadagna commissioni ogni volta che nuovi clienti si iscrivono alla nostra piattaforma con il nostro programma di partnership multilivello. Iscriviti oggi per aumentare le tue entrate."
     },
-
-
     "contactUs": {
-        "title": "Contact Us",
-        "titleDescription": "Need help? Our 5-star support team is ready to help you Monday through Sunday, 9:00 a.m. to 6:00 p.m. UTC+2",
-
-        "section1Title": "Your 24/7 customer service",
-        "section1Description": "Contact our customer service team who are available 24/7 to assist you",
-
+        "title": "Contattaci",
+        "titleDescription": "Hai bisogno di aiuto? Il nostro team di assistenza a 5 stelle è pronto ad aiutarti dal lunedì alla domenica, dalle 9:00 alle 18:00 UTC+2",
+        "section1Title": "Assistenza clienti 24/7",
+        "section1Description": "Contatta il nostro team di assistenza clienti, disponibile 24 ore su 24, 7 giorni su 7, per aiutarti",
         "card1": {
-            "title": "Email us",
-            "description": "Send us an email to"
+            "title": "Inviaci un'email",
+            "description": "Inviaci una email"
         },
         "card2": {
-            "title": "Phone support",
-            "description": "Call us at"
+            "title": "Assistenza telefonica",
+            "description": "Chiamaci al numero"
         },
         "card3": {
-            "title": "Live chat support",
-            "description": "Chat with us, get an instant reply"
+            "title": "Supporto tramite live chat",
+            "description": "Chatta con noi e ricevi una risposta immediata"
         }
     }
 }

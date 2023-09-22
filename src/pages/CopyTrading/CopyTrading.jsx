@@ -10,6 +10,7 @@ import TimerCheckLogo from "../../assets/copy_trading/timer-check-outline.svg";
 import CopyTradingBg from "../../assets/copytrading_bg.png";
 import CopyTradingSectionImg from "../../assets/copy_trading_section.png";
 import Lines from "../../assets/lines.svg";
+import { useTranslation } from "react-i18next";
 
 const StartSteps = [
   {
@@ -35,21 +36,24 @@ const StartSteps = [
 const Traders = [1, 2, 3, 4, 5];
 
 const TraderBox = () => {
+  const { t } = useTranslation();
   return (
     <div className="copyTrading_box">
-      <span>Trade</span>
-      <Button>Copy</Button>
+      <span>{t("copyTrading.trade")}</span>
+      <Button>{t("copyTrading.copy")}</Button>
     </div>
   );
 };
 
 const CopyTrading = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="copyTrading">
       <Hero
         bgImage={CopyTradingBg}
-        heading="Copytrading Platform"
-        text="Follow successful traders, automatically replicate their strategies, and maximize your trading potential."
+        heading={t("copyTrading.title")}
+        text={t("copyTrading.titleDescription")}
       />
       <div className="copyTrading_main">
         <div className="copyTrading_bg1" />
@@ -58,12 +62,8 @@ const CopyTrading = () => {
         <img src={Lines} alt="copyTrading Lines" className="copyTradingLines" />
 
         <div className="copyTrading_content1">
-          <h2>Why copy the best traders?</h2>
-          <p className="body-large">
-            Copytrading can be beneficial as it allows you to replicate the
-            trades of successful traders, potentially increasing your chances of
-            profitability.
-          </p>
+          <h2>{t("copyTrading.section1Title")}</h2>
+          <p className="body-large">{t("copyTrading.section1Description")}</p>
         </div>
 
         <div className="copyTrading_steps">
@@ -77,8 +77,8 @@ const CopyTrading = () => {
         </div>
 
         <div className="copyTrading_content">
-          <h2>Top Traders By ROI</h2>
-          <p>Traders that have earned the highest ROI in the last 7 days.</p>
+          <h2>{t("copyTrading.section2Title")}</h2>
+          <p>{t("copyTrading.section2Description")}</p>
         </div>
         <div className="copyTrading_boxes">
           {Traders.map((k) => (
@@ -86,11 +86,8 @@ const CopyTrading = () => {
           ))}
         </div>
         <div className="copyTrading_content">
-          <h2>Top Intra-Day Traders</h2>
-          <p>
-            Intra-day traders with over 20% ROI and a win-rate of more than 20%
-            in the last 7 days
-          </p>
+          <h2>{t("copyTrading.section3Title")}</h2>
+          <p>{t("copyTrading.section3Description")}</p>
         </div>
         <div className="copyTrading_boxes">
           {Traders.map((k) => (
@@ -98,11 +95,8 @@ const CopyTrading = () => {
           ))}
         </div>
         <div className="copyTrading_content">
-          <h2>Lowest Drawdown</h2>
-          <p>
-            Traders with over 10% ROI and a max. drawdown of less than 20% in
-            the last 30 days.
-          </p>
+          <h2>{t("copyTrading.section4Title")}</h2>
+          <p>{t("copyTrading.section4Description")}</p>
         </div>
         <div className="copyTrading_boxes">
           {Traders.map((k) => (
@@ -110,30 +104,33 @@ const CopyTrading = () => {
           ))}
         </div>
         <InvestmentBox
-          heading="Start copytrading now"
-          text="Our copytrading platform lets our clients access the opportunities of trading without any advanced technical skills."
+          heading={t("copyTrading.section5Title")}
+          text={t("copyTrading.section5Description")}
           image={CopyTradingSectionImg}
         />
         <p className="body-large">
-          Capital Revo Copytrading is a system that facilitates the management
+          {/* Capital Revo Copytrading is a system that facilitates the management
           of funds placed in multiple separate accounts to be managed by one or
           more account holder(s), the manager(s). Past performance is not
           indicative of future results and no representation is being made by
           the Company in relation to certain results that may be achieved by
           investing in a PAMM Manager or that clients will or are likely to
-          achieve profits or incur losses comparable to those that may be shown.
+          achieve profits or incur losses comparable to those that may be shown. */}
+          {t("copyTrading.copyTradingFooter").substring(0, 474)}
           <br /> <br />
-          Prior to investing in a PAMM Manager you need to carefully consider
+          {/* Prior to investing in a PAMM Manager you need to carefully consider
           any risks including but not limited to those involved in trading. The
           Company does not recommend the selection of any PAMM Manager. This
           responsibility lies solely with the investor. Therefore, Capital Revo
           Ltd. is under no circumstances, liable and/or responsible for any
-          losses that arise out of the use of Copytrading.
+          losses that arise out of the use of Copytrading. */}
+          {t("copyTrading.copyTradingFooter").substring(474, 865)}
           <br /> <br />
-          Even if all reasonable efforts have been made by the Company to ensure
+          {/* Even if all reasonable efforts have been made by the Company to ensure
           the proper statistical reporting of PAMM Managers Performance, the
           Company cannot guarantee the accuracy of performance and/or results of
-          any PAMM Manager.
+          any PAMM Manager. */}
+          {t("copyTrading.copyTradingFooter").substring(865)}
         </p>
       </div>
       <Footer dark />

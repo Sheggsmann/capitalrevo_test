@@ -17,6 +17,7 @@ import ChartBarLogo from "../../assets/about/chart-bar.svg";
 import Button from "../../components/Button";
 import AboutBg from "../../assets/about_bg.png";
 import Lines from "../../assets/lines.svg";
+import { useTranslation } from "react-i18next";
 
 const CurrencyData = [
   {
@@ -49,46 +50,47 @@ const CurrencyData = [
   },
 ];
 
-const TradeBoxes = [
-  {
-    logo: EarthLogo,
-    heading: "Global Presence",
-    text: "Trade in global markets with our expansive network and international expertise.",
-  },
-  {
-    logo: SealVariantLogo,
-    heading: "Award Winning Technology",
-    text: "Experience trading excellence with our cutting-edge platform and innovative tools.",
-  },
-  {
-    logo: FaceAgentLogo,
-    heading: "24/7 Customer Service",
-    text: "Get round-the-clock support from our dedicated team, ensuring prompt assistance whenever you need it.",
-  },
-  {
-    logo: CashMultipleLogo,
-    heading: "Flexible Deposit Options",
-    text: "Enjoy funding methods tailored to your preferences, providing flexibility for your trading needs.",
-  },
-  {
-    logo: SchoolOutlineLogo,
-    heading: "Trading Education",
-    text: "Expand your knowledge and skills with our comprehensive educational resources to make informed decisions.",
-  },
-  {
-    logo: ChartBarLogo,
-    heading: "Technical Analysis",
-    text: "Stay ahead of the game with in-depth market insights and analysis, helping you identify profitable trading opportunities.",
-  },
-];
-
 const About = () => {
+  const { t } = useTranslation();
+
+  const TradeBoxes = [
+    {
+      logo: EarthLogo,
+      heading: t("about.benefit1.title"),
+      text: t("about.benefit2.description"),
+    },
+    {
+      logo: SealVariantLogo,
+      heading: t("about.benefit2.title"),
+      text: t("about.benefit2.description"),
+    },
+    {
+      logo: FaceAgentLogo,
+      heading: t("about.benefit3.title"),
+      text: t("about.benefit3.description"),
+    },
+    {
+      logo: CashMultipleLogo,
+      heading: t("about.benefit4.title"),
+      text: t("about.benefit4.description"),
+    },
+    {
+      logo: SchoolOutlineLogo,
+      heading: t("about.benefit5.title"),
+      text: t("about.benefit5.description"),
+    },
+    {
+      logo: ChartBarLogo,
+      heading: t("about.benefit6.title"),
+      text: t("about.benefit6.description"),
+    },
+  ];
   return (
     <div className="about">
       <Hero
         bgImage={AboutBg}
-        heading="Global Leading Online Trading Provider"
-        text="Capital Revo is a leading global online trading provider, offering trading with Forex and CFDs, indices, precious metals, energy and cryptocurrencies."
+        heading={t("about.title")}
+        text={t("about.titleDescription")}
       />
       <div className="about_main">
         <div className="about_bg1" />
@@ -108,28 +110,29 @@ const About = () => {
 
         <div className="about_content">
           <h2>
-            Capital Revo - <span className="accent"> A Trusted Broker </span>
+            Capital Revo -{" "}
+            <span className="accent">
+              {" "}
+              {t("about.section1Title").substring(14)}{" "}
+            </span>
           </h2>
-          <p className="body-large">
-            Our mission is to provide our clients with a comprehensive trading
-            experience that is educational, intuitive and empowering
-          </p>
+          <p className="body-large">{t("about.section1Description")}</p>
         </div>
 
         <div className="about_contentBoxes">
           <ContentBox
             logo={LicenseLogo}
-            heading="Licences and regulation"
-            text="CapitalRevo operates under Kwakol Markets PTY Limited, an authorized Finance company, by Australia Security and Investment Commision (ASIC) with the A.C.N 656 656 665. Kwakol Markets is an authorized money service business by FINTRAC Money Services Canada; the registration number is M22699427."
+            heading={t("about.card1.title")}
+            text={t("about.card1.description")}
           />
           <ContentBox
             logo={SafetyLogo}
-            heading="Reliability, security and speed"
-            text="We offer Contracts for Difference (CFDs) on 6 asset classes: Forex, Shares, Spot Indices, Futures, Spot Metals and Spot Energy. We provide our clients with access to top-tier liquidity and advanced trade execution with no dealing desk intervention."
+            heading={t("about.card2.title")}
+            text={t("about.card2.description")}
           />
         </div>
         <Rating
-          heading="Excellent"
+          heading={t("common.excellent")}
           count="724"
           source="TrustPilot"
           color="body"
@@ -137,19 +140,15 @@ const About = () => {
 
         <div className="about_investmentBox">
           <InvestmentBox
-            heading="Certified Investmet"
-            text="Deposits to trading accounts can be made in most national currencies. Additionally, if you want to protect your capital from currency fluctuation, you can have multiple trading accounts in different currencies at the same time. "
+            heading={t("about.section2Title")}
+            text={t("about.section2Description")}
           />
         </div>
 
         <div className="about_trade">
           <div className="about_tradeContent">
-            <h2>Why Trade With Capital Revo</h2>
-            <p className="body-large">
-              Our strong dedication to state-of-the-art software and quality
-              assurance means that our clients receive the best, most
-              transparent trading experience.
-            </p>
+            <h2>{t("about.section3Title")}</h2>
+            <p className="body-large">{t("about.section3Description")}</p>
           </div>
 
           <div className="about_tradeBoxes">
@@ -164,7 +163,7 @@ const About = () => {
 
           <div className="about_tradeButton">
             <a href="https://client.kwakolmarkets.com/register">
-              <Button>Start trading</Button>
+              <Button>{t("common.startTrading")}</Button>
             </a>
             {/* <p>or try Demo Account</p> */}
           </div>

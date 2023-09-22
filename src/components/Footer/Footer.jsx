@@ -14,6 +14,7 @@ import TwitterLogo from "../../assets/twitter.svg";
 import YouTubeLogo from "../../assets/youtube.svg";
 import LinkedinLogo from "../../assets/linkedin.svg";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const FooterLogos = [
   PaypalLogo,
@@ -30,6 +31,7 @@ const MediaLogos = [FacebookLogo, TwitterLogo, YouTubeLogo, LinkedinLogo];
 
 const Footer = ({ dark = false }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <footer className={`footer ${dark ? "footer_dark" : ""}`}>
@@ -50,8 +52,8 @@ const Footer = ({ dark = false }) => {
 
           <br />
           <div className="footer_descriptionLinks">
-            <span>Privacy</span>
-            <span>Cookie Policy</span>
+            <span>{t("footer.privacy")}</span>
+            <span>{t("footer.cookiePolicy")}</span>
           </div>
 
           <div className="footer_media">
@@ -62,28 +64,38 @@ const Footer = ({ dark = false }) => {
         </div>
 
         <div className="footer_item footer_item1">
-          <h4>Trading</h4>
-          <span onClick={() => navigate("/accounts")}>Accounts</span>
-          <span onClick={() => navigate("/calculator")}>Instruments</span>
-          <span onClick={() => navigate("/deposits")}>
-            Withdrawals and Deposits
+          <h4>{t("nav.trading")}</h4>
+          <span onClick={() => navigate("/accounts")}>{t("nav.accounts")}</span>
+          <span onClick={() => navigate("/calculator")}>
+            {t("nav.instruments")}
           </span>
-          <span onClick={() => navigate("/copy-trading")}>Copytrading</span>
+          <span onClick={() => navigate("/deposits")}>
+            {t("nav.withdrawalsDeposits")}
+          </span>
+          <span onClick={() => navigate("/copy-trading")}>
+            {t("nav.copytrading")}
+          </span>
         </div>
         <div className="footer_item footer_item2">
-          <h4>TOOLS</h4>
-          <span onClick={() => navigate("/calendar")}>Trading Calendar</span>
-          <span onClick={() => navigate("/calculator")}>Forex Calculator</span>
+          <h4>{t("nav.tools")}</h4>
+          <span onClick={() => navigate("/calendar")}>
+            {t("nav.tradingCalendar")}
+          </span>
+          <span onClick={() => navigate("/calculator")}>
+            {t("nav.forexCalculator")}
+          </span>
         </div>
         <div className="footer_item footer_item3">
-          <h4>PARTNERSHIP</h4>
-          <span>Introducing broker</span>
-          <span onClick={() => navigate("/partnership")}>Become a partner</span>
+          <h4>{t("nav.partnership")}</h4>
+          <span>{t("nav.introducingBroker")}</span>
+          <span onClick={() => navigate("/partnership")}>
+            {t("nav.becomeAPartner")}
+          </span>
         </div>
         <div className="footer_item footer_item4">
-          <h4>HELP</h4>
-          <span onClick={() => navigate("/faq")}>FAQ</span>
-          <span onClick={() => navigate("/contact")}>Contact</span>
+          <h4>{t("nav.help")}</h4>
+          <span onClick={() => navigate("/faq")}>{t("nav.faq")}</span>
+          <span onClick={() => navigate("/contact")}>{t("nav.contact")}</span>
         </div>
 
         <div className="footer_description footer_text">

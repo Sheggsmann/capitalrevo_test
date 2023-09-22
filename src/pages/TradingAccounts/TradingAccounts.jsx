@@ -15,95 +15,92 @@ import CustomerSupportLogo from "../../assets/face-agent.svg";
 import TechAnalysisLogo from "../../assets/chart-waterfall.svg";
 import ProfessionalLogo from "../../assets/professional.svg";
 import Lines from "../../assets/lines.svg";
+import { useTranslation } from "react-i18next";
 import "./TradingAccounts.scss";
 
-const AccountsDetails = [
-  {
-    title: "Basic",
-    details:
-      "Start your trading journey with our Basic Account. Access essential trading tools and market research to make informed decisions.",
-    logo: BeginnerLogo,
-    minDeposit: "$250",
-    spread: "Floating from 3 pips",
-    leverage: "Up to 1:100",
-    manager: "1 session",
-    // evaluation: "Monthly",
-    customerSupport: "24/7",
-    technicalAnalysis: "Yes",
-  },
-  {
-    title: "Advanced",
-    details:
-      "Take your trading skills to the next level with our Advanced Account. Enjoy advanced charting features and personalized support.",
-    logo: StandardLogo,
-    minDeposit: "$10,000",
-    spread: "Floating from 2.25 pips",
-    leverage: "Up to 1:200",
-    manager: "Senior",
-    evaluation: "Quaterly",
-    customerSupport: "24/7",
-    technicalAnalysis: "Yes",
-  },
-  {
-    title: "Gold",
-    details:
-      "Experience the benefits of our Gold Account. Unlock premium trading features, exclusive market insights, and priority customer service.",
-    logo: StandardLogo,
-    minDeposit: "$25,000",
-    spread: "Floating from 1.65 pips",
-    leverage: "Up to 1:300",
-    manager: "Senior",
-    evaluation: "Quaterly",
-    customerSupport: "24/7",
-    technicalAnalysis: "Yes",
-  },
-  {
-    title: "Platinum",
-    details:
-      "Basic account is ideal for traders looking for a traditional trading experience. The Standard account offers ultra-competitive spreads without any commissions.",
-    logo: ProfessionalLogo,
-    minDeposit: "$100,000",
-    spread: "Floating from 1.2 pips",
-    leverage: "Up to 1:400",
-    manager: "Senior",
-    evaluation: "Monthly",
-    customerSupport: "24/7",
-    technicalAnalysis: "Yes",
-  },
-  {
-    title: "Diamond",
-    details:
-      "Elevate your trading experience with our Platform Account. Enjoy enhanced trading conditions, dedicated account manage, and tailored investment strategies",
-    logo: ProfessionalLogo,
-    minDeposit: "$250,000",
-    spread: "Floating from 0.9 pips",
-    leverage: "Up to 1:500",
-    manager: "Senior",
-    evaluation: "Monthly",
-    customerSupport: "24/7",
-    technicalAnalysis: "Yes",
-  },
-  {
-    title: "VIP",
-    details:
-      "Join our most priviledged traders with our VIP Account. Enjoy unparalleled benefits, personalized services, and exclusive perks for your trading success",
-    logo: VIPLogo,
-    minDeposit: "$1,000,000",
-    spread: "Floating from 0.5 pips",
-    leverage: "Up to 1:1000",
-    manager: "Senior",
-    evaluation: "Daily",
-    customerSupport: "24/7",
-    technicalAnalysis: "Yes",
-  },
-];
-
 const TradingAccounts = () => {
+  const { t } = useTranslation();
+
+  const AccountsDetails = [
+    {
+      title: t("accounts.accounts.basic.title"),
+      details: t("accounts.accounts.basic.description"),
+      logo: BeginnerLogo,
+      minDeposit: "$250",
+      spread: "Floating from 3 pips",
+      leverage: "Up to 1:100",
+      manager: "1 session",
+      // evaluation: "Monthly",
+      customerSupport: "24/7",
+      technicalAnalysis: "Yes",
+    },
+    {
+      title: t("accounts.accounts.advanced.title"),
+      details: t("accounts.accounts.advanced.description"),
+      logo: StandardLogo,
+      minDeposit: "$10,000",
+      spread: "Floating from 2.25 pips",
+      leverage: "Up to 1:200",
+      manager: "Senior",
+      evaluation: "Quaterly",
+      customerSupport: "24/7",
+      technicalAnalysis: "Yes",
+    },
+    {
+      title: t("accounts.accounts.gold.title"),
+      details: t("accounts.accounts.gold.description"),
+      logo: StandardLogo,
+      minDeposit: "$25,000",
+      spread: "Floating from 1.65 pips",
+      leverage: "Up to 1:300",
+      manager: "Senior",
+      evaluation: "Quaterly",
+      customerSupport: "24/7",
+      technicalAnalysis: "Yes",
+    },
+    {
+      title: t("accounts.accounts.platinum.title"),
+      details: t("accounts.accounts.platinum.description"),
+      logo: ProfessionalLogo,
+      minDeposit: "$100,000",
+      spread: "Floating from 1.2 pips",
+      leverage: "Up to 1:400",
+      manager: "Senior",
+      evaluation: "Monthly",
+      customerSupport: "24/7",
+      technicalAnalysis: "Yes",
+    },
+    {
+      title: t("accounts.accounts.diamond.title"),
+      details: t("accounts.accounts.diamond.description"),
+      logo: ProfessionalLogo,
+      minDeposit: "$250,000",
+      spread: "Floating from 0.9 pips",
+      leverage: "Up to 1:500",
+      manager: "Senior",
+      evaluation: "Monthly",
+      customerSupport: "24/7",
+      technicalAnalysis: "Yes",
+    },
+    {
+      title: t("accounts.accounts.vip.title"),
+      details: t("accounts.accounts.vip.description"),
+      logo: VIPLogo,
+      minDeposit: "$1,000,000",
+      spread: "Floating from 0.5 pips",
+      leverage: "Up to 1:1000",
+      manager: "Senior",
+      evaluation: "Daily",
+      customerSupport: "24/7",
+      technicalAnalysis: "Yes",
+    },
+  ];
+
   return (
     <div className="tradingAccounts">
       <Hero
-        heading="Trading Accounts"
-        text="Capital Revo offers a wide range of account types, all designed to suit a diverse range of trading styles."
+        heading={t("accounts.title")}
+        text={t("accounts.titleDescription")}
         trading
       />
 
@@ -115,14 +112,14 @@ const TradingAccounts = () => {
 
         <div className="tradingAccounts_text">
           <h2>
-            Accounts For <span className="accent"> Every Trader </span>
+            {t("accounts.section1Title").substring(0, 12)}{" "}
+            <span className="accent">
+              {" "}
+              {t("accounts.section1Title").substring(12)}{" "}
+            </span>
           </h2>
 
-          <p className="body-large">
-            Unlock your trading potential with our diverse range of accounts.
-            Choose from Basic, Advanced, Gold, Platinum, Diamond, and VIP
-            options for personalized trading experiences and exclusive benefits.
-          </p>
+          <p className="body-large">{t("accounts.section1Description")}</p>
         </div>
 
         <div className="tradingAccounts_boxes">
@@ -135,11 +132,11 @@ const TradingAccounts = () => {
                 loading="lazy"
               />
               <div className="tradingAccounts_boxText">
-                <h6>Account type</h6>
+                <h6>{t("accounts.accountType")}</h6>
                 {d.title === "Advanced" && (
                   <span className="tradingAccounts_boxStandard">
                     <img src={CheckDecagramLogo} alt="check" />
-                    Recommended
+                    {t("accounts.recommended")}
                   </span>
                 )}
               </div>
@@ -151,7 +148,7 @@ const TradingAccounts = () => {
 
                   <div className="tradingAccounts_boxButtons">
                     <a href="https://client.kwakolmarkets.com/register">
-                      <Button>Open account</Button>
+                      <Button>{t("accounts.openAccount")}</Button>
                     </a>
                   </div>
                 </div>
@@ -160,7 +157,7 @@ const TradingAccounts = () => {
                   <div className="tradingAccounts_spec">
                     <div className="tradingAccounts_specName">
                       <img src={CurrencyLogo} alt="currency" />
-                      <span>Minimum deposit</span>
+                      <span>{t("accounts.minimumDeposit")}</span>
                     </div>
                     <div className="tradingAccounts_specDetails">
                       {d.minDeposit}
@@ -170,7 +167,7 @@ const TradingAccounts = () => {
                   <div className="tradingAccounts_spec">
                     <div className="tradingAccounts_specName">
                       <img src={SplitArrowLogo} alt="spread" />
-                      <span>Spread</span>
+                      <span>{t("accounts.spread")}</span>
                     </div>
                     <div className="tradingAccounts_specDetails">
                       {d.spread}
@@ -180,7 +177,7 @@ const TradingAccounts = () => {
                   <div className="tradingAccounts_spec">
                     <div className="tradingAccounts_specName">
                       <img src={ScaleBalanceLogo} alt="leverage" />
-                      <span>Leverage</span>
+                      <span>{t("accounts.leverage")}</span>
                     </div>
                     <div className="tradingAccounts_specDetails">
                       {d.leverage}
@@ -190,7 +187,7 @@ const TradingAccounts = () => {
                   <div className="tradingAccounts_spec">
                     <div className="tradingAccounts_specName">
                       <img src={AccountManagerLogo} alt="account manager" />
-                      <span>Account Manager</span>
+                      <span>{t("accounts.accountManager")}</span>
                     </div>
                     <div className="tradingAccounts_specDetails">
                       {d.manager}
@@ -201,7 +198,7 @@ const TradingAccounts = () => {
                     <div className="tradingAccounts_spec">
                       <div className="tradingAccounts_specName">
                         <img src={SpeedometerLogo} alt="portfolio evaluation" />
-                        <span>Portfolio evaluation</span>
+                        <span>{t("accounts.portfolioEvaluation")}</span>
                       </div>
                       <div className="tradingAccounts_specDetails">
                         {d.evaluation}
@@ -212,7 +209,7 @@ const TradingAccounts = () => {
                   <div className="tradingAccounts_spec">
                     <div className="tradingAccounts_specName">
                       <img src={CustomerSupportLogo} alt="customer support" />
-                      <span>Customer support</span>
+                      <span>{t("accounts.customerSupport")}</span>
                     </div>
                     <div className="tradingAccounts_specDetails">
                       {d.customerSupport}
@@ -222,7 +219,10 @@ const TradingAccounts = () => {
                   <div className="tradingAccounts_spec">
                     <div className="tradingAccounts_specName">
                       <img src={TechAnalysisLogo} alt="technical analysis" />
-                      <span>Technical analysis, market news</span>
+                      <span>
+                        {t("accounts.technicalAnalysis")},{" "}
+                        {t("accounts.marketNews")}
+                      </span>
                     </div>
                     <div className="tradingAccounts_specDetails">
                       {d.technicalAnalysis}
@@ -232,7 +232,7 @@ const TradingAccounts = () => {
 
                 <div className="tradingAccounts_boxButtons mobile">
                   <a href="https://client.kwakolmarkets.com/register">
-                    <Button>Open account</Button>
+                    <Button>{t("accounts.openAccount")}</Button>
                   </a>
                 </div>
               </div>

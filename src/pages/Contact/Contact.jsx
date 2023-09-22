@@ -4,37 +4,39 @@ import FaceAgentLogo from "../../assets/face-agent-1.svg";
 import EmailLogo from "../../assets/email-outline.svg";
 import LiveChatLogo from "../../assets/message-outline.svg";
 import ContactUs from "../../assets/contact_bg.png";
+import { useTranslation } from "react-i18next";
 import "./Contact.scss";
 
-const ContactBoxes = [
-  {
-    logo: EmailLogo,
-    heading: "Email us",
-    text: "Send us an email to",
-    subText: "support@capitalrevo.com",
-    type: "email",
-  },
-  {
-    logo: FaceAgentLogo,
-    heading: "Phone support",
-    text: "Call us at",
-    subText: "+44 7862 144547",
-    type: "tel",
-  },
-  {
-    logo: LiveChatLogo,
-    heading: "Live chat support",
-    text: "Chat with us, get an instant reply",
-  },
-];
-
 const Contact = () => {
+  const { t } = useTranslation();
+
+  const ContactBoxes = [
+    {
+      logo: EmailLogo,
+      heading: t("contactUs.card1.title"),
+      text: t("contactUs.card1.description"),
+      subText: "support@capitalrevo.com",
+      type: "email",
+    },
+    {
+      logo: FaceAgentLogo,
+      heading: t("contactUs.card2.title"),
+      text: t("contactUs.card2.description"),
+      subText: "+44 7862 144547",
+      type: "tel",
+    },
+    {
+      logo: LiveChatLogo,
+      heading: t("contactUs.card3.title"),
+      text: t("contactUs.card3.description"),
+    },
+  ];
   return (
     <div className="contact">
       <Hero
         bgImage={ContactUs}
-        heading="Contact us"
-        text="Need help? Our 5-star support team is ready to help you Monday through Sunday, 9:00 a.m. to 6:00 p.m. UTC+2"
+        heading={t("contactUs.title")}
+        text={t("contactUs.titleDescription")}
       />
 
       <div className="contact_main">
@@ -43,12 +45,11 @@ const Contact = () => {
 
         <div className="contact_content">
           <h2>
-            Your <span className="accent">24/7</span> customer service
+            {t("contactUs.section1Title").substring(0, 4)}{" "}
+            <span className="accent">24/7</span>{" "}
+            {t("contactUs.section1Title").substring(10)}
           </h2>
-          <p className="body-large">
-            Contact our customer service team who are available 24/7 to assist
-            you.
-          </p>
+          <p className="body-large">{t("contactUs.section1Description")}</p>
         </div>
 
         <div className="contactFeatures">

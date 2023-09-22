@@ -3,7 +3,8 @@
         "startTrading": "Start Trading",
         "recommended": "Recommended",
         "excellent": "Excellent",
-        "reviewsOn": "reviews on"
+        "reviewsOn": "reviews on",
+        "viewAccounts": "View Accounts"
     },
 
 
@@ -32,7 +33,9 @@
     
 
     "footer": {
-        "bottomText": "Contracts for Difference (“CFDs”) are leveraged products and carry a high level of risk to your capital as prices may move rapidly against you. Losses can exceed your deposits and you may be required to make further payments. These products may not be suitable for all clients therefore ensure you understand the risks and seek independent advice.Capital Revo Limited with its registered office at No 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group is a financial technology provider registered under the number 1713236 in BVI. Capital Revo products and services are not intended for Belgium, US and Canada residents."
+        "bottomText": "Contracts for Difference (“CFDs”) are leveraged products and carry a high level of risk to your capital as prices may move rapidly against you. Losses can exceed your deposits and you may be required to make further payments. These products may not be suitable for all clients therefore ensure you understand the risks and seek independent advice.Capital Revo Limited with its registered office at No 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group is a financial technology provider registered under the number 1713236 in BVI. Capital Revo products and services are not intended for Belgium, US and Canada residents.",
+        "privacy": "Privacy",
+        "cookiePolicy": "Cookie Policy"
     },
 
 
@@ -103,7 +106,7 @@
         },
 
         "section4Title": "Account For Every Trader",
-        "description": "We have accounts for both new and more active traders. Check which fits and you're set to go."
+        "section4Description": "We have accounts for both new and more active traders. Check which fits and you're set to go."
     },
 
 
@@ -148,7 +151,9 @@
         "customerSupport": "Customer Support",
         "technicalAnalysis": "Technical analysis, market news",
         "recommended": "Recommended",
-        "openAccount": "Open Account"
+        "openAccount": "Open Account",
+        "portfolioEvaluation": "Portfolio evaluation",
+        "marketNews": "market news"
     },
 
 
@@ -262,7 +267,9 @@
         "section5Title": "Start copytrading now",
         "section5Description": "Our copytrading platform lets our clients access the opportunities of trading without any advanced technical skills.",
 
-        "copyTradingFooter": "Capital Revo Copytrading is a system that facilitates the management of funds placed in multiple separate accounts to be managed by one or more account holder(s), the manager(s). Past performance is not indicative of future results and no representation is being made by the Company in relation to certain results that may be achieved by investing in a PAMM Manager or that clients will or are likely to achieve profits or incur losses comparable to those that may be shown. Prior to investing in a PAMM Manager you need to carefully consider any risks including but not limited to those involved in trading. The Company does not recommend the selection of any PAMM Manager. This responsibility lies solely with the investor. Therefore, Capital Revo Ltd. is under no circumstances, liable and/or responsible for any losses that arise out of the use of Copytrading. Even if all reasonable efforts have been made by the Company to ensure the proper statistical reporting of PAMM Managers Performance, the Company cannot guarantee the accuracy of performance and/or results of any PAMM Manager."
+        "copyTradingFooter": "Capital Revo Copytrading is a system that facilitates the management of funds placed in multiple separate accounts to be managed by one or more account holder(s), the manager(s). Past performance is not indicative of future results and no representation is being made by the Company in relation to certain results that may be achieved by investing in a PAMM Manager or that clients will or are likely to achieve profits or incur losses comparable to those that may be shown. Prior to investing in a PAMM Manager you need to carefully consider any risks including but not limited to those involved in trading. The Company does not recommend the selection of any PAMM Manager. This responsibility lies solely with the investor. Therefore, Capital Revo Ltd. is under no circumstances, liable and/or responsible for any losses that arise out of the use of Copytrading. Even if all reasonable efforts have been made by the Company to ensure the proper statistical reporting of PAMM Managers Performance, the Company cannot guarantee the accuracy of performance and/or results of any PAMM Manager.",
+        "trade": "Trade",
+        "copy": "Copy"
     },
 
 
@@ -290,7 +297,7 @@
     },
 
 
-    "economicCalendar": {
+    "calendar": {
         "title": "Economic Calendar",
         "description": "Keep an eye on key upcoming economic events, announcements, and news. Plus, set up filters in a few clicks, selecting for event importance and affected currencies.",
 

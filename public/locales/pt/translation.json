@@ -1,0 +1,351 @@
+{
+    "common": {
+        "startTrading": "comece a negociar",
+        "recommended": "Recomendado",
+        "excellent": "Excelente",
+        "reviewsOn": "Avaliações da"
+    },
+    "nav": {
+        "trading": "Comercialização",
+        "tools": "Ferramentas",
+        "partnership": "Parceria",
+        "help": "Ajuda",
+        "about": "Quem somos",
+        "accounts": "Contas",
+        "instruments": "Instrumentos",
+        "withdrawalsDeposits": "Saques e depósitos",
+        "copytrading": "CopyTrading",
+        "faq": "Perguntas frequentes",
+        "becomeAPartner": "Torna-te sócio",
+        "introducingBroker": "17. CORRETOR DE INTRODUÇÃO",
+        "knowledgeBase": "Base de Conhecimento",
+        "contact": "Contacto",
+        "webTrader": "Negociador Web",
+        "tradingCalendar": "Calendário de Negociação",
+        "forexCalculator": "Forex ForexCalculator",
+        "withdrawals": "Renúncias",
+        "login": "Iniciar sessão",
+        "signup": "Registar-se"
+    },
+    "footer": {
+        "bottomText": "Os Contratos por Diferença ('CFDs') são produtos alavancados e acarretam um elevado nível de risco para o seu capital, uma vez que os preços podem mover-se rapidamente contra si. As perdas podem exceder seus depósitos e você pode ser obrigado a fazer pagamentos adicionais. Esses produtos podem não ser adequados para todos os clientes, portanto, certifique-se de compreender os riscos e procurar aconselhamento independente.Capital Revo Limited com sede em No 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. O Grupo Capital Revo é um provedor de tecnologia financeira registrado sob o número 1713236 nas Ilhas Virgens Britânicas. Os produtos e serviços da Capital Revo não se destinam a residentes na Bélgica, nos EUA e no Canadá"
+    },
+    "tradeAccounts": {
+        "basic": {
+            "title": "Básico",
+            "description": "Para iniciantes que desejam negociar forex em spreads fixos com stop loss garantido",
+            "benefit1": "Alavancagem: Até 1:100",
+            "benefit2": "Espalhe a partir de 3 pips",
+            "benefit3": "Sessão gratuita para gestores de conta",
+            "benefit4": "Suporte Gratuito 24/7",
+            "benefit5": "Depósito mínimo de 250 euros."
+        },
+        "advanced": {
+            "title": "Avançado",
+            "description": "Para traders mais experientes que precisam de uma vantagem profissional",
+            "benefit1": "Alavancagem de até 1:200",
+            "benefit2": "Spread a partir de 2,25 pips",
+            "benefit3": "Gestor de conta sénior",
+            "benefit4": "Avaliação trimestral da carteira",
+            "benefit5": "Suporte Gratuito 24/7",
+            "benefit6": "Depósito mínimo de US$10"
+        },
+        "diamond": {
+            "title": "Diamante",
+            "description": "Para grandes players que exigem uma abordagem mais personalizada",
+            "benefit1": "Alavancagem de até 1:500",
+            "benefit2": "Spread a partir de 0,9 pips",
+            "benefit3": "Gestor de conta sénior",
+            "benefit4": "Avaliação diária da carteira",
+            "benefit5": "Suporte Gratuito 24/7",
+            "benefit6": "Depósito mínimo $ 250.000"
+        }
+    },
+    "home": {
+        "title": "Negocie forex e CFDs com a corretora número1 do mundo",
+        "titleDescription": "Negocie forex com spreads imbatíveis, proteção contra saldo negativo e suporte premiado 24 horas por dia, 7 dias por semana",
+        "section1": "Negocie mais de100 instrumentos com uma corretora premiada",
+        "section1Description": "Diversifique a sua carteira de investimentos negociando CFDs em mais do que apenas Forex.",
+        "forex": "Forex",
+        "energy": "renovável",
+        "stocks": "Estoques",
+        "Metals": "Metais",
+        "CryptoCurrency CFDs": "CFDs de Criptomoedas",
+        "section2Title": "Por que negociar com a Capital Revo",
+        "section2Description": "A Capital REVO, fundada em 2015, é uma fornecedora líder de trading online, oferecendo trading com Forex, Índices, Metais Preciosos e Energia.",
+        "easyWithdrawals": "Levantamentos fáceis",
+        "flexibleDeposits": "Opções de depósito flexíveis",
+        "customerSupport": "Atendimento ao cliente 24/7",
+        "accountManager": "Gestor de conta",
+        "section3Title": "Comece em menos de 5 minutos",
+        "card1": {
+            "title": "Registro",
+            "description": "Registe-se e ative a sua conta"
+        },
+        "card2": {
+            "title": "Depósito",
+            "description": "Faça um depósito por transferência bancária ou cartão de débito"
+        },
+        "card3": {
+            "title": "Comércio",
+            "description": "Obtenha aprovação e comece a negociar"
+        },
+        "section4Title": "Conta para cada trader",
+        "description": "Temos contas para traders novos e mais ativos. Verifique qual se encaixa e está pronto para começar."
+    },
+    "accounts": {
+        "title": "Contas de Negociação",
+        "titleDescription": "A Capital Revo oferece uma ampla gama de tipos de contas, todas projetadas para se adequar a uma gama diversificada de estilos de negociação.",
+        "section1Title": "Contas para cada trader",
+        "section1Description": "Desbloqueie o seu potencial de negociação com a nossa gama diversificada de contas. Escolha entre as opções Básica, Avançada, Ouro, Platina, Diamante e VIP para experiências de negociação personalizadas e benefícios exclusivos.",
+        "accountType": "Tipo de Conta",
+        "accounts": {
+            "basic": {
+                "title": "Básico",
+                "description": "Comece a sua jornada de negociação com a nossa Conta Básica. Acesse ferramentas essenciais de negociação e pesquisa de mercado para tomar decisões informadas."
+            },
+            "advanced": {
+                "title": "Avançado",
+                "description": "Leve suas habilidades de negociação para o próximo nível com a nossa Conta Avançada. Desfrute de recursos avançados de gráficos e suporte personalizado."
+            },
+            "gold": {
+                "title": "Ouro",
+                "description": "Experimente os benefícios da nossa Conta Gold. Desbloqueie recursos de negociação premium, insights de mercado exclusivos e atendimento prioritário ao cliente."
+            },
+            "platinum": {
+                "title": "Platinum",
+                "description": "A conta básica é ideal para traders que procuram uma experiência de negociação tradicional. A conta Standard oferece spreads ultracompetitivos sem comissões."
+            },
+            "diamond": {
+                "title": "Diamante",
+                "description": "Melhore a sua experiência de negociação com a nossa Conta Platinum. Desfrute de condições de negociação aprimoradas, gerente de contas dedicado e estratégias de investimento personalizadas."
+            },
+            "vip": {
+                "title": "VIP",
+                "description": "Junte-se aos nossos traders mais privilegiados com a nossa Conta VIP. Desfrute de benefícios incomparáveis, serviços personalizados e vantagens exclusivas para o seu sucesso comercial."
+            }
+        },
+        "minimumDeposit": "Depósito mínimo",
+        "spread": "Disseminação",
+        "leverage": "Alavancagem",
+        "accountManager": "Gestor de conta",
+        "customerSupport": "Assistência ao cliente",
+        "technicalAnalysis": "Análise técnica, notícias do mercado",
+        "recommended": "Recomendado",
+        "openAccount": "Abertura de Conta"
+    },
+    "about": {
+        "title": "Fornecedor Líder Global de Negociação Online",
+        "titleDescription": "A Capital Revo é uma fornecedora líder global de trading online, oferecendo trading com forex e CFDs, índices, metais preciosos, energia e criptomoedas.",
+        "section1Title": "Capital REVO - Uma Corretora de Confiança",
+        "section1Description": "Nossa missão é fornecer aos nossos clientes uma experiência de negociação abrangente, educacional, intuitiva e empoderadora",
+        "card1": {
+            "title": "Licenças e regulamentação",
+            "description": "A CapitalRevo opera sob a KWAKOL MARKETS PTY Limited, uma empresa financeira autorizada, pela Australia Security and Investment Commission (ASIC) com o A.C.N 656 656 665. A Kwakol Markets é uma empresa de serviços financeiros autorizada pela FINTRAC Money Services Canada; o número de registro é M22600427."
+        },
+        "card2": {
+            "title": "Confiabilidade, segurança e velocidade",
+            "description": "Oferecemos Contratos por Diferença (CFDs) em 6 classes de ativos: Forex, Ações, Índices Spot, Futuros, Metais Spot e Energia Spot. Fornecemos aos nossos clientes acesso a liquidez de primeira linha e execução avançada de negociações sem intervenção da mesa de negociação."
+        },
+        "section2Title": "Investimento Certificado",
+        "section2Description": "Os depósitos em contas de negociação podem ser feitos na maioria das moedas nacionais. Além disso, se você quiser proteger seu capital da flutuação da moeda, poderá ter várias contas de negociação em moedas diferentes ao mesmo tempo.",
+        "section3Title": "Por que negociar com a REVO de capital",
+        "section3Description": "Nossa forte dedicação ao software de última geração e à garantia de qualidade significa que nossos clientes recebem a melhor e mais transparente experiência de negociação.",
+        "benefit1": {
+            "title": "Presença Global",
+            "description": "Negocie  em mercados globais com a nossa extensa rede e experiência internacional."
+        },
+        "benefit2": {
+            "title": "Tecnologia premiada",
+            "description": "Experimente a excelência em trading com a nossa plataforma de ponta e ferramentas inovadoras."
+        },
+        "benefit3": {
+            "title": "Atendimento aos clientes 24 horas por dia, 7 dias por semana",
+            "description": "Obtenha apoio permanente da nossa equipa dedicada, garantindo assistência imediata sempre que precisar."
+        },
+        "benefit4": {
+            "title": "Opções de depósito flexíveis",
+            "description": "Desfrute de métodos de financiamento adaptados às suas preferências, proporcionando flexibilidade para as suas necessidades de negociação."
+        },
+        "benefit5": {
+            "title": "Educação em Negociação",
+            "description": "Expanda seus conhecimentos e habilidades com os nossos recursos educacionais abrangentes, para tomar decisões informadas."
+        },
+        "benefit6": {
+            "title": "Análise técnica",
+            "description": "Fique à frente do jogo com insights e análises de mercado aprofundados, ajudando você a identificar oportunidades de negociação lucrativas."
+        }
+    },
+    "deposits": {
+        "title": "Depósitos e levantamentos",
+        "titleDescription": "Escolha entre opções de pagamento flexíveis em moedas locais, incluindo os sistemas de pagamento, carteiras eletrônicas e carteiras de criptomoedas mais populares do mundo.",
+        "section1Title": "Saques instantâneos, depósitos fáceis",
+        "section1Description": "Nossos depósitos e saques são realizados em segundos, sem processamento manual, inclusive nos finais de semana.",
+        "card1": {
+            "title": "Levantar/depositar com um cartão bancário",
+            "description": "O valor total que você deposita na sua conta CapitalRevo com seu cartão de crédito ou débito é o valor total que temos permissão legal para devolver a esse cartão. Os lucros podem ser retirados usando Bitcoin ou transferência eletrônica/bancária."
+        },
+        "card2": {
+            "title": "Levantar/depositar na sua conta bancária",
+            "description": "A transferência bancária é o método de transferência de dinheiro mais difundido no mundo. Transfira dinheiro da sua carteira CapitalRevo para a sua conta bancária. Cobramos US $ 0 por depósitos de taxas de até US $ 5.000 e uma taxa de US $ 25 por saques de US $ 5.000 ou mais."
+        },
+        "card3": {
+            "title": "Levantar/depositar com criptomoedas",
+            "description": "A CapitalRevo pode enviar-lhe os seus lucros através da Crypto. Tudo o que precisa de fazer é criar um pedido de levantamento na sua conta e a nossa equipa processará o seu pedido no mesmo dia. O progresso desta transação pode ser rastreado em blockchain.info."
+        },
+        "card4": {
+            "title": "Saques instantâneos e seguros",
+            "description": "As transações são realizadas em poucos segundos sem processamento manual. A tecnologia 3-D Secure é uma camada de segurança adicional para pagamentos online e também foi adotada pela VISA e Mastercard."
+        },
+        "section2Title": "Pronto para negociar?",
+        "section2Description": "Aceda aos mercados mais populares através de uma única conta. Descubra CFDs sobre ações, ETFs, criptomoedas e muito mais. Comece a negociar em menos de 5 minutos!"
+    },
+    "copyTrading": {
+        "title": "Plataforma de Copytrading",
+        "titleDescription": "Siga traders bem-sucedidos, replique automaticamente suas estratégias e maximize seu potencial de negociação.",
+        "section1Title": "Por que copiar os melhores traders?",
+        "section1Description": "O copytrading pode ser benéfico, pois permite replicar as negociações de traders bem-sucedidos, aumentando potencialmente suas chances de lucratividade.",
+        "card1": {
+            "title": "Beneficie-se do trabalho de especialistas",
+            "description": "Ganhe com estratégias de negociação comprovadas de profissionais experientes."
+        },
+        "card2": {
+            "title": "Poupar tempo",
+            "description": "Ignore a pesquisa e a análise copiando automaticamente as negociações de traders bem-sucedidos."
+        },
+        "card3": {
+            "title": "Menos risco.",
+            "description": "Mitigue perdas potenciais diversificando o seu portfólio através do copytrading."
+        },
+        "section2Title": "Principais traders por ROI",
+        "section2Description": "Traders que obtiveram o maior ROI nos últimos 7 dias.",
+        "section3Title": "Os melhores traders intra-dia",
+        "section3Description": "Traders intra-dia com mais de 20% de ROI e uma taxa de ganhos de mais de 20% nos últimos 7 dias",
+        "section4Title": "Menor drawdown",
+        "section4Description": "Traders com mais de 10% de ROI e um drawdown máximo de menos de 20% nos últimos 30 dias.",
+        "section5Title": "Iniciar copytrading agora",
+        "section5Description": "Nossa plataforma de copytrading permite que nossos clientes acessem as oportunidades de negociação sem nenhuma habilidade técnica avançada.",
+        "copyTradingFooter": "Capital Revo Copytrading é um sistema que facilita a gestão de fundos colocados em múltiplas contas separadas a serem administradas por um ou mais titulares de contas, o(s) gestor(es). O desempenho passado não é indicativo de resultados futuros e nenhuma representação está sendo feito pela Empresa em relação a certos resultados que podem ser alcançados investindo em um Gerente PAMM ou que os clientes irão ou provavelmente obterão lucros ou incorrerão em perdas comparáveis ​​​​aquelas que podem ser mostradas. Antes de investir em um Gerente PAMM, você precisa considere cuidadosamente quaisquer riscos, incluindo, mas não se limitando, àqueles envolvidos na negociação. A Empresa não recomenda a seleção de qualquer Gerente PAMM. Esta responsabilidade é exclusiva do investidor. Portanto, a Capital Revo Ltd. não é, sob nenhuma circunstância, responsável e/ou responsável por quaisquer perdas que surjam do uso de Copytrading. Mesmo que todos os esforços razoáveis ​​tenham sido feitos pela Empresa para garantir o relatório estatístico adequado do Desempenho dos Gerentes PAMM, a Empresa não pode garantir a precisão do desempenho e/ou resultados de qualquer Gerente PAMM."
+    },
+    "tradingCalculator": {
+        "title": "Calculadora de Negociação Forex",
+        "titleDescription": "A calculadora de negociação Forex mostra quanto dinheiro será imediatamente envolvido na ordem com os parâmetros escolhidos.",
+        "calculatorText": "Defina o símbolo e ajuste a alavancagem e o volume para calcular a margem necessária, o valor do pip e as taxas com as quais você se sente confortável.",
+        "section1Title": "Comece a negociar em menos de 5 minutos",
+        "card1": {
+            "title": "Registro",
+            "description": "Registe-se e ative a sua conta"
+        },
+        "card2": {
+            "title": "Depósito",
+            "description": "Faça um depósito por transferência bancária, transferência bancária ou cartão de débito"
+        },
+        "card3": {
+            "title": "Comércio",
+            "description": "Obtenha aprovação e comece a negociar"
+        },
+        "calculate": "Calcular"
+    },
+    "calendar": {
+        "title": "Calendário Económico",
+        "description": "Fique atento aos principais eventos económicos futuros, anúncios e notícias. Além disso, configure filtros com apenas alguns cliques, selecionando a importância do evento e as moedas afetadas.",
+        "section1Title": "Mantenha-se atualizado nos mercados financeiros",
+        "section1Description": "Mantenha-se informado e tome decisões estratégicas de negociação com o nosso abrangente Calendário Económico. Acompanhe os principais eventos, indicadores e impacto no mercado.",
+        "section2Title": "Sobre o Calendário Económico",
+        "section2Description": "Um calendário económico é uma ferramenta que fornece um calendário dos próximos eventos económicos, anúncios e indicadores que afetam os mercados financeiros.",
+        "card1": {
+            "title": "&lt;h4&gt;O que é um calendário económico?",
+            "description": "O Calendário Econômico é uma ferramenta que ajuda os traders a monitorar e analisar eventos de movimento do mercado e prever novos movimentos de preços. Ele destaca as próximas notícias nacionais e internacionais em todo o mundo em ordem cronológica por data. Esses grandes eventos podem ter um alto impacto nos mercados financeiros e geralmente são anunciados ou divulgados em relatórios."
+        },
+        "card2": {
+            "title": "Como usar o Calendário Económico?",
+            "description": "Pode escolher várias moedas e ações na lista suspensa. Por predefinição, todos serão selecionados. Depois de fazer a sua seleção, pode ver os próximos eventos na tabela abaixo do menu suspenso. Deve-se notar que o número de instrumentos de negociação no calendário muda dinamicamente e depende do número de eventos e notícias futuros."
+        },
+        "card3": {
+            "title": "Porque deve usar o Calendário Económico?",
+            "description": "O Calendário Económico é indispensável se quiser acompanhar rapidamente as próximas notícias, relatórios e anúncios. Os eventos podem afetar altamente a volatilidade dos pares de moedas forex, ações e outros mercados. Assim, os traders costumam usar o calendário para planejar suas negociações e manter-se informados sobre os padrões gráficos e indicadores que podem ser afetados pelos eventos."
+        },
+        "card4": {
+            "title": "Como ler o Calendário Económico?",
+            "description": "Depois de selecionar os instrumentos desejados, verá uma lista de eventos exibida no calendário.  Existem duas figuras-chave na tabela, que são os números 'Real' e 'Previsão'. Uma diferença significativa entre os dois números indica que pode haver alguma volatilidade no gráfico dos instrumentos de negociação relacionados. Geralmente, a volatilidade aumenta antes do evento e diminui após o evento."
+        },
+        "section3Title": "Contas para cada trader",
+        "section3Description": "Temos contas para traders novos e mais ativos. Verifique qual se encaixa e está pronto para começar."
+    },
+    "faq": {
+        "title": "Perguntas Frequentes",
+        "description": "Descubra respostas para perguntas comuns e encontre soluções úteis. Simplifique a sua jornada de negociação com a nossa orientação especializada.",
+        "paymentSystems": {
+            "title": "Sistemas de Pagamento",
+            "question1": "Qual é o valor mínimo para negociar?",
+            "answer1": "Você pode começar a negociar na Kwakol com um depósito de US $ 250 e desfrutar de uma execução ultrarrápida, spreads apertados e comissões baixas.",
+            "question2": "Como faço um saque se depositar fundos com vários métodos de pagamento?",
+            "question3": "Como posso ter a certeza de que o meu pagamento é seguro?",
+            "question4": "Posso usar o meu cartão para depositar?"
+        },
+        "trading": {
+            "title": "Comercialização",
+            "question1": "O Capital Revo é regulamentado?",
+            "question2": "Como faço para fazer uma ordem com limite?",
+            "question3": "Como posso verificar o meu histórico de negociação?",
+            "question4": "Posso negociar durante o fim de semana?"
+        },
+        "general": {
+            "title": "Disposições gerais",
+            "question1": "Não consigo cadastrar na plataforma CapitalRevo.",
+            "question2": "Não consigo configurar uma palavra-passe durante o registo",
+            "question3": "Porque é que o meu depósito/levantamento foi rejeitado?",
+            "question4": "Como limpar o cache e os cookies do seu navegador?"
+        }
+    },
+    "partnership": {
+        "title": "Parceria",
+        "titleDescription": "Desbloqueie oportunidades lucrativas com o programa de parceria do nosso site de negociação online. Ganhe comissões generosas e benefícios exclusivos.",
+        "section1Title": "O que ganha como parceiro",
+        "section1Description": "Um programa de parceria de negociação online oferece aos indivíduos a oportunidade de ganhar comissões ao indicar clientes para uma plataforma de negociação.",
+        "card1": {
+            "title": "Estrutura de comissões de cinco níveis",
+            "description": "Ganhe recompensas em várias modalidades por indicar outras pessoas para a plataforma."
+        },
+        "card2": {
+            "title": "Gestor de afiliados dedicado",
+            "description": "Obtenha apoio e orientação personalizados de um gestor de afiliados dedicado."
+        },
+        "card3": {
+            "title": "Levantamentos instantâneos.",
+            "description": "Desfrute de um levantamento rápido e sem complicações dos seus rendimentos sempre que precisar."
+        },
+        "card4": {
+            "title": "Comissão eterna",
+            "description": "Continue ganhando comissões sobre as atividades dos seus traders indicados indefinidamente."
+        },
+        "card5": {
+            "title": "Pagamentos de comissões semanais",
+            "description": "Receba os seus ganhos de comissão semanalmente para um fluxo de caixa consistente."
+        },
+        "card6": {
+            "title": "Motivar o modelo de partilha de receitas",
+            "description": "Modelo de partilha de receitas gratificante que o mantém motivado para expandir o seu negócio de afiliados."
+        },
+        "section2Title": "Aumente a sua receita",
+        "section2Description": "Comece a promover a marca Capital Revo e ganhe comissão cada vez que novos clientes se inscreverem na nossa plataforma com o nosso programa de parceria multinível. Registe-se hoje para aumentar a sua receita."
+    },
+    "contactUs": {
+        "title": "Contacte-nos",
+        "titleDescription": "Precisa de ajuda? A nossa equipa de apoio de 5 estrelas está pronta para o ajudar de segunda a domingo, das 9:00 às 18:00 UTC+2",
+        "section1Title": "Atendimento aos clientes 24 horas por dia, 7 dias por semana",
+        "section1Description": "Contacte a nossa equipa de apoio ao cliente, que está disponível 24 horas por dia, 7 dias por semana,",
+        "card1": {
+            "title": "Envie-nos um e-mail",
+            "description": "Envie-nos um email"
+        },
+        "card2": {
+            "title": "Suporte por telefone",
+            "description": "Ligue para"
+        },
+        "card3": {
+            "title": "Assistência por chat ao vivo",
+            "description": "Fale connosco, obtenha uma resposta imediata"
+        }
+    }
+}

@@ -74,11 +74,21 @@ const WebLink = ({ link, text }) => {
   );
 };
 
+const flags = {
+  en: "https://flagcdn.com/w160/gb.png",
+  it: "https://flagcdn.com/w160/it.png",
+  es: "https://flagcdn.com/w160/es.png",
+  ae: "https://flagcdn.com/w160/ae.png",
+  pt: "https://flagcdn.com/w160/pt.png",
+  in: "https://flagcdn.com/w160/in.png",
+};
+
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentOpenMenu, setCurrentOpenMenu] = useState(null);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [flagUrl, setFlagUrl] = useState(flags.en);
   const location = window.location.pathname;
 
   const navigate = useNavigate();
@@ -102,6 +112,7 @@ const Navbar = () => {
   };
 
   const handleLangMenuClick = (lang) => {
+    setFlagUrl(flags[lang]);
     i18n.changeLanguage(lang);
     setLangMenuOpen(false);
   };
@@ -197,7 +208,7 @@ const Navbar = () => {
 
           <div className="navbar_language">
             <img
-              src={EnglishFlag}
+              src={flagUrl}
               alt="flag"
               className="navbar_language"
               onClick={() => setLangMenuOpen(true)}
@@ -219,25 +230,25 @@ const Navbar = () => {
                 </div>
                 <div
                   className="language"
-                  onClick={() => handleLangMenuClick("it")}
+                  onClick={() => handleLangMenuClick("es")}
                 >
                   Spanish
                 </div>
                 <div
                   className="language"
-                  onClick={() => handleLangMenuClick("it")}
+                  onClick={() => handleLangMenuClick("ae")}
                 >
                   Arab
                 </div>
                 <div
                   className="language"
-                  onClick={() => handleLangMenuClick("it")}
+                  onClick={() => handleLangMenuClick("pt")}
                 >
                   Portuguese
                 </div>
                 <div
                   className="language"
-                  onClick={() => handleLangMenuClick("it")}
+                  onClick={() => handleLangMenuClick("in")}
                 >
                   Indian
                 </div>

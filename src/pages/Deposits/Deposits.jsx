@@ -12,119 +12,17 @@ import SectionBox2 from "../../components/SectionBox2";
 import DepositBg from "../../assets/deposit_bg.png";
 import DepositBag from "../../assets/deposits_bag.png";
 import Lines from "../../assets/lines.svg";
-// import CheckdecagramIcon from "../../assets/check-decagram.svg";
-// import CurrencyUSDLogo from "../../assets/currency-usd.svg";
-// import ArrowSplitLogo from "../../assets/arrow-split-vertical.svg";
-// import ScaleBalanceLogo from "../../assets/scale-balance.svg";
-
-// const DepositMethods = [
-//   {
-//     title: "PayPal",
-//     minDeposit: "$50",
-//     minWithdraw: "$0.01",
-//     processTime: "3-7 working days",
-//   },
-//   {
-//     title: "Bitcoin",
-//     minDeposit: "$50",
-//     minWithdraw: "$0.01",
-//     processTime: "3-7 working days",
-//   },
-//   {
-//     title: "Razorpay",
-//     minDeposit: "$50",
-//     minWithdraw: "$0.01",
-//     processTime: "3-7 working days",
-//   },
-//   {
-//     title: "Rupeepay",
-//     minDeposit: "$50",
-//     minWithdraw: "$0.01",
-//     processTime: "3-7 working days",
-//   },
-//   {
-//     title: "SwiffyEft",
-//     minDeposit: "$50",
-//     minWithdraw: "$0.01",
-//     processTime: "3-7 working days",
-//   },
-//   {
-//     title: "PaymentRush",
-//     minDeposit: "$50",
-//     minWithdraw: "$0.01",
-//     processTime: "3-7 working days",
-//   },
-//   {
-//     title: "Help2Pay",
-//     minDeposit: "$50",
-//     minWithdraw: "$0.01",
-//     processTime: "3-7 working days",
-//   },
-//   {
-//     title: "USD Coin (USDC)",
-//     minDeposit: "$50",
-//     minWithdraw: "$0.01",
-//     processTime: "3-7 working days",
-//   },
-// ];
-
-// const DepositMethod = ({ d }) => {
-//   const { title, minDeposit, minWithdraw, processTime } = d;
-//   return (
-//     <div
-//       className={`deposits_method  ${
-//         title === "PayPal" ? "deposits_methodSpecStandard" : ""
-//       }`}
-//     >
-//       <div className="deposits_methodText">
-//         <div className="deposits_methodSubHeading">
-//           Payment system
-//           {title === "PayPal" && (
-//             <span className="deposits_methodRecommended">
-//               <img src={CheckdecagramIcon} alt="check" />
-//               Recommended
-//             </span>
-//           )}
-//         </div>
-//         <h3>{title}</h3>
-//       </div>
-
-//       <div className="deposits_methodSpecs">
-//         <div className="deposits_methodSpec ">
-//           <div className="deposits_methodSpecName">
-//             <img src={CurrencyUSDLogo} alt="currency" />
-//             Minimum deposit
-//           </div>
-//           <div className="deposits_methodSpecValue">{minDeposit}</div>
-//         </div>
-
-//         <div className="deposits_methodSpec">
-//           <div className="deposits_methodSpecName">
-//             <img src={ArrowSplitLogo} alt="currency" />
-//             Minimum withdrawal
-//           </div>
-//           <div className="deposits_methodSpecValue">{minWithdraw}</div>
-//         </div>
-
-//         <div className="deposits_methodSpec">
-//           <div className="deposits_methodSpecName">
-//             <img src={ScaleBalanceLogo} alt="currency" />
-//             Processing time
-//           </div>
-//           <div className="deposits_methodSpecValue">{processTime}</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+import { useTranslation } from "react-i18next";
 
 const Deposits = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="deposits">
       <Hero
         bgImage={DepositBg}
-        heading="Deposits and Withdrawals"
-        text="Choose from flexible payment options in local currencies, including the world’s most popular payment systems, e-wallets, and crypto wallets."
+        heading={t("deposits.title")}
+        text={t("deposits.titleDescription")}
       />
       <div className="deposits_main">
         <div className="deposits_bg1" />
@@ -134,37 +32,41 @@ const Deposits = () => {
 
         <div className="deposits_textContainer">
           <h2>
-            <span className="accent"> Instant </span> Withdrawals,
+            <span className="accent">
+              {" "}
+              {t("deposits.section1Title").substring(0, 8)}{" "}
+            </span>{" "}
+            {t("deposits.section1Title").substring(8, 19)},
             <br />
-            <span className="accent">Easy</span> Deposits
+            <span className="accent">
+              {t("deposits.section1Title").substring(20, 25)}
+            </span>{" "}
+            {t("deposits.section1Title").substring(25)}
           </h2>
-          <p className="body-large">
-            Our deposits and withdrawals are carried out in seconds with no
-            manual processing, including on weekends.
-          </p>
+          <p className="body-large">{t("deposits.section1Description")}</p>
         </div>
         <div className="deposits_boxes">
           <ContentBox
             logo={CardLogo}
-            heading="Withdraw/deposit to your bank card"
-            text="The total amount you fund your Kwakol Markets account with your Credit or Debit card is the total amount we are legally allowed return to that card. Profits can be withdrawn using either Bitcoin or wire/bank transfer."
+            heading={t("deposits.card1.title")}
+            text={t("deposits.card1.description")}
           />
           <ContentBox
             logo={WithdrawalsLogo}
-            heading="Withdraw/deposit to your bank account"
-            text="Wire Transfer is the most wide-spread money transfer method in the world. Transfer money from your CapitalRevo Wallet to your bank account. We charge $0 for fees deposits of up to $5,000, and $25 fee on withdrawals of $5,000 and above."
+            heading={t("deposits.card2.title")}
+            text={t("deposits.card2.description")}
             transparent
           />
           <ContentBox
             logo={WalletLogo}
-            heading="Withdraw/deposit to with crypto"
-            text="Capital Revo can send your profits to you via Crypto. All you need to do is to create a withdraw request on your account and our team will process your request same day. The progress of this transaction can be tracked on blockchain.info"
+            heading={t("deposits.card3.title")}
+            text={t("deposits.card3.description")}
             transparent
           />
           <ContentBox
             logo={SafetyLogo}
-            heading="Instant and secure withdrawals"
-            text="Transactions are carried out within a few seconds without manual processing. 3-D Secure technology is an additional security layer for online payments and has also been adopted by VISA and Mastercard."
+            heading={t("deposits.card4.title")}
+            text={t("deposits.card4.description")}
           />
         </div>
         {/*       
@@ -227,7 +129,7 @@ const Deposits = () => {
          */}
         <Rating
           color="body"
-          heading="Excellent"
+          heading={t("common.excellent")}
           count="724"
           source="TrustPilot"
         />
@@ -235,9 +137,8 @@ const Deposits = () => {
           bgImage={DepositBag}
           btn
           btnText="Make a deposit"
-          heading="Ready to trade?"
-          text="Access the most popular markets through a single account.
-        Discover CFD on Stocks, ETFs, Crypto and more. Start trading in less than 5 minutes!"
+          heading={t("deposits.section2Title")}
+          text={t("deposits.section2Description")}
         />
       </div>
       <Footer dark />

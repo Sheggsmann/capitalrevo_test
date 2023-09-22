@@ -157,14 +157,18 @@
     margin-top: 5px;
 
     img {
-      height: 2rem;
+      // height: 2rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
       cursor: pointer;
+      background-size: cover;
     }
 
     .languages_container {
       position: absolute;
       top: 3em;
-      left: -1em;
+      left: -5rem;
       min-width: 90px;
       padding: 10px;
       background-color: $White;

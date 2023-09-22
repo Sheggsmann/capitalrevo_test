@@ -6,59 +6,55 @@ import StandardLogo from "../../assets/standard.svg";
 import ProfessionalLogo from "../../assets/professional.svg";
 import { useTranslation } from "react-i18next";
 
-const AccountsData = [
-  {
-    title: "Basic",
-    image: BeginnerLogo,
-    tagLine:
-      "For beginners who want to trade Forex at fixed spreads with guaranteed stop loss",
-    benefits: [
-      "Leverage up to 1:100",
-      "Spread from 3 pips",
-      "Free account manager session",
-      "Customer support 24/7",
-      "Minimum Deposit $250",
-    ],
-  },
-  {
-    title: "Advanced",
-    image: StandardLogo,
-    tagLine: "For more experienced traders who need a professional advantage",
-    benefits: [
-      "Leverage up to 1:200",
-      "Spread from 2.25 pips",
-      "Senior account manager",
-      "Quaterly portfolio evaluation",
-      "Customer support 24/7",
-      "Minimum deposit $10,000",
-    ],
-  },
-  {
-    title: "Diamond",
-    image: ProfessionalLogo,
-    tagLine: "For big players who require a more personalized approach",
-    benefits: [
-      "Leverage up to 1:500",
-      "Spread from 0.9 pips",
-      "Senior account manager",
-      "Daily portfolio evaluation",
-      "Customer support 24/7",
-      "Minimum Deposit $250,000",
-    ],
-  },
-];
-
 const Accounts = () => {
   const { t } = useTranslation();
+
+  const AccountsData = [
+    {
+      title: t("tradeAccounts.basic.title"),
+      image: BeginnerLogo,
+      tagLine: t("tradeAccounts.basic.description"),
+      benefits: [
+        t("tradeAccounts.basic.benefit1"),
+        t("tradeAccounts.basic.benefit2"),
+        t("tradeAccounts.basic.benefit3"),
+        t("tradeAccounts.basic.benefit4"),
+        t("tradeAccounts.basic.benefit5"),
+      ],
+    },
+    {
+      title: t("tradeAccounts.advanced.title"),
+      image: StandardLogo,
+      tagLine: t("tradeAccounts.advanced.description"),
+      benefits: [
+        t("tradeAccounts.advanced.benefit1"),
+        t("tradeAccounts.advanced.benefit2"),
+        t("tradeAccounts.advanced.benefit3"),
+        t("tradeAccouts.advanced.benefit4"),
+        t("tradeAccounts.advanced.benefit5"),
+        t("tradeAccounts.advanced.benefit6"),
+      ],
+    },
+    {
+      title: t("tradeAccounts.diamond.title"),
+      image: ProfessionalLogo,
+      tagLine: t("tradeAccounts.diamond.description"),
+      benefits: [
+        t("tradeAccounts.diamond.benefit1"),
+        t("tradeAccounts.diamond.benefit2"),
+        t("tradeAccounts.diamond.benefit3"),
+        t("tradeAccounts.diamond.benefit4"),
+        t("tradeAccounts.diamond.benefit5"),
+        t("tradeAccounts.diamond.benefit6"),
+      ],
+    },
+  ];
 
   return (
     <div className="accounts">
       <div className="accounts_content">
-        <h2 className="text-primary">Accounts For Every Trader</h2>
-        <p>
-          We have accounts for both new and more active traders. Check which
-          fits and you're set to go.
-        </p>
+        <h2 className="text-primary">{t("calendar.section3Title")}</h2>
+        <p>{t("calendar.section3Description")}</p>
       </div>
 
       <div className="accounts_main">
@@ -88,7 +84,7 @@ const Accounts = () => {
       <div className="accounts_btn">
         <a href="/accounts">
           <Button outline color="body">
-            View Accounts
+            {t("common.viewAccounts")}
           </Button>
         </a>
       </div>

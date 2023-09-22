@@ -13,6 +13,7 @@ import DepositLogo from "../../assets/deposit.svg";
 import StepBox from "../../components/StepBox";
 import CalculatorBg from "../../assets/calculator_bg.png";
 import Lines from "../../assets/lines.svg";
+import { useTranslation } from "react-i18next";
 
 const CurrencyData = [
   {
@@ -45,34 +46,37 @@ const CurrencyData = [
   },
 ];
 
-const StartSteps = [
-  {
-    image: JoinLogo,
-    name: "Register",
-    details: "Register and and activate your account",
-  },
-  {
-    image: Step2Logo,
-    name: "Deposit",
-    details: "Make a deposit via bank transfer, wire or debit card",
-  },
-  {
-    image: DepositLogo,
-    name: "Trade",
-    details: "Get approved and start trading",
-  },
-];
-
 const Calculator = () => {
+  const { t } = useTranslation();
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
+  const StartSteps = [
+    {
+      image: JoinLogo,
+      name: t("tradingCalculator.card1.title"),
+      details: t("tradingCalculator.card1.description"),
+    },
+    {
+      image: Step2Logo,
+      name: t("tradingCalculator.card2.title"),
+      details: t("tradingCalculator.card2.description"),
+    },
+    {
+      image: DepositLogo,
+      name: t("tradingCalculator.card3.title"),
+      details: t("tradingCalculator.card3.description"),
+    },
+  ];
+
   return (
     <div className="calculator">
       <Hero
         bgImage={CalculatorBg}
-        heading="Forex Trading Calculator"
-        text="The tool shows how much money will be immediately engaged in the order with your chosen parameters."
+        heading={t("tradingCalculator.title")}
+        text={t("tradingCalculator.titleDescription")}
       />
       <div className="calculator_main">
         <div className="calculator_bg1" />
@@ -89,10 +93,7 @@ const Calculator = () => {
           ))}
         </div>
 
-        <p className="body-large">
-          Set the symbol and adjust the leverage and volume to calculate the
-          required margin, pip value, and fees that you are comfortable with.
-        </p>
+        <p className="body-large">{t("tradingCalculator.calculatorText")}</p>
         <form onSubmit={handleSubmit} className="calculator_form">
           <div>
             <Dropdown
@@ -102,17 +103,17 @@ const Calculator = () => {
             <Dropdown label="Leverage" options={["1:20", "1:30", "1:40"]} />
             <ValueInput label="Required margin" />
             <TextInput label="Account currency" color="grey" />
-            <Button type="submit">Calculate</Button>
+            <Button type="submit">{t("tradingCalculator.calculate")}</Button>
           </div>
           <div>
             <TextInput label="Required margin" />
             <TextInput label="Pip value" />
             <TextInput label="Trading fees" />
-            <Button type="submit">Calculate</Button>
+            <Button type="submit">{t("tradingCalculator.calculate")}</Button>
           </div>
         </form>
         <div className="calculator_startSteps">
-          <h2>Start trading in less than 5 minutes</h2>
+          <h2>{t("tradingCalculator.section1Title")}</h2>
           <div className="calculator_startStepsMain">
             {StartSteps.map((d, i) => (
               <StepBox
@@ -126,9 +127,9 @@ const Calculator = () => {
           </div>
           <div className="calculator_startStepsButton">
             <a href="https://client.kwakolmarkets.com/register">
-              <Button>Start trading</Button>
+              <Button>{t("common.startTrading")}</Button>
             </a>
-            <p className="body-large">or try Demo Account</p>
+            {/* <p className="body-large">or try Demo Account</p> */}
           </div>
         </div>
       </div>

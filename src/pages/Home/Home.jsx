@@ -116,7 +116,11 @@ const Home = () => {
           </div>
 
           <div className="header_reviews">
-            <Rating heading="Excellent" count="724" source="TrustPilot" />
+            <Rating
+              heading={t("common.excellent")}
+              count="724"
+              source="TrustPilot"
+            />
           </div>
         </header>
       </div>
@@ -130,8 +134,12 @@ const Home = () => {
         <section className="home_trading">
           <div className="home_tradingHeading">
             <h2 className="text-primary">
-              Trade <span className="accent"> 100+ Instruments </span>
-              with an Award-Winning Broker
+              {t("home.section1Title").substring(0, 5)}
+              <span className="accent">
+                {" "}
+                {t("home.section1Title").substring(5, 22)}{" "}
+              </span>
+              {t("home.section1Title").substring(22)}
             </h2>
             <p className="body-large ">{t("home.section1Description")}</p>
           </div>
@@ -160,9 +168,8 @@ const Home = () => {
         <SectionBox
           bgImage={HomeHandomseMan}
           tabs
-          heading="Why trade with Capital Revo"
-          text="Capital Revo founded in 2015 is a leading online trading provider,
-                 offering trading with Forex, Indices, Precious Metals and Energy."
+          heading={t("home.section2Title")}
+          text={t("home.section2Description")}
         />
 
         <section className="home_startSteps">
