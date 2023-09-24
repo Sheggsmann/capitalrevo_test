@@ -90,8 +90,8 @@ const Home = () => {
           <div className="header_content">
             <div className="header_details">
               <h1 className="heading-1 mb-1">
-                {t("home.title").substring(0, 30)}
-                <span className="accent"> {t("home.title").substring(30)}</span>
+                {t("home.title.text")}
+                <span className="accent"> {t("home.title.span")}</span>
               </h1>
               <p className="body-large mb-3">{t("home.titleDescription")}</p>
 
@@ -134,12 +134,9 @@ const Home = () => {
         <section className="home_trading">
           <div className="home_tradingHeading">
             <h2 className="text-primary">
-              {t("home.section1Title").substring(0, 5)}
-              <span className="accent">
-                {" "}
-                {t("home.section1Title").substring(5, 22)}{" "}
-              </span>
-              {t("home.section1Title").substring(22)}
+              {t("home.section1Title.p1")}
+              <span className="accent"> {t("home.section1Title.span")} </span>
+              {t("home.section1Title.p2")}
             </h2>
             <p className="body-large ">{t("home.section1Description")}</p>
           </div>
@@ -197,15 +194,9 @@ const Home = () => {
         <Accounts />
 
         <div className="home_bottomText">
-          <b>Risk warning</b>: CFDs are complex instruments and come with a high
-          risk of losing money rapidly due to leverage.
-          <b>
-            {" "}
-            71% of retail investor accounts lose money when trading CFDs with
-            this provider
-          </b>
-          . You should consider whether you understand how CFDs work and whether
-          you can afford to take the high risk of losing your money.
+          <b>{t("home.riskText.bold1")}</b>: {t("home.riskText.span1")}
+          <b> {t("home.riskText.bold2")}</b>
+          {t("home.riskText.span2")}
         </div>
       </div>
 

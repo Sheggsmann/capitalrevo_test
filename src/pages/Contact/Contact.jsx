@@ -45,9 +45,9 @@ const Contact = () => {
 
         <div className="contact_content">
           <h2>
-            {t("contactUs.section1Title").substring(0, 4)}{" "}
-            <span className="accent">24/7</span>{" "}
-            {t("contactUs.section1Title").substring(10)}
+            {t("contactUs.section1Title.text")}{" "}
+            <span className="accent"> 24/7</span>{" "}
+            {t("contactUs.section1Title.span")}
           </h2>
           <p className="body-large">{t("contactUs.section1Description")}</p>
         </div>

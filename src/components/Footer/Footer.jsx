@@ -99,18 +99,10 @@ const Footer = ({ dark = false }) => {
         </div>
 
         <div className="footer_description footer_text">
-          Contracts for Difference (“CFDs”) are leveraged products and carry a
-          high level of risk to your capital as prices may move rapidly against
-          you. Losses can exceed your deposits and you may be required to make
-          further payments. These products may not be suitable for all clients
-          therefore ensure you understand the risks and seek independent advice.
+          {t("footer.bottomText.top")}
           <br />
           <br />
-          Capital Revo Limited with its registered office at No 169, Ademola
-          Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group is a financial
-          technology provider registered under the number 1713236 in BVI.
-          Capital Revo products and services are not intended for Belgium, US
-          and Canada residents.
+          {t("footer.bottomText.bottom")}
           <br />
         </div>
       </div>

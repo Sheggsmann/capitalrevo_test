@@ -28,10 +28,11 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 690px;
+    width: 700px;
     max-width: 90%;
     padding: 3rem 0;
     padding-left: 4rem;
+    padding-right: 1rem;
 
     @include xl {
       padding-left: 2rem;

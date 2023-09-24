@@ -3,7 +3,8 @@
         "startTrading": "comece a negociar",
         "recommended": "Recomendado",
         "excellent": "Excelente",
-        "reviewsOn": "Avaliações da"
+        "reviewsOn": "Avaliações da",
+        "viewAccounts": "Ver Contas"
     },
     "nav": {
         "trading": "Comercialização",
@@ -28,7 +29,13 @@
         "signup": "Registar-se"
     },
     "footer": {
-        "bottomText": "Os Contratos por Diferença ('CFDs') são produtos alavancados e acarretam um elevado nível de risco para o seu capital, uma vez que os preços podem mover-se rapidamente contra si. As perdas podem exceder seus depósitos e você pode ser obrigado a fazer pagamentos adicionais. Esses produtos podem não ser adequados para todos os clientes, portanto, certifique-se de compreender os riscos e procurar aconselhamento independente.Capital Revo Limited com sede em No 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. O Grupo Capital Revo é um provedor de tecnologia financeira registrado sob o número 1713236 nas Ilhas Virgens Britânicas. Os produtos e serviços da Capital Revo não se destinam a residentes na Bélgica, nos EUA e no Canadá"
+        "privacy": "Privacidade",
+        "cookiePolicy": "Política de Cookies",
+        "bottomText": {
+            "top": "Contratos por Diferença (“CFDs”) são produtos alavancados e envolvem um alto nível de risco para o seu capital, pois os preços podem se mover rapidamente contra você. As perdas podem exceder seus depósitos e pode ser necessário fazer pagamentos adicionais. Esses produtos podem não ser adequados para todos os clientes, portanto, certifique-se de entender os riscos e buscar aconselhamento independente.",
+            "bottom": "A Capital Revo Limited, com seu escritório registrado no número 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. O Grupo Capital Revo é um provedor de tecnologia financeira registrado sob o número 1713236 nas Ilhas Virgens Britânicas. Os produtos e serviços da Capital Revo não se destinam a residentes da Bélgica, Estados Unidos e Canadá."
+        }
+        
     },
     "tradeAccounts": {
         "basic": {
@@ -62,12 +69,19 @@
         }
     },
     "home": {
-        "title": "Negocie forex e CFDs com a corretora número1 do mundo",
+        "title": {
+            "text": "Negocie forex e CFDs com o ",
+            "span": "número 1 do mundo"
+        },        
         "titleDescription": "Negocie forex com spreads imbatíveis, proteção contra saldo negativo e suporte premiado 24 horas por dia, 7 dias por semana",
-        "section1": "Negocie mais de100 instrumentos com uma corretora premiada",
+        "section1Title": {
+            "p1": "Negocie ",
+            "span": "mais de 100 instrumentos ",
+            "p2": "com um corretor premiado"
+        },        
         "section1Description": "Diversifique a sua carteira de investimentos negociando CFDs em mais do que apenas Forex.",
         "forex": "Forex",
-        "energy": "renovável",
+        "energy": "Renovável",
         "stocks": "Estoques",
         "Metals": "Metais",
         "CryptoCurrency CFDs": "CFDs de Criptomoedas",
@@ -91,12 +105,21 @@
             "description": "Obtenha aprovação e comece a negociar"
         },
         "section4Title": "Conta para cada trader",
-        "description": "Temos contas para traders novos e mais ativos. Verifique qual se encaixa e está pronto para começar."
+        "description": "Temos contas para traders novos e mais ativos. Verifique qual se encaixa e está pronto para começar.",
+        "riskText": {
+            "bold1": "Aviso de risco: ",
+            "span1": "Os CFDs são instrumentos complexos e envolvem um alto risco de perder dinheiro rapidamente devido à alavancagem. ",
+            "bold2": "68% das contas de investidores de varejo perdem dinheiro ao negociar CFDs com este provedor.",
+            "span2": "Você deve considerar se compreende como os CFDs funcionam e se pode se dar ao luxo de correr o alto risco de perder seu dinheiro."
+        }        
     },
     "accounts": {
         "title": "Contas de Negociação",
         "titleDescription": "A Capital Revo oferece uma ampla gama de tipos de contas, todas projetadas para se adequar a uma gama diversificada de estilos de negociação.",
-        "section1Title": "Contas para cada trader",
+        "section1Title": {
+            "text": "Contas Para ",
+            "span": "Cada Trader"
+        },        
         "section1Description": "Desbloqueie o seu potencial de negociação com a nossa gama diversificada de contas. Escolha entre as opções Básica, Avançada, Ouro, Platina, Diamante e VIP para experiências de negociação personalizadas e benefícios exclusivos.",
         "accountType": "Tipo de Conta",
         "accounts": {

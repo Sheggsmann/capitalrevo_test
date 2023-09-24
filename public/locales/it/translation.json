@@ -3,7 +3,8 @@
         "startTrading": "Inizia a Fare Trading",
         "recommended": "Consigliati",
         "excellent": "Ottimo",
-        "reviewsOn": "Tutte le recensioni"
+        "reviewsOn": "Tutte le recensioni",
+        "viewAccounts": "Visualizza Conti"
     },
     "nav": {
         "trading": "Trading",
@@ -28,7 +29,13 @@
         "signup": "Registrati"
     },
     "footer": {
-        "bottomText": "I Contratti per Differenza ('CFD') sono prodotti con leva finanziaria e comportano un elevato livello di rischio per il tuo capitale poiché i prezzi potrebbero muoversi rapidamente a tuo sfavore. Le perdite possono superare i tuoi depositi e ti potrebbe essere richiesto di effettuare ulteriori pagamenti. Questi prodotti potrebbero non essere adatti a tutti i clienti, pertanto assicurati di comprendere i rischi e di chiedere una consulenza indipendente. Capital Revo Limited con sede legale al n. 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group è un fornitore di tecnologia finanziaria registrato con il numero 1713236 in BVI. I prodotti e i servizi Capital Revo non sono destinati ai residenti in Belgio, Stati Uniti e Canada."
+        "privacy": "Privacy",
+        "cookiePolicy": "Informativa sui Cookie",
+        "bottomText": {
+            "top": "I Contratti per Differenza (“CFD”) sono prodotti con leva finanziaria e comportano un elevato livello di rischio per il tuo capitale in quanto i prezzi possono muoversi rapidamente contro di te. Le perdite possono superare i tuoi depositi e potrebbe essere necessario effettuare ulteriori pagamenti. Questi prodotti potrebbero non essere adatti a tutti i clienti, quindi assicurati di comprendere i rischi e cerca consiglio indipendente.",
+            "bottom": "Capital Revo Limited con sede registrata al numero 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group è un fornitore di tecnologia finanziaria registrato con il numero 1713236 nelle Isole Vergini Britanniche. I prodotti e servizi di Capital Revo non sono destinati ai residenti in Belgio, negli Stati Uniti e in Canada."
+        }
+        
     },
     "tradeAccounts": {
         "basic": {
@@ -62,9 +69,16 @@
         }
     },
     "home": {
-        "title": "Fai trading su forex e CFD con il broker numero1 al mondo",
+        "title": {
+            "text": "Fai trading su forex e CFD con il ",
+            "span": "broker numero 1 al mondo"
+        },        
         "titleDescription": "Fai trading sul forex con spread imbattibili, protezione dal saldo negativo e un premiato supporto 24 ore su 24, 7 giorni su 7",
-        "section1Title": "Fai trading suoltre 100 strumenti con un broker pluripremiato",
+        "section1Title": {
+            "p1": "Fai trading ",
+            "span": "su oltre 100 strumenti ",
+            "p2": "con un broker premiato"
+        },        
         "section1Description": "Diversifica il tuo portafoglio di investimenti facendo trading di CFD su qualcosa di più del semplice Forex.",
         "forex": "Forex",
         "energy": "Energia",
@@ -91,12 +105,21 @@
             "description": "Ottieni l'approvazione e inizia a fare trading"
         },
         "section4Title": "Account per ogni trader",
-        "section4Description": "Abbiamo account sia per i trader nuovi che per quelli più attivi. Controlla quale si adatta e sei pronto per partire."
+        "section4Description": "Abbiamo account sia per i trader nuovi che per quelli più attivi. Controlla quale si adatta e sei pronto per partire.",
+        "riskText": {
+            "bold1": "Avvertenza di rischio: ",
+            "span1": "I CFD sono strumenti complessi e comportano un elevato rischio di perdita rapida di denaro a causa della leva finanziaria. ",
+            "bold2": "Il 68% dei conti degli investitori al dettaglio perde denaro quando negozia CFD con questo fornitore.",
+            "span2": "Dovresti valutare se comprendi come funzionano i CFD e se puoi permetterti di correre l'alto rischio di perdere il tuo denaro."
+        }        
     },
     "accounts": {
         "title": "Conti di trading",
         "titleDescription": "Capital Revo offre una vasta gamma di tipi di account, tutti progettati per adattarsi a una vasta gamma di stili di trading.",
-        "section1Title": "Conti per ogni trader",
+        "section1Title": {
+            "text": "Account per ",
+            "span": "Ogni Trader"
+        },        
         "section1Description": "Sblocca il tuo potenziale di trading con la nostra vasta gamma di conti. Scegli tra le opzioni Basic, Advanced, Gold, Platinum, Diamond e VIP per esperienze di trading personalizzate e vantaggi esclusivi.",
         "accountType": "Tipo di conto",
         "accounts": {
@@ -137,7 +160,7 @@
     "about": {
         "title": "Fornitore leader mondiale di trading online",
         "titleDescription": "Capital Revo è un fornitore leader globale di trading online, che offre trading con forex e CFD, indici, metalli preziosi, energia e criptovalute.",
-        "section1Title": "Capital Revo - Un broker di fiducia",
+        "section1Title": "Un Broker Affidabile",
         "section1Description": "La nostra missione è fornire ai nostri clienti un'esperienza di trading completa che sia educativa, intuitiva e stimolante",
         "card1": {
             "title": "Licenze e regolamento",
@@ -333,7 +356,10 @@
     "contactUs": {
         "title": "Contattaci",
         "titleDescription": "Hai bisogno di aiuto? Il nostro team di assistenza a 5 stelle è pronto ad aiutarti dal lunedì alla domenica, dalle 9:00 alle 18:00 UTC+2",
-        "section1Title": "Assistenza clienti 24/7",
+        "section1Title": {
+            "text": "Il tuo",
+            "span": "servizio clienti"
+        },
         "section1Description": "Contatta il nostro team di assistenza clienti, disponibile 24 ore su 24, 7 giorni su 7, per aiutarti",
         "card1": {
             "title": "Inviaci un'email",

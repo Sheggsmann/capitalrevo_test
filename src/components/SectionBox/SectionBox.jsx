@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import "./SectionBox.scss";
+import { useTranslation } from "react-i18next";
 
 const SectionBox = ({
   heading,
@@ -10,6 +11,7 @@ const SectionBox = ({
   btn = false,
   btnText,
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="sectionBox" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="sectionBox_Content">
@@ -17,10 +19,10 @@ const SectionBox = ({
         <p>{text}</p>
         {tabs && (
           <div className="sectionBox_Options">
-            <div>Easy withdrawals</div>
-            <div>Flexible Deposit Options</div>
-            <div>24/7 customer support</div>
-            <div>Account manager</div>
+            <div>{t("home.easyWithdrawals")}</div>
+            <div>{t("home.flexibleDeposits")}</div>
+            <div>{t("home.customerSupport")}</div>
+            <div>{t("home.accountManager")}</div>
           </div>
         )}
         {btn && (

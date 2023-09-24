@@ -111,10 +111,7 @@ const About = () => {
         <div className="about_content">
           <h2>
             Capital Revo -{" "}
-            <span className="accent">
-              {" "}
-              {t("about.section1Title").substring(14)}{" "}
-            </span>
+            <span className="accent"> {t("about.section1Title")} </span>
           </h2>
           <p className="body-large">{t("about.section1Description")}</p>
         </div>

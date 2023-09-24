@@ -112,11 +112,8 @@ const TradingAccounts = () => {
 
         <div className="tradingAccounts_text">
           <h2>
-            {t("accounts.section1Title").substring(0, 12)}{" "}
-            <span className="accent">
-              {" "}
-              {t("accounts.section1Title").substring(12)}{" "}
-            </span>
+            {t("accounts.section1Title.text")}{" "}
+            <span className="accent"> {t("accounts.section1Title.span")} </span>
           </h2>
 
           <p className="body-large">{t("accounts.section1Description")}</p>

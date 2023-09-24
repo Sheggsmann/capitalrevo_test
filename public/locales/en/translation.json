@@ -25,7 +25,7 @@
         "contact": "Contact",
         "webTrader": "Web Trader",
         "tradingCalendar": "Trading Calendar",
-        "forexCalculator": "Forex forexCalculator",
+        "forexCalculator": "Forex Calculator",
         "withdrawals": "Withdrawals",
         "login": "Log in",
         "signup": "Sign up"
@@ -33,9 +33,12 @@
     
 
     "footer": {
-        "bottomText": "Contracts for Difference (“CFDs”) are leveraged products and carry a high level of risk to your capital as prices may move rapidly against you. Losses can exceed your deposits and you may be required to make further payments. These products may not be suitable for all clients therefore ensure you understand the risks and seek independent advice.Capital Revo Limited with its registered office at No 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group is a financial technology provider registered under the number 1713236 in BVI. Capital Revo products and services are not intended for Belgium, US and Canada residents.",
         "privacy": "Privacy",
-        "cookiePolicy": "Cookie Policy"
+        "cookiePolicy": "Cookie Policy",
+        "bottomText": {
+            "top": "Contracts for Difference (“CFDs”) are leveraged products and carry a high level of risk to your capital as prices may move rapidly against you. Losses can exceed your deposits and you may be required to make further payments. These products may not be suitable for all clients therefore ensure you understand the risks and seek independent advice.",
+            "bottom": "Capital Revo Limited with its registered office at No 169, Ademola Adetokunbo Crescent, Wuse 2, Abuja. Capital Revo Group is a financial technology provider registered under the number 1713236 in BVI. Capital Revo products and services are not intended for Belgium, US and Canada residents."
+        }
     },
 
 
@@ -73,10 +76,16 @@
 
 
     "home": {
-        "title": "Trade forex and CFDs with the world's #1 broker",
+        "title": {
+            "text": "Trade forex and CFDs with the ",
+            "span": "world's #1 broker"
+        },
         "titleDescription": "Trade forex with unbeatable spreads, negative balance protection, and award winning 24/7 support",
-
-        "section1Title": "Trade 100+ Instruments with an Award-Winning Broker",
+        "section1Title": {
+            "p1": "Trade ",
+            "span": "100+ Instruments ",
+            "p2": "with an Award-Winning Broker"
+        },
         "section1Description": "Diversify your investment portfolio by trading CFDs on more than just Forex.",
         "forex": "Forex",
         "energy": "Energy",
@@ -106,7 +115,13 @@
         },
 
         "section4Title": "Account For Every Trader",
-        "section4Description": "We have accounts for both new and more active traders. Check which fits and you're set to go."
+        "section4Description": "We have accounts for both new and more active traders. Check which fits and you're set to go.",
+        "riskText": {
+            "bold1": "Risk warning: ",
+            "span1": "CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. ",
+            "bold2": "68% of retail investor accounts lose money when trading CFDs with this provider.",
+            "span2": "You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money."
+        }
     },
 
 
@@ -114,7 +129,10 @@
         "title": "Trading Accounts",
         "titleDescription": "Capital Revo offers a wide range of account types, all designed to suit a diverse range of trading styles.",
 
-        "section1Title": "Accounts For Every Trader",
+        "section1Title": {
+            "text": "Accounts For ",
+            "span": "Every Trader"
+        },
         "section1Description": "Unlock your trading potential with our diverse range of accounts. Choose from Basic, Advanced, Gold, Platinum, Diamond, and VIP options for personalized trading experiences and exclusive benefits.",   
 
         "accountType": "Account Type",
@@ -161,7 +179,7 @@
         "title": "Global Leading Online Trading Provider",
         "titleDescription": "Capital Revo is a leading global online trading provider, offering trading with forex and CFDs, indices, precious metals, energy and cryptocurrencies.",
 
-        "section1Title": "Capital Revo - A Trusted Broker",
+        "section1Title": "A Trusted Broker",
         "section1Description": "Our mission is to provide our clients with a comprehensive trading experience that is educational, intuitive, and empowering",
 
         "card1": {
@@ -406,7 +424,10 @@
         "title": "Contact Us",
         "titleDescription": "Need help? Our 5-star support team is ready to help you Monday through Sunday, 9:00 a.m. to 6:00 p.m. UTC+2",
 
-        "section1Title": "Your 24/7 customer service",
+        "section1Title": {
+            "text": "Your",
+            "span": "customer service"
+        },
         "section1Description": "Contact our customer service team who are available 24/7 to assist you",
 
         "card1": {
