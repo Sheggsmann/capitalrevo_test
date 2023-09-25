@@ -139,6 +139,7 @@ const About = () => {
           <InvestmentBox
             heading={t("about.section2Title")}
             text={t("about.section2Description")}
+            buttonText={t("common.startTrading")}
           />
         </div>
 

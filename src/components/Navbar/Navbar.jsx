@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useClickOutside, useMediaQuery } from "../../hooks";
 import Button from "../Button";
@@ -96,6 +96,10 @@ const Navbar = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const menuRef = useRef();
+
+  useLayoutEffect(() => {
+    setFlagUrl(flags[i18n.language]);
+  }, [i18n.language]);
 
   useClickOutside(menuRef, () => {
     if (!isMobile) return;

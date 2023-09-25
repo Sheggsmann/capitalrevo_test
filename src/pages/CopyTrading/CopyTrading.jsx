@@ -107,6 +107,7 @@ const CopyTrading = () => {
           heading={t("copyTrading.section5Title")}
           text={t("copyTrading.section5Description")}
           image={CopyTradingSectionImg}
+          buttonText={t("common.startTrading")}
         />
         <p className="body-large">
           {/* Capital Revo Copytrading is a system that facilitates the management
