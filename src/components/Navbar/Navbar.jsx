@@ -1,9 +1,8 @@
-import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useClickOutside, useMediaQuery } from "../../hooks";
 import Button from "../Button";
 import LogoIcon from "../../assets/logo.svg";
-import EnglishFlag from "../../assets/eng-flag.svg";
 import MenuIcon from "../../assets/menu.svg";
 import ChevronDown from "../../assets/chevron-down.svg";
 import ChevronUp from "../../assets/chevron-up.svg";
