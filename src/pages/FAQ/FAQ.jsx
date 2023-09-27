@@ -16,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: t("faq.paymentSystems.question2"),
-      answer: t("faq.paymentSystems.answer2"),
+      answer: "",
     },
     {
       question: t("faq.paymentSystems.question3"),
