@@ -18,6 +18,7 @@ import Button from "../../components/Button";
 import AboutBg from "../../assets/about_bg.png";
 import Lines from "../../assets/lines.svg";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const CurrencyData = [
   {
@@ -104,6 +105,11 @@ const About = () => {
               key={i}
               value={d.value}
               percentage={d.percentage}
+              onClick={() =>
+                window.location.replace(
+                  "https://client.kwakolmarkets.com/login"
+                )
+              }
             />
           ))}
         </div>
