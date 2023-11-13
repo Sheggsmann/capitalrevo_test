@@ -27,7 +27,18 @@ const FooterLogos = [
   Help2payLogo,
 ];
 
-const MediaLogos = [FacebookLogo, TwitterLogo, YouTubeLogo, LinkedinLogo];
+const MediaLogos = [
+  {
+    logo: FacebookLogo,
+    link: "https://www.facebook.com/profile.php?id=61552517622119",
+  },
+  {
+    logo: TwitterLogo,
+    link: "https://x.com/capital_revo?s=11&t=kqR3TQFC0T8If9PgBAWszw",
+  },
+  { logo: YouTubeLogo, link: "" },
+  { logo: LinkedinLogo, link: "https://www.linkedin.com/company/capitalrevo/" },
+];
 
 const Footer = ({ dark = false }) => {
   const navigate = useNavigate();
@@ -58,7 +69,9 @@ const Footer = ({ dark = false }) => {
 
           <div className="footer_media">
             {MediaLogos.map((l, i) => (
-              <img key={i} src={l} alt="logo" />
+              <a href={l.link} target="_blank">
+                <img key={i} src={l.logo} alt="logo" />
+              </a>
             ))}
           </div>
         </div>

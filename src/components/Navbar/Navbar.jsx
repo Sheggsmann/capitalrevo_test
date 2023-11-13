@@ -229,31 +229,31 @@ const Navbar = () => {
                   className="language"
                   onClick={() => handleLangMenuClick("it")}
                 >
-                  Italian
+                  Italiano
                 </div>
                 <div
                   className="language"
                   onClick={() => handleLangMenuClick("es")}
                 >
-                  Spanish
+                  Español
                 </div>
                 <div
                   className="language"
                   onClick={() => handleLangMenuClick("ae")}
                 >
-                  Arab
+                  اردو
                 </div>
                 <div
                   className="language"
                   onClick={() => handleLangMenuClick("pt")}
                 >
-                  Portuguese
+                  Português
                 </div>
                 <div
                   className="language"
                   onClick={() => handleLangMenuClick("in")}
                 >
-                  Indian
+                  Hindi
                 </div>
               </div>
             )}
