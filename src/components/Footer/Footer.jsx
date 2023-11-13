@@ -8,7 +8,7 @@ import RupeepayLogo from "../../assets/rupeepay.png";
 import SwiftyLogo from "../../assets/swifty.png";
 import PaymentrLogo from "../../assets/paymentr.png";
 import Help2payLogo from "../../assets/help2pay.png";
-import LogoDark from "../../assets/logo-dark.svg";
+import LogoDark from "../../assets/logo-dark.png";
 import FacebookLogo from "../../assets/facebook.svg";
 import TwitterLogo from "../../assets/twitter.svg";
 import YouTubeLogo from "../../assets/youtube.svg";
